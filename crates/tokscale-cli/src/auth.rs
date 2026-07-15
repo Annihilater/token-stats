@@ -226,7 +226,7 @@ pub async fn login() -> Result<()> {
         );
         println!(
             "{}",
-            "  Run 'bunx tokscale@latest logout' to sign out first.\n".bright_black()
+            "  Run 'token-stats logout' to sign out first.\n".bright_black()
         );
         return Ok(());
     }
@@ -315,7 +315,7 @@ pub async fn login() -> Result<()> {
                             );
                             println!(
                                 "{}",
-                                "  You can now use 'bunx tokscale@latest submit' to share your usage.\n"
+                                "  You can now use 'token-stats submit' to share your usage.\n"
                                     .bright_black()
                             );
                             return Ok(());
@@ -393,7 +393,7 @@ pub async fn login_with_token(token: &str) -> Result<()> {
     );
     println!(
         "{}",
-        "  You can now use 'bunx tokscale@latest submit' to share your usage.\n".bright_black()
+        "  You can now use 'token-stats submit' to share your usage.\n".bright_black()
     );
 
     Ok(())
@@ -431,7 +431,7 @@ pub fn whoami() -> Result<()> {
         println!("\n  {}", "Not logged in.".yellow());
         println!(
             "{}",
-            "  Run 'bunx tokscale@latest login' to authenticate.\n".bright_black()
+            "  Run 'token-stats login' to authenticate.\n".bright_black()
         );
         return Ok(());
     };
@@ -475,7 +475,7 @@ pub fn show_qr(yes: bool) -> Result<()> {
         println!("\n  {}", "Not logged in.".yellow());
         println!(
             "{}",
-            "  Run 'bunx tokscale@latest login' to authenticate.\n".bright_black()
+            "  Run 'token-stats login' to authenticate.\n".bright_black()
         );
         return Ok(());
     };

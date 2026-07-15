@@ -25,6 +25,14 @@ import {
 } from "@/lib/leaderboard/constants";
 import { parseCustomDateRange } from "@/lib/leaderboard/dateRange";
 import type { LeaderboardData, LeaderboardUser, Period } from "@/lib/leaderboard/types";
+import {
+  CLI_BIN,
+  CLI_INSTALL_CMD,
+  CLI_LOGIN_CMD,
+  CLI_LOGIN_SUBMIT_CMD,
+  CLI_SUBMIT_CMD,
+  SITE_GITHUB_URL,
+} from "@/lib/brand";
 
 const Section = styled.div`
   display: grid;
@@ -1368,7 +1376,7 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
                 <>
                   <EmptyMessage>No submissions yet. Be the first!</EmptyMessage>
                   <EmptyHint>
-                    Run <CodeSnippet>tokscale login && tokscale submit</CodeSnippet>
+                    Run <CodeSnippet>{CLI_LOGIN_SUBMIT_CMD}</CodeSnippet>
                   </EmptyHint>
                 </>
               )}
@@ -1492,30 +1500,43 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
           )}
           <CodeLine>
             <CommandPrompt>$</CommandPrompt>
-            <CommandPrefix>bunx</CommandPrefix>
-            <CommandName>tokscale</CommandName>
-            <CommandArg>login</CommandArg>
+            <CommandName>cargo</CommandName>
+            <CommandArg>
+              install --git {SITE_GITHUB_URL} --locked --bin {CLI_BIN}
+            </CommandArg>
             <CopyIconButton
               type="button"
-              onClick={() => handleCopyCommand("bunx tokscale login")}
-              className={copiedCommand === "bunx tokscale login" ? "copied" : ""}
-              aria-label="Copy command"
+              onClick={() => handleCopyCommand(CLI_INSTALL_CMD)}
+              className={copiedCommand === CLI_INSTALL_CMD ? "copied" : ""}
+              aria-label="Copy install command"
             >
-              {copiedCommand === "bunx tokscale login" ? <CheckIcon size={16} /> : <CopyIcon size={16} />}
+              {copiedCommand === CLI_INSTALL_CMD ? <CheckIcon size={16} /> : <CopyIcon size={16} />}
             </CopyIconButton>
           </CodeLine>
           <CodeLine>
             <CommandPrompt>$</CommandPrompt>
-            <CommandPrefix>bunx</CommandPrefix>
-            <CommandName>tokscale</CommandName>
+            <CommandName>{CLI_BIN}</CommandName>
+            <CommandArg>login</CommandArg>
+            <CopyIconButton
+              type="button"
+              onClick={() => handleCopyCommand(CLI_LOGIN_CMD)}
+              className={copiedCommand === CLI_LOGIN_CMD ? "copied" : ""}
+              aria-label="Copy login command"
+            >
+              {copiedCommand === CLI_LOGIN_CMD ? <CheckIcon size={16} /> : <CopyIcon size={16} />}
+            </CopyIconButton>
+          </CodeLine>
+          <CodeLine>
+            <CommandPrompt>$</CommandPrompt>
+            <CommandName>{CLI_BIN}</CommandName>
             <CommandArg>submit</CommandArg>
             <CopyIconButton
               type="button"
-              onClick={() => handleCopyCommand("bunx tokscale submit")}
-              className={copiedCommand === "bunx tokscale submit" ? "copied" : ""}
-              aria-label="Copy command"
+              onClick={() => handleCopyCommand(CLI_SUBMIT_CMD)}
+              className={copiedCommand === CLI_SUBMIT_CMD ? "copied" : ""}
+              aria-label="Copy submit command"
             >
-              {copiedCommand === "bunx tokscale submit" ? <CheckIcon size={16} /> : <CopyIcon size={16} />}
+              {copiedCommand === CLI_SUBMIT_CMD ? <CheckIcon size={16} /> : <CopyIcon size={16} />}
             </CopyIconButton>
           </CodeLine>
         </CodeBlock>

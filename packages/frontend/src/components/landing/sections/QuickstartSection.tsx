@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import styled, { css, keyframes } from "styled-components";
+import { CLI_INSTALL_CMD, CLI_SUBMIT_CMD } from "@/lib/brand";
 import { useCopy, useSquircleClip } from "../hooks";
 import { SquircleBorder } from "../components";
 
 export function QuickstartSection() {
-  const tui = useCopy("bunx tokscale@latest");
-  const submit = useCopy("bunx tokscale@latest submit");
+  const tui = useCopy(CLI_INSTALL_CMD);
+  const submit = useCopy(CLI_SUBMIT_CMD);
   const {
     setElementRef: setCardsRowRef,
     clipPath: cardsRowClipPath,
@@ -74,7 +75,7 @@ export function QuickstartSection() {
               </CardTitle>
               <CommandBox>
                 <CommandInputArea>
-                  <CommandText>bunx tokscale@latest</CommandText>
+                  <CommandText>{CLI_INSTALL_CMD}</CommandText>
                   <GradientAccent />
                 </CommandInputArea>
                 <CopyBtn onClick={tui.copy}>
@@ -104,7 +105,7 @@ export function QuickstartSection() {
               </CardTitle>
               <CommandBox>
                 <CommandInputArea>
-                  <CommandText>bunx tokscale@latest submit</CommandText>
+                  <CommandText>{CLI_SUBMIT_CMD}</CommandText>
                   <GradientAccent $delay />
                 </CommandInputArea>
                 <CopyBtn onClick={submit.copy}>

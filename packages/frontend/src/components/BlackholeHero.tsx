@@ -5,12 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import heroBg from "@/../public/assets/hero-bg.png";
+import { CLI_BIN, CLI_INSTALL_CMD } from "@/lib/brand";
 
 export function BlackholeHero() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("bunx tokscale");
+    navigator.clipboard.writeText(CLI_INSTALL_CMD);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -55,11 +56,8 @@ export function BlackholeHero() {
           
           <CommandDisplay>
             <CommandTextWrapper>
-              <CommandPrefix>
-                bunx&nbsp;
-              </CommandPrefix>
               <CommandName>
-                tokscale
+                {CLI_BIN}
               </CommandName>
             </CommandTextWrapper>
             <GradientSeparator />

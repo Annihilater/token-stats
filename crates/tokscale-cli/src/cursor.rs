@@ -869,7 +869,7 @@ pub async fn fetch_cursor_usage_csv(session_token: &str) -> Result<String> {
         || response.status() == reqwest::StatusCode::FORBIDDEN
     {
         anyhow::bail!(
-            "Cursor session expired. Please run 'bunx tokscale@latest cursor login' to re-authenticate."
+            "Cursor session expired. Please run 'token-stats cursor login' to re-authenticate."
         );
     }
 
@@ -1068,7 +1068,7 @@ pub fn run_cursor_login(name: Option<String>) -> Result<()> {
             println!(
                 "  {}",
                 format!(
-                    "Account '{}' already exists. Use 'bunx tokscale@latest cursor logout --name {}' first.",
+                    "Account '{}' already exists. Use 'token-stats cursor logout --name {}' first.",
                     label, label
                 )
                 .yellow()
@@ -1189,7 +1189,7 @@ pub fn run_cursor_status(name: Option<String>) -> Result<()> {
                 println!("\n  {}", "No saved Cursor accounts.".yellow());
                 println!(
                     "{}",
-                    "  Run 'bunx tokscale@latest cursor login' to authenticate.\n".bright_black()
+                    "  Run 'token-stats cursor login' to authenticate.\n".bright_black()
                 );
             }
             return Ok(());

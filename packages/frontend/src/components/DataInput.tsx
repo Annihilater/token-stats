@@ -352,15 +352,15 @@ export function DataInput({ onDataLoaded }: DataInputProps) {
         </InstructionsTitle>
         <InstructionsList>
           <ListItem>
-            Install tokscale:{" "}
+            Install Token Stats CLI:{" "}
             <SmallCodeSnippet>
-              bunx tokscale
+              cargo install --git https://github.com/Annihilater/token-stats --locked --bin token-stats
             </SmallCodeSnippet>
           </ListItem>
           <ListItem>
             Run the graph command:{" "}
             <SmallCodeSnippet>
-              tokscale graph
+              token-stats graph
             </SmallCodeSnippet>
           </ListItem>
           <ListItem>Copy the JSON output and paste it above</ListItem>

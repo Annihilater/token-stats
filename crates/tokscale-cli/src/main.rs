@@ -21,7 +21,7 @@ use std::time::Duration;
 use tui::Tab;
 
 #[derive(Parser)]
-#[command(name = "tokscale")]
+#[command(name = "token-stats")]
 #[command(author, version, about = "Token Stats — AI token usage analytics CLI")]
 struct Cli {
     #[command(subcommand)]
@@ -4410,7 +4410,7 @@ fn run_delete_data_command() -> Result<()> {
     use tokio::runtime::Runtime;
 
     let auth_token = auth::resolve_api_token().ok_or_else(|| {
-        anyhow::anyhow!("Not logged in. Run `tokscale login` or set TOKSCALE_API_TOKEN.")
+        anyhow::anyhow!("Not logged in. Run `token-stats login` or set TOKSCALE_API_TOKEN.")
     })?;
 
     println!("\n{}", "  ⚠ Delete all submitted usage data".red().bold());
@@ -5176,13 +5176,13 @@ fn run_submit_command(
         None => {
             if mode == SubmitMode::Autosubmit {
                 return Err(anyhow::anyhow!(
-                    "Autosubmit requires login. Run `tokscale login` or set TOKSCALE_API_TOKEN."
+                    "Autosubmit requires login. Run `token-stats login` or set TOKSCALE_API_TOKEN."
                 ));
             }
             eprintln!("\n  {}", "Not logged in.".yellow());
             eprintln!(
                 "{}",
-                "  Run 'bunx tokscale@latest login' or set TOKSCALE_API_TOKEN.\n".bright_black()
+                "  Run 'token-stats login' or set TOKSCALE_API_TOKEN.\n".bright_black()
             );
             std::process::exit(1);
         }

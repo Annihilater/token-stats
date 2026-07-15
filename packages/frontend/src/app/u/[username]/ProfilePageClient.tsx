@@ -225,7 +225,7 @@ export default function ProfilePageClient({
           {showResubmitBanner && (
             <UpdateNotice role="status">
               <strong>Fresh detail is available.</strong> Re-submit with{" "}
-              <code>bunx tokscale submit</code> to add daily model breakdowns.
+              <code>token-stats submit</code> to add daily model breakdowns.
             </UpdateNotice>
           )}
 

@@ -44,7 +44,7 @@ impl CacheReportScope {
 /// cache. The cache file's `groupBy` field is compared verbatim against
 /// this on load (`cache.rs::load_cache`), so any code path that writes
 /// the cache — most importantly the detached `warm-tui-cache` subprocess
-/// fired after `tokscale submit` — must use this exact value, NOT
+/// fired after `token-stats submit` — must use this exact value, NOT
 /// `GroupBy::default()`.
 ///
 /// Historical bug: the warm-tui-cache writer keyed on `GroupBy::default()`
@@ -1922,14 +1922,14 @@ mod tests {
 
     /// Regression test for the TUI cache `group_by` mismatch bug.
     ///
-    /// Symptom: `npx tokscale@latest` (TUI launch) silently dropped the
+    /// Symptom: `token-stats` (TUI launch) silently dropped the
     /// on-disk cache and showed an empty dashboard until the background
     /// scan finished, even though `~/.config/tokscale/cache/tui-data-cache.json`
     /// existed and was well-formed.
     ///
     /// Root cause: the warm-tui-cache writer (`run_warm_tui_cache` in
     /// `main.rs`, spawned as a detached subprocess after every successful
-    /// `tokscale submit`) saved the cache with `GroupBy::default()`
+    /// `token-stats submit`) saved the cache with `GroupBy::default()`
     /// (= `ClientModel`, serialized as `"client,model"`), while the TUI
     /// reader (`tui::run`) loaded with the hard-coded `GroupBy::Model`
     /// (serialized as `"model"`). `cache.rs::load_cache` does a strict
