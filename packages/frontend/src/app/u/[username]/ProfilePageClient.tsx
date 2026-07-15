@@ -333,7 +333,7 @@ export default function ProfilePageClient({
                 <EmptyState>
                   <EmptyTitle>No usage history yet</EmptyTitle>
                   <EmptyCopy>
-                    Daily activity will appear after the next Tokscale
+                    Daily activity will appear after the next Token Stats
                     submission.
                   </EmptyCopy>
                 </EmptyState>

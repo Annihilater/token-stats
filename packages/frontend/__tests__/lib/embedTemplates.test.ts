@@ -310,14 +310,14 @@ const allTemplates = {
 };
 
 const ariaLabels: Record<keyof typeof allTemplates, string> = {
-  classic: "Tokscale profile stats for @octocat",
-  minimal: "Tokscale stats for @octocat",
-  terminal: "Tokscale stats for @octocat",
-  graph: "Tokscale contribution graph for @octocat",
-  orbit: "Tokscale leaderboard standing for @octocat",
-  vitals: "Tokscale usage signals for @octocat",
-  blueprint: "Tokscale usage data sheet for @octocat",
-  receipt: "Tokscale compact ledger for @octocat",
+  classic: "Token Stats profile stats for @octocat",
+  minimal: "Token Stats stats for @octocat",
+  terminal: "Token Stats stats for @octocat",
+  graph: "Token Stats contribution graph for @octocat",
+  orbit: "Token Stats leaderboard standing for @octocat",
+  vitals: "Token Stats usage signals for @octocat",
+  blueprint: "Token Stats usage data sheet for @octocat",
+  receipt: "Token Stats compact ledger for @octocat",
 };
 
 const graphOptions = { contributions: mockContributions, graph: true } as const;

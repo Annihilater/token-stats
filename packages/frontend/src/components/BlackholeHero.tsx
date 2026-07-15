@@ -35,7 +35,7 @@ export function BlackholeHero() {
         <LogoWrapper>
           <LogoImage
             src="/assets/hero-logo.svg"
-            alt="Tokscale Logo"
+            alt="Token Stats Logo"
             fill
           />
         </LogoWrapper>
@@ -79,11 +79,11 @@ export function BlackholeHero() {
             </StarText>
           </StarContainer>
           <GitHubLink
-            href="https://github.com/junhoyeo/tokscale"
+            href="https://github.com/Annihilater/token-stats"
             target="_blank"
             rel="noopener noreferrer"
           >
-            junhoyeo/tokscale
+            Annihilater/token-stats
           </GitHubLink>
         </FooterContainer>
       </ContentWrapper>

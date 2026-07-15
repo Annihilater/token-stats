@@ -16,7 +16,7 @@ const githubAssetsPath = fileURLToPath(
   new URL("../../../../.github/assets/", import.meta.url)
 );
 const GITHUB_ASSET_URL_PREFIX =
-  "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/";
+  "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/";
 
 function coreClientIds(): string[] {
   const source = readFileSync(coreClientsPath, "utf8");

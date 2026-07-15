@@ -23,7 +23,7 @@ describe("profile embed dialog options", () => {
   it("previews the live renderer on the current origin", () => {
     expect(
       buildEmbedPreviewPath(
-        "https://tokscale.ai/api/embed/octocat/svg?template=graph&theme=light",
+        "https://token-stats.com/api/embed/octocat/svg?template=graph&theme=light",
       ),
     ).toBe("/api/embed/octocat/svg?template=graph&theme=light");
   });
@@ -45,7 +45,7 @@ describe("profile embed dialog options", () => {
     const links = buildProfileEmbedLinks('alice/foo"', defaults);
 
     expect(links.embedUrl).toContain("/api/embed/alice%2Ffoo%22/svg");
-    expect(links.profileUrl).toBe("https://tokscale.ai/u/alice%2Ffoo%22");
+    expect(links.profileUrl).toBe("https://token-stats.com/u/alice%2Ffoo%22");
     expect(links.htmlSnippet).toContain("@alice/foo&quot;");
     expect(links.htmlSnippet).not.toContain('foo"');
   });

@@ -26,7 +26,7 @@ describe("renderProfileEmbedSvg", () => {
     const svg = renderProfileEmbedSvg(mockStats);
 
     expect(svg).toContain("<svg");
-    expect(svg).toContain(">Tokscale<");
+    expect(svg).toContain(">Token Stats<");
     expect(svg).toContain("@octocat");
     expect(svg).toContain("1,234,567");
     expect(svg).toContain("$42.42");
@@ -50,7 +50,7 @@ describe("renderProfileEmbedSvg", () => {
 
     expect(svg).toContain('width="460"');
     expect(svg).toContain('height="162"');
-    expect(svg).toContain(">Tokscale<");
+    expect(svg).toContain(">Token Stats<");
     expect(svg).toContain("@octocat");
     expect(svg).toContain('fill="#FFFFFF"');
     expect(svg).not.toContain("Submissions");
@@ -326,7 +326,7 @@ describe("renderProfileEmbedErrorSvg", () => {
       theme: "light",
     });
 
-    expect(svg).toContain(">Tokscale<");
+    expect(svg).toContain(">Token Stats<");
     expect(svg).toContain("User &lt;unknown&gt;");
     expect(svg).not.toContain("User <unknown>");
     expect(svg).toContain('font-family="Figtree');

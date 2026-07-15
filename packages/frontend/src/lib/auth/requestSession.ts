@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/brand";
 import { getSession, getSessionFromHeader, type SessionUser } from "./session";
 
 const MUTATING_METHODS = new Set(["POST", "PUT", "PATCH", "DELETE"]);
@@ -10,7 +11,7 @@ function getAllowedOrigins(): string[] {
   const env = process.env.CSRF_ALLOWED_ORIGINS;
   const origins = env
     ? env.split(",").map((o) => o.trim()).filter(Boolean)
-    : ["https://tokscale.ai", "http://localhost:3000"];
+    : [SITE_URL, "http://localhost:3000"];
 
   // Self-hosted deployments already set NEXT_PUBLIC_URL for OAuth redirects;
   // the deployment's own origin is always a legitimate request source, so

@@ -19,7 +19,7 @@ const IMAGE_WIDTH: i32 = 1200 * SCALE;
 const IMAGE_HEIGHT: i32 = 1200 * SCALE;
 const PADDING: i32 = 56 * SCALE;
 
-const TOKSCALE_LOGO_SVG_URL: &str = "https://tokscale.ai/tokscale-logo.svg";
+const TOKSCALE_LOGO_SVG_URL: &str = "https://token-stats.com/tokscale-logo.svg";
 const TOKSCALE_LOGO_PNG_SIZE: i32 = 400;
 const FIGTREE_REGULAR_FILE: &str = "Figtree-Regular.ttf";
 const FIGTREE_REGULAR_URL: &str =
@@ -771,7 +771,7 @@ async fn generate_wrapped_image(data: &WrappedData, options: &RenderOptions) -> 
                 COLOR_TEXT_SECONDARY,
                 PADDING,
                 footer_bottom_y,
-                "github.com/junhoyeo/tokscale",
+                "github.com/Annihilater/token-stats",
             );
 
             let logo_width = ((logo.width() as f32 / logo.height() as f32)
@@ -1477,54 +1477,54 @@ fn client_display_name(client: &str) -> Option<&'static str> {
 
 fn client_logo_url(client_name: &str) -> Option<&'static str> {
     match client_name {
-        "OpenCode" => Some("https://tokscale.ai/assets/logos/opencode.png"),
-        "Claude Code" => Some("https://tokscale.ai/assets/logos/claude.jpg"),
-        "Codex CLI" => Some("https://tokscale.ai/assets/logos/openai.jpg"),
+        "OpenCode" => Some("https://token-stats.com/assets/logos/opencode.png"),
+        "Claude Code" => Some("https://token-stats.com/assets/logos/claude.jpg"),
+        "Codex CLI" => Some("https://token-stats.com/assets/logos/openai.jpg"),
         "Copilot CLI" => Some(
-            "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-copilot.jpg",
+            "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-copilot.jpg",
         ),
-        "Gemini CLI" => Some("https://tokscale.ai/assets/logos/gemini.png"),
-        "Cursor IDE" => Some("https://tokscale.ai/assets/logos/cursor.jpg"),
-        "Amp" => Some("https://tokscale.ai/assets/logos/amp.png"),
+        "Gemini CLI" => Some("https://token-stats.com/assets/logos/gemini.png"),
+        "Cursor IDE" => Some("https://token-stats.com/assets/logos/cursor.jpg"),
+        "Amp" => Some("https://token-stats.com/assets/logos/amp.png"),
         "Codebuff" => Some(
-            "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-codebuff.png",
+            "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-codebuff.png",
         ),
-        "Droid" => Some("https://tokscale.ai/assets/logos/droid.png"),
-        "OpenClaw" => Some("https://tokscale.ai/assets/logos/openclaw.png"),
-        "Hermes Agent" => Some("https://tokscale.ai/assets/logos/hermes.png"),
-        "Pi" => Some("https://tokscale.ai/assets/logos/pi.png"),
-        "Kimi CLI" => Some("https://tokscale.ai/assets/logos/kimi.png"),
-        "Qwen CLI" => Some("https://tokscale.ai/assets/logos/qwen.png"),
-        "Roo Code" => Some("https://tokscale.ai/assets/logos/roocode.png"),
-        "Kilo" => Some("https://tokscale.ai/assets/logos/kilocode.png"),
-        "Kilo CLI" => Some("https://tokscale.ai/assets/logos/kilocode.png"),
-        "Mux" => Some("https://tokscale.ai/assets/logos/mux.png"),
+        "Droid" => Some("https://token-stats.com/assets/logos/droid.png"),
+        "OpenClaw" => Some("https://token-stats.com/assets/logos/openclaw.png"),
+        "Hermes Agent" => Some("https://token-stats.com/assets/logos/hermes.png"),
+        "Pi" => Some("https://token-stats.com/assets/logos/pi.png"),
+        "Kimi CLI" => Some("https://token-stats.com/assets/logos/kimi.png"),
+        "Qwen CLI" => Some("https://token-stats.com/assets/logos/qwen.png"),
+        "Roo Code" => Some("https://token-stats.com/assets/logos/roocode.png"),
+        "Kilo" => Some("https://token-stats.com/assets/logos/kilocode.png"),
+        "Kilo CLI" => Some("https://token-stats.com/assets/logos/kilocode.png"),
+        "Mux" => Some("https://token-stats.com/assets/logos/mux.png"),
         "Crush" => Some(
-            "https://raw.githubusercontent.com/junhoyeo/tokscale/6b483d0f2de3717266dec8faed13acd067f90ff3/.github/assets/client-crush.png",
+            "https://raw.githubusercontent.com/Annihilater/token-stats/6b483d0f2de3717266dec8faed13acd067f90ff3/.github/assets/client-crush.png",
         ),
         "Goose" => Some(
-            "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-goose.png",
+            "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-goose.png",
         ),
         "Antigravity" | "Antigravity CLI" => Some(
-            "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-antigravity.png",
+            "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-antigravity.png",
         ),
         "Zed Agent" => Some(
-            "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-zed.webp",
+            "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-zed.webp",
         ),
-        "Jcode" => Some("https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-jcode.png"),
+        "Jcode" => Some("https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-jcode.png"),
         "Junie" => Some("https://github.com/JetBrains.png"),
-        "Synthetic" => Some("https://tokscale.ai/assets/logos/synthetic.png"),
+        "Synthetic" => Some("https://token-stats.com/assets/logos/synthetic.png"),
         _ => None,
     }
 }
 
 fn provider_logo_url(provider: &str) -> Option<&'static str> {
     match provider {
-        "anthropic" => Some("https://tokscale.ai/assets/logos/claude.jpg"),
-        "openai" => Some("https://tokscale.ai/assets/logos/openai.jpg"),
-        "google" => Some("https://tokscale.ai/assets/logos/gemini.png"),
-        "xai" => Some("https://tokscale.ai/assets/logos/grok.jpg"),
-        "zai" => Some("https://tokscale.ai/assets/logos/zai.jpg"),
+        "anthropic" => Some("https://token-stats.com/assets/logos/claude.jpg"),
+        "openai" => Some("https://token-stats.com/assets/logos/openai.jpg"),
+        "google" => Some("https://token-stats.com/assets/logos/gemini.png"),
+        "xai" => Some("https://token-stats.com/assets/logos/grok.jpg"),
+        "zai" => Some("https://token-stats.com/assets/logos/zai.jpg"),
         _ => None,
     }
 }
@@ -2505,7 +2505,7 @@ mod tests {
     fn test_client_logo_url_opencode() {
         assert_eq!(
             client_logo_url("OpenCode"),
-            Some("https://tokscale.ai/assets/logos/opencode.png")
+            Some("https://token-stats.com/assets/logos/opencode.png")
         );
     }
 
@@ -2513,7 +2513,7 @@ mod tests {
     fn test_client_logo_url_claude_code() {
         assert_eq!(
             client_logo_url("Claude Code"),
-            Some("https://tokscale.ai/assets/logos/claude.jpg")
+            Some("https://token-stats.com/assets/logos/claude.jpg")
         );
     }
 
@@ -2521,7 +2521,7 @@ mod tests {
     fn test_client_logo_url_codex_cli() {
         assert_eq!(
             client_logo_url("Codex CLI"),
-            Some("https://tokscale.ai/assets/logos/openai.jpg")
+            Some("https://token-stats.com/assets/logos/openai.jpg")
         );
     }
 
@@ -2530,7 +2530,7 @@ mod tests {
         assert_eq!(
             client_logo_url("Copilot CLI"),
             Some(
-                "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-copilot.jpg",
+                "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-copilot.jpg",
             )
         );
     }
@@ -2539,7 +2539,7 @@ mod tests {
     fn test_client_logo_url_gemini_cli() {
         assert_eq!(
             client_logo_url("Gemini CLI"),
-            Some("https://tokscale.ai/assets/logos/gemini.png")
+            Some("https://token-stats.com/assets/logos/gemini.png")
         );
     }
 
@@ -2547,7 +2547,7 @@ mod tests {
     fn test_client_logo_url_cursor_ide() {
         assert_eq!(
             client_logo_url("Cursor IDE"),
-            Some("https://tokscale.ai/assets/logos/cursor.jpg")
+            Some("https://token-stats.com/assets/logos/cursor.jpg")
         );
     }
 
@@ -2555,7 +2555,7 @@ mod tests {
     fn test_client_logo_url_amp() {
         assert_eq!(
             client_logo_url("Amp"),
-            Some("https://tokscale.ai/assets/logos/amp.png")
+            Some("https://token-stats.com/assets/logos/amp.png")
         );
     }
 
@@ -2563,7 +2563,7 @@ mod tests {
     fn test_client_logo_url_droid() {
         assert_eq!(
             client_logo_url("Droid"),
-            Some("https://tokscale.ai/assets/logos/droid.png")
+            Some("https://token-stats.com/assets/logos/droid.png")
         );
     }
 
@@ -2571,7 +2571,7 @@ mod tests {
     fn test_client_logo_url_openclaw() {
         assert_eq!(
             client_logo_url("OpenClaw"),
-            Some("https://tokscale.ai/assets/logos/openclaw.png")
+            Some("https://token-stats.com/assets/logos/openclaw.png")
         );
     }
 
@@ -2579,7 +2579,7 @@ mod tests {
     fn test_client_logo_url_hermes() {
         assert_eq!(
             client_logo_url("Hermes Agent"),
-            Some("https://tokscale.ai/assets/logos/hermes.png")
+            Some("https://token-stats.com/assets/logos/hermes.png")
         );
     }
 
@@ -2588,7 +2588,7 @@ mod tests {
         assert_eq!(
             client_logo_url("Codebuff"),
             Some(
-                "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-codebuff.png"
+                "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-codebuff.png"
             )
         );
     }
@@ -2597,7 +2597,7 @@ mod tests {
     fn test_client_logo_url_pi() {
         assert_eq!(
             client_logo_url("Pi"),
-            Some("https://tokscale.ai/assets/logos/pi.png")
+            Some("https://token-stats.com/assets/logos/pi.png")
         );
     }
 
@@ -2605,7 +2605,7 @@ mod tests {
     fn test_client_logo_url_kilo_cli() {
         assert_eq!(
             client_logo_url("Kilo CLI"),
-            Some("https://tokscale.ai/assets/logos/kilocode.png")
+            Some("https://token-stats.com/assets/logos/kilocode.png")
         );
     }
 
@@ -2614,7 +2614,7 @@ mod tests {
         assert_eq!(
             client_logo_url("Crush"),
             Some(
-                "https://raw.githubusercontent.com/junhoyeo/tokscale/6b483d0f2de3717266dec8faed13acd067f90ff3/.github/assets/client-crush.png"
+                "https://raw.githubusercontent.com/Annihilater/token-stats/6b483d0f2de3717266dec8faed13acd067f90ff3/.github/assets/client-crush.png"
             )
         );
     }
@@ -2624,7 +2624,7 @@ mod tests {
         assert_eq!(
             client_logo_url("Goose"),
             Some(
-                "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-goose.png"
+                "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-goose.png"
             )
         );
     }
@@ -2634,7 +2634,7 @@ mod tests {
         assert_eq!(
             client_logo_url("Antigravity"),
             Some(
-                "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-antigravity.png"
+                "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-antigravity.png"
             )
         );
     }
@@ -2644,7 +2644,7 @@ mod tests {
         assert_eq!(
             client_logo_url("Zed Agent"),
             Some(
-                "https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-zed.webp"
+                "https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-zed.webp"
             )
         );
     }
@@ -2653,7 +2653,7 @@ mod tests {
     fn test_client_logo_url_jcode() {
         assert_eq!(
             client_logo_url("Jcode"),
-            Some("https://raw.githubusercontent.com/junhoyeo/tokscale/main/.github/assets/client-jcode.png")
+            Some("https://raw.githubusercontent.com/Annihilater/token-stats/main/.github/assets/client-jcode.png")
         );
     }
 
@@ -2678,7 +2678,7 @@ mod tests {
     fn test_provider_logo_url_anthropic() {
         assert_eq!(
             provider_logo_url("anthropic"),
-            Some("https://tokscale.ai/assets/logos/claude.jpg")
+            Some("https://token-stats.com/assets/logos/claude.jpg")
         );
     }
 
@@ -2686,7 +2686,7 @@ mod tests {
     fn test_provider_logo_url_openai() {
         assert_eq!(
             provider_logo_url("openai"),
-            Some("https://tokscale.ai/assets/logos/openai.jpg")
+            Some("https://token-stats.com/assets/logos/openai.jpg")
         );
     }
 
@@ -2694,7 +2694,7 @@ mod tests {
     fn test_provider_logo_url_google() {
         assert_eq!(
             provider_logo_url("google"),
-            Some("https://tokscale.ai/assets/logos/gemini.png")
+            Some("https://token-stats.com/assets/logos/gemini.png")
         );
     }
 
@@ -2702,7 +2702,7 @@ mod tests {
     fn test_provider_logo_url_xai() {
         assert_eq!(
             provider_logo_url("xai"),
-            Some("https://tokscale.ai/assets/logos/grok.jpg")
+            Some("https://token-stats.com/assets/logos/grok.jpg")
         );
     }
 
@@ -2710,7 +2710,7 @@ mod tests {
     fn test_provider_logo_url_zai() {
         assert_eq!(
             provider_logo_url("zai"),
-            Some("https://tokscale.ai/assets/logos/zai.jpg")
+            Some("https://token-stats.com/assets/logos/zai.jpg")
         );
     }
 
@@ -3054,7 +3054,7 @@ fn cursor_setup_warning_for_wrapped(
     };
 
     Some(format!(
-        "Cursor usage requires Tokscale's Cursor API cache at `~/.config/tokscale/cursor-cache/usage*.csv`; {action}. Tokscale does not parse local `~/.cursor` session data."
+        "Cursor usage requires Token Stats' Cursor API cache at `~/.config/tokscale/cursor-cache/usage*.csv`; {action}. Token Stats does not parse local `~/.cursor` session data."
     ))
 }
 

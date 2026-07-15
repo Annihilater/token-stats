@@ -123,7 +123,7 @@ function renderProfileCardSvg(
     .join("\n  ");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg data-template="classic" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokscale profile stats for @${escapeXml(data.user.username)}">
+<svg data-template="classic" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Token Stats profile stats for @${escapeXml(data.user.username)}">
   ${cardTextStyle()}
   ${cardSurface(width, height, palette)}
   ${cardHeader({
@@ -166,15 +166,15 @@ export function renderProfileEmbedErrorSvg(
   const right = width - x;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokscale embed error">
+<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Token Stats embed error">
   ${cardTextStyle()}
   <g id="err-bg">
     ${cardSurface(width, height, palette)}
   </g>
-  <text x="${x}" y="32" fill="${palette.text}" font-size="14" font-weight="600" font-family="${FIGTREE_FONT_STACK}">Tokscale</text>
+  <text x="${x}" y="32" fill="${palette.text}" font-size="14" font-weight="600" font-family="${FIGTREE_FONT_STACK}">Token Stats</text>
   ${divider(x, right, 46, palette)}
   ${fittedText({ text: message, x, y: 72, maxWidth: right - x, fill: palette.text, fontSize: 15, minFontSize: 9, fontWeight: 600 })}
   ${fittedText({ text: "Check the profile or try again later.", x, y: 94, maxWidth: right - x, fill: palette.muted, fontSize: 11, minFontSize: 8 })}
-  <text x="${right}" y="106" fill="${palette.muted}" font-size="10" text-anchor="end" font-family="${FIGTREE_FONT_STACK}">tokscale.ai</text>
+  <text x="${right}" y="106" fill="${palette.muted}" font-size="10" text-anchor="end" font-family="${FIGTREE_FONT_STACK}">token-stats.com</text>
 </svg>`;
 }

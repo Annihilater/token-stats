@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound, permanentRedirect } from 'next/navigation';
 import type { ProfileDevice } from '@/components/profile';
+import { SITE_NAME, SITE_URL } from '@/lib/brand';
 import { loadPublicProfileDevicesForPage } from '@/lib/publicProfileDevices';
 import { loadPublicProfileForPage } from '@/lib/publicProfileData';
 import ProfilePageClient, { type ProfileData } from './ProfilePageClient';
@@ -57,27 +58,27 @@ async function getProfileDevices(username: string) {
 export async function generateMetadata({ params }: { params: Promise<{ username: string }> }): Promise<Metadata> {
   const { username } = await params;
   return {
-    title: `@${username} - Token Usage | Tokscale`,
-    description: `View ${username}'s AI token usage statistics and cost breakdown on Tokscale`,
+    title: `@${username} - Token Usage | ${SITE_NAME}`,
+    description: `View ${username}'s AI token usage statistics and cost breakdown on ${SITE_NAME}`,
     openGraph: {
-      title: `@${username}'s Token Usage | Tokscale`,
-      description: `AI token usage statistics for ${username} on Tokscale`,
+      title: `@${username}'s Token Usage | ${SITE_NAME}`,
+      description: `AI token usage statistics for ${username} on ${SITE_NAME}`,
       type: 'profile',
-      url: `https://tokscale.ai/u/${username}`,
-      siteName: 'Tokscale',
+      url: `${SITE_URL}/u/${username}`,
+      siteName: SITE_NAME,
       images: [
         {
-          url: 'https://tokscale.ai/og-image.png',
+          url: `${SITE_URL}/og-image.png`,
           width: 1200,
           height: 630,
-          alt: `${username}'s Token Usage on Tokscale`,
+          alt: `${username}'s Token Usage on ${SITE_NAME}`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `@${username}'s Token Usage | Tokscale`,
-      images: ['https://tokscale.ai/og-image.png'],
+      title: `@${username}'s Token Usage | ${SITE_NAME}`,
+      images: [`${SITE_URL}/og-image.png`],
     },
   };
 }

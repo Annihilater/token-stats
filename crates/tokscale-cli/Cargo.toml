@@ -5,7 +5,7 @@ edition.workspace = true
 authors.workspace = true
 license.workspace = true
 repository.workspace = true
-description = "CLI and TUI for tokscale - AI token usage analytics"
+description = "CLI and TUI for Token Stats - AI token usage analytics"
 
 [[bin]]
 name = "tokscale"

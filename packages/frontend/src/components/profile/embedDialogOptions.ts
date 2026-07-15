@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_URL } from "@/lib/brand";
 import type { EmbedTemplate } from "@/lib/embed/embedShared";
 import type { ColorPaletteName } from "@/lib/themes";
 
@@ -36,8 +37,6 @@ export interface ProfileEmbedLinks {
   profileUrl: string;
 }
 
-const TOKSCALE_URL = "https://tokscale.ai";
-
 function escapeHtmlAttribute(value: string): string {
   return value.replace(
     /[&<>"']/g,
@@ -53,7 +52,7 @@ function escapeHtmlAttribute(value: string): string {
 }
 
 export function buildEmbedPreviewPath(embedUrl: string): string {
-  const url = new URL(embedUrl, TOKSCALE_URL);
+  const url = new URL(embedUrl, SITE_URL);
   return `${url.pathname}${url.search}`;
 }
 
@@ -108,14 +107,14 @@ export function buildProfileEmbedLinks(
   const query = params.toString();
   const encodedUsername = encodeURIComponent(username);
   const escapedUsername = escapeHtmlAttribute(username);
-  const baseEmbedUrl = `${TOKSCALE_URL}/api/embed/${encodedUsername}/svg`;
+  const baseEmbedUrl = `${SITE_URL}/api/embed/${encodedUsername}/svg`;
   const embedUrl = query ? `${baseEmbedUrl}?${query}` : baseEmbedUrl;
-  const profileUrl = `${TOKSCALE_URL}/u/${encodedUsername}`;
+  const profileUrl = `${SITE_URL}/u/${encodedUsername}`;
 
   return {
     embedUrl,
-    markdownSnippet: `[![Tokscale Stats](${embedUrl})](${profileUrl})`,
-    htmlSnippet: `<a href="${profileUrl}"><img alt="Tokscale Stats for @${escapedUsername}" src="${embedUrl}" /></a>`,
+    markdownSnippet: `[![${SITE_NAME}](${embedUrl})](${profileUrl})`,
+    htmlSnippet: `<a href="${profileUrl}"><img alt="${SITE_NAME} for @${escapedUsername}" src="${embedUrl}" /></a>`,
     profileUrl,
   };
 }

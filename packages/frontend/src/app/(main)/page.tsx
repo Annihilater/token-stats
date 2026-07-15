@@ -26,7 +26,7 @@ function createEmptyLeaderboardData(sortBy: "tokens" | "cost"): LeaderboardData 
 
 export default async function HomePage() {
   const [stargazersCount, topUsersByCost, topUsersByTokens] = await Promise.all([
-    getStargazersCount("junhoyeo/tokscale"),
+    getStargazersCount("Annihilater/token-stats"),
     getLeaderboardData("all", 1, 5, "cost").catch(() => createEmptyLeaderboardData("cost")),
     getLeaderboardData("all", 1, 5, "tokens").catch(() => createEmptyLeaderboardData("tokens")),
   ]);

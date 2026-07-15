@@ -14,7 +14,7 @@ export function FollowSection() {
             <Avatar3D>
               <Image
                 src="/assets/landing/follow-3d-avatar.webp"
-                alt="@junhoyeo"
+                alt="@Annihilater"
                 width={268}
                 height={268}
                 style={{ width: 268, height: 268, objectFit: "cover" }}
@@ -30,11 +30,11 @@ export function FollowSection() {
                 Don&#39;t miss the next one.
               </HeadingText>
               <FollowLink
-                href="https://github.com/junhoyeo"
+                href="https://github.com/Annihilater"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Follow @junhoyeo on GitHub
+                Follow @Annihilater on GitHub
               </FollowLink>
             </TextGroup>
           </MiddleContentInner>
@@ -43,7 +43,7 @@ export function FollowSection() {
         <BottomGradientWrapper>
           <BottomInner>
             <BlueBanner>
-              <RepoNameText>junhoyeo/tokscale</RepoNameText>
+              <RepoNameText>Annihilater/token-stats</RepoNameText>
             </BlueBanner>
           </BottomInner>
         </BottomGradientWrapper>

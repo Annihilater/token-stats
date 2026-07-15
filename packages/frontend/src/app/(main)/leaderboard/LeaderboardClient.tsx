@@ -1472,9 +1472,9 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
 
       <CTASection>
         <CTATitle>Join the Leaderboard</CTATitle>
-        <CTADescription>Install Tokscale CLI and submit your usage data:</CTADescription>
+        <CTADescription>Install the Token Stats CLI and submit your usage data:</CTADescription>
         <CodeBlock>
-          {mounted && typeof window !== "undefined" && window.location.hostname !== "tokscale.ai" && (
+          {mounted && typeof window !== "undefined" && window.location.hostname !== "token-stats.com" && (
             <CodeLine>
               <CommandPrompt>$</CommandPrompt>
               <CommandPrefix>export</CommandPrefix>

@@ -225,7 +225,7 @@ export function ProfileEmbedDialog({
               <PreviewFrame $threeD={view === "3d"}>
                 <PreviewImage
                   src={previewUrl}
-                  alt={`Tokscale README embed preview for ${displayName || username}`}
+                  alt={`Token Stats README embed preview for ${displayName || username}`}
                 />
               </PreviewFrame>
             </PreviewSurface>

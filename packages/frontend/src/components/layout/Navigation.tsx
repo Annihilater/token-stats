@@ -683,10 +683,10 @@ export function Navigation() {
   return (
     <NavContainer aria-label="Main navigation">
       <NavHeaderRow>
-        <NavLogoLink href="/" aria-label="Tokscale home">
+        <NavLogoLink href="/" aria-label="Token Stats home">
           <NavLogoImage
             src="/assets/hero-logo.svg"
-            alt="Tokscale"
+            alt="Token Stats"
             width={100}
             height={21}
             priority
@@ -714,7 +714,7 @@ export function Navigation() {
           </NavItemLink>
           <NavItemBase
             as="a"
-            href="https://github.com/junhoyeo/tokscale"
+            href="https://github.com/Annihilater/token-stats"
             target="_blank"
             rel="noopener noreferrer"
             $isActive={false}
@@ -762,7 +762,7 @@ export function Navigation() {
             Profile
           </DropdownNavLink>
           <DropdownNavLinkExternal
-            href="https://github.com/junhoyeo/tokscale"
+            href="https://github.com/Annihilater/token-stats"
             target="_blank"
             rel="noopener noreferrer"
             $isActive={false}

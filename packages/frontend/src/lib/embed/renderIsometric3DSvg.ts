@@ -1,3 +1,4 @@
+import { SITE_HOST, SITE_NAME } from "../brand";
 import type { UserEmbedStats, EmbedContributionDay } from "./getUserEmbedStats";
 import { escapeXml, formatNumber, formatCurrency } from "../format";
 import { colorPalettes, getDarkGradeColors } from "../themes";
@@ -240,12 +241,12 @@ export function renderIsometric3DEmbedSvg(
   const safeUsername = escapeXml(username);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg data-template="3d" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokscale 3D contribution graph for ${safeUsername}">
-  <title>${safeUsername} Tokscale 3D contribution graph</title>
+<svg data-template="3d" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${SITE_NAME} 3D contribution graph for ${safeUsername}">
+  <title>${safeUsername} ${SITE_NAME} 3D contribution graph</title>
   <style>${faceCss}</style>
   <rect width="${width}" height="${height}" rx="${rx}" fill="${palette.surface}"/>
   ${fittedText({ text: username, x: px, y: 29, maxWidth: 300, fill: palette.text, fontSize: 16, minFontSize: 9, fontFamily: FONT_STACK, fontWeight: 600 })}
-  ${fittedText({ text: `tokscale.ai/u/${data.user.username}`, x: width - px, y: 29, maxWidth: 260, fill: palette.muted, fontSize: 11, minFontSize: 8, fontFamily: FONT_STACK, textAnchor: "end" })}
+  ${fittedText({ text: `${SITE_HOST}/u/${data.user.username}`, x: width - px, y: 29, maxWidth: 260, fill: palette.muted, fontSize: 11, minFontSize: 8, fontFamily: FONT_STACK, textAnchor: "end" })}
   <text x="${px}" y="49" fill="${palette.muted}" font-size="10" font-family="${FONT_STACK}">${updated}</text>
   ${fittedText({ text: dateRange, x: width - px, y: 49, maxWidth: 260, fill: palette.muted, fontSize: 10, minFontSize: 8, fontFamily: FONT_STACK, textAnchor: "end" })}
   <line x1="${px}" y1="62.5" x2="${width - px}" y2="62.5" stroke="${palette.divider}" stroke-opacity="${palette.dividerOpacity}"/>
@@ -268,11 +269,11 @@ export function renderIsometric3DErrorSvg(
   const px = 24;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg data-template="3d-error" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokscale 3D embed error">
-  <title>Tokscale 3D embed error</title>
+<svg data-template="3d-error" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${SITE_NAME} 3D embed error">
+  <title>${SITE_NAME} 3D embed error</title>
   <rect width="${width}" height="${height}" rx="${rx}" fill="${palette.surface}"/>
-  <text x="${px}" y="27" fill="${palette.text}" font-size="13" font-weight="600" font-family="${FONT_STACK}">Tokscale</text>
-  <text x="${width - px}" y="27" fill="${palette.muted}" font-size="11" font-family="${FONT_STACK}" text-anchor="end">tokscale.ai</text>
+  <text x="${px}" y="27" fill="${palette.text}" font-size="13" font-weight="600" font-family="${FONT_STACK}">${SITE_NAME}</text>
+  <text x="${width - px}" y="27" fill="${palette.muted}" font-size="11" font-family="${FONT_STACK}" text-anchor="end">${SITE_HOST}</text>
   <line x1="${px}" y1="40.5" x2="${width - px}" y2="40.5" stroke="${palette.divider}" stroke-opacity="${palette.dividerOpacity}"/>
   ${fittedText({ text: message, x: px, y: 68, maxWidth: width - px * 2, fill: palette.text, fontSize: 15, minFontSize: 9, fontFamily: FONT_STACK, fontWeight: 600 })}
   ${fittedText({ text: "Check the profile or try again later.", x: px, y: 91, maxWidth: width - px * 2, fill: palette.muted, fontSize: 12, minFontSize: 8, fontFamily: FONT_STACK })}

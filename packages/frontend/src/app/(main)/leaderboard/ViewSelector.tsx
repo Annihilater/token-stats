@@ -120,7 +120,7 @@ export default function ViewSelector({ current, searchParams }: ViewSelectorProp
         <Description>
           {current === "groups"
             ? "Scoped rankings for teams, friends, and workspaces."
-            : "Global rankings across public Tokscale submissions."}
+            : "Global rankings across public Token Stats submissions."}
         </Description>
       </HeadingGroup>
       <SegmentedGroup as="nav" aria-label="Leaderboard view">

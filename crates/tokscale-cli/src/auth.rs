@@ -160,7 +160,7 @@ pub fn clear_credentials() -> Result<bool> {
 }
 
 pub fn get_api_base_url() -> String {
-    std::env::var("TOKSCALE_API_URL").unwrap_or_else(|_| "https://tokscale.ai".to_string())
+    std::env::var("TOKSCALE_API_URL").unwrap_or_else(|_| "https://token-stats.com".to_string())
 }
 
 fn get_device_name() -> String {
@@ -233,7 +233,7 @@ pub async fn login() -> Result<()> {
 
     let base_url = get_api_base_url();
 
-    println!("\n  {}\n", "Tokscale - Login".cyan());
+    println!("\n  {}\n", "Token Stats - Login".cyan());
     println!("{}", "  Requesting authorization code...".bright_black());
 
     let client = reqwest::Client::builder()
@@ -354,7 +354,7 @@ pub async fn login_with_token(token: &str) -> Result<()> {
         anyhow::bail!("API token cannot be empty.");
     }
     if !token.starts_with("tt_") {
-        anyhow::bail!("Tokscale API tokens must start with `tt_`.");
+        anyhow::bail!("Token Stats API tokens must start with `tt_`.");
     }
 
     let base_url = get_api_base_url();
@@ -436,7 +436,7 @@ pub fn whoami() -> Result<()> {
         return Ok(());
     };
 
-    println!("\n  {}\n", "Tokscale - Account Info".cyan());
+    println!("\n  {}\n", "Token Stats - Account Info".cyan());
     println!(
         "{}",
         format!("  Username:  {}", creds.username.bold()).white()
@@ -524,7 +524,7 @@ pub fn show_qr(yes: bool) -> Result<()> {
         .quiet_zone(true)
         .build();
 
-    println!("\n  {}\n", "Tokscale - API Token QR Code".cyan());
+    println!("\n  {}\n", "Token Stats - API Token QR Code".cyan());
     println!("  {}\n", "Scan to get your API token:".bright_black());
 
     for line in image.lines() {
@@ -616,7 +616,7 @@ mod tests {
         unsafe {
             env::remove_var("TOKSCALE_API_URL");
         }
-        assert_eq!(get_api_base_url(), "https://tokscale.ai");
+        assert_eq!(get_api_base_url(), "https://token-stats.com");
     }
 
     #[test]

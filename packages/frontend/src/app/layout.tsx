@@ -4,6 +4,7 @@ import NextTopLoader from "nextjs-toploader";
 import { ToastContainer } from "react-toastify";
 import { Analytics } from "@vercel/analytics/next";
 import { Providers } from "@/lib/providers";
+import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/brand";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,10 +20,12 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const siteTitle = `${SITE_NAME} - AI Token Usage Tracker & Leaderboard`;
+
 export const metadata: Metadata = {
-  title: "Tokscale - AI Token Usage Tracker & Leaderboard",
-  description: "Track, visualize, and compete on AI coding assistant token usage across Claude Code, Cursor, OpenCode, Codex, Gemini, Kimi, and Qwen. The Kardashev Scale for AI Devs.",
-  metadataBase: new URL("https://tokscale.ai"),
+  title: siteTitle,
+  description: SITE_TAGLINE,
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -32,25 +35,25 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Tokscale - AI Token Usage Tracker & Leaderboard",
-    description: "Track, visualize, and compete on AI coding assistant token usage across Claude Code, Cursor, OpenCode, Codex, Gemini, Kimi, and Qwen. The Kardashev Scale for AI Devs.",
+    title: siteTitle,
+    description: SITE_TAGLINE,
     type: "website",
-    url: "https://tokscale.ai",
-    siteName: "Tokscale",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     images: [
       {
-        url: "https://tokscale.ai/og-image.png",
+        url: `${SITE_URL}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Tokscale - AI Token Usage Tracker",
+        alt: `${SITE_NAME} - AI Token Usage Tracker`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tokscale - AI Token Usage Tracker & Leaderboard",
-    description: "Track, visualize, and compete on AI coding assistant token usage across Claude Code, Cursor, OpenCode, Codex, Gemini, Kimi, and Qwen.",
-    images: ["https://tokscale.ai/og-image.png"],
+    title: siteTitle,
+    description: SITE_TAGLINE,
+    images: [`${SITE_URL}/og-image.png`],
   },
 };
 

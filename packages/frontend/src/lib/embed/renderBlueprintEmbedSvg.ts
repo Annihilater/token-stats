@@ -141,7 +141,7 @@ export function renderBlueprintEmbedSvg(
   const height = graph ? 367 : 232;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg data-template="blueprint" width="${W}" height="${height}" viewBox="0 0 ${W} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokscale usage data sheet for @${escapeXml(data.user.username)}">
+<svg data-template="blueprint" width="${W}" height="${height}" viewBox="0 0 ${W} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Token Stats usage data sheet for @${escapeXml(data.user.username)}">
   ${cardTextStyle()}
   ${cardSurface(W, height, palette)}
   ${cardHeader({

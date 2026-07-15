@@ -206,20 +206,20 @@ export function Footer() {
           <LogoContainer>
             <LogoImage
               src="/assets/footer-logo-icon.png"
-              alt="Tokscale Icon"
+              alt="Token Stats Icon"
               fill
               sizes="(max-width: 400px) 64px, (max-width: 560px) 80px, 108px"
             />
           </LogoContainer>
 
           <LogoLink 
-            href="https://tokscale.ai" 
+            href="https://token-stats.com" 
             target="_blank" 
             rel="noopener noreferrer"
           >
             <LogoSvg
               src="/assets/footer-logo.svg"
-              alt="Tokscale"
+              alt="Token Stats"
               width={184}
               height={21}
             />
@@ -229,14 +229,14 @@ export function Footer() {
 
           <TextContainer>
             <CopyrightText>
-              © <time dateTime={String(currentYear)} suppressHydrationWarning>{currentYear}</time> Tokscale. All rights reserved.
+              © <time dateTime={String(currentYear)} suppressHydrationWarning>{currentYear}</time> Token Stats. All rights reserved.
             </CopyrightText>
             <GitHubLink 
-              href="https://github.com/junhoyeo/tokscale" 
+              href="https://github.com/Annihilater/token-stats" 
               target="_blank" 
               rel="noopener noreferrer"
             >
-              github.com/junhoyeo/tokscale
+              github.com/Annihilater/token-stats
             </GitHubLink>
           </TextContainer>
         </ContentContainer>

@@ -22,7 +22,7 @@ use tui::Tab;
 
 #[derive(Parser)]
 #[command(name = "tokscale")]
-#[command(author, version, about = "AI token usage analytics")]
+#[command(author, version, about = "Token Stats — AI token usage analytics CLI")]
 struct Cli {
     #[command(subcommand)]
     command: Option<Commands>,
@@ -198,15 +198,15 @@ enum Commands {
         #[arg(long, help = "Output as JSON")]
         json: bool,
     },
-    #[command(about = "Login to Tokscale (opens browser for GitHub auth)")]
+    #[command(about = "Login to Token Stats (opens browser for GitHub auth)")]
     Login {
         #[arg(
             long,
-            help = "Save an existing Tokscale API token without browser auth"
+            help = "Save an existing Token Stats API token without browser auth"
         )]
         token: Option<String>,
     },
-    #[command(about = "Logout from Tokscale")]
+    #[command(about = "Logout from Token Stats")]
     Logout,
     #[command(about = "Show current logged in user")]
     Whoami,
@@ -235,7 +235,7 @@ enum Commands {
         #[command(flatten)]
         date: DateRangeFlags,
     },
-    #[command(about = "Submit usage data to the Tokscale social platform")]
+    #[command(about = "Submit usage data to the Token Stats social platform")]
     Submit {
         #[command(flatten)]
         clients: ClientFlags,
@@ -1316,7 +1316,7 @@ fn cursor_setup_warnings_for_report(
 
     let Some(state) = cursor_setup_state(home_dir) else {
         return vec![
-            "Cursor usage requires Tokscale's Cursor API cache, but the home directory could not be resolved. Run `tokscale cursor login` and `tokscale cursor sync --json`. Tokscale does not parse local `~/.cursor` session data.".to_string(),
+            "Cursor usage requires Token Stats' Cursor API cache, but the home directory could not be resolved. Run `tokscale cursor login` and `tokscale cursor sync --json`. Token Stats does not parse local `~/.cursor` session data.".to_string(),
         ];
     };
     if state.has_cache {
@@ -1332,7 +1332,7 @@ fn cursor_setup_warnings_for_report(
     };
 
     vec![format!(
-        "Cursor usage requires Tokscale's Cursor API cache at `{}`; {}. Tokscale does not parse local `~/.cursor` session data.",
+        "Cursor usage requires Token Stats' Cursor API cache at `{}`; {}. Token Stats does not parse local `~/.cursor` session data.",
         state.cache_glob, action
     )]
 }
@@ -1362,7 +1362,7 @@ fn warp_setup_warnings_for_report(
             Some(home) => (home, false),
             None => {
                 return vec![
-                    "Warp usage requires Tokscale's Warp aggregate cache, but the home directory could not be resolved. Tokscale does not parse local Warp transcripts.".to_string(),
+                    "Warp usage requires Token Stats' Warp aggregate cache, but the home directory could not be resolved. Token Stats does not parse local Warp transcripts.".to_string(),
                 ];
             }
         },
@@ -1393,7 +1393,7 @@ fn warp_setup_warnings_for_report(
     };
 
     vec![format!(
-        "Warp usage requires Tokscale's aggregate API cache at `{}`; {}. Tokscale does not parse local Warp/Oz session transcripts and does not infer tokens from request counts.",
+        "Warp usage requires Token Stats' aggregate API cache at `{}`; {}. Token Stats does not parse local Warp/Oz session transcripts and does not infer tokens from request counts.",
         cache_glob, action
     )]
 }
@@ -3265,7 +3265,7 @@ fn run_wrapped_command(
 ) -> Result<()> {
     use colored::Colorize;
 
-    println!("{}", "\n  Tokscale - Generate Wrapped Image\n".cyan());
+    println!("{}", "\n  Token Stats - Generate Wrapped Image\n".cyan());
 
     println!("{}", "  Generating wrapped image...".bright_black());
     println!();
@@ -4637,7 +4637,7 @@ fn prompt_star_repo(username: &str) -> Result<()> {
     // Check if user has already starred via gh API
     // Returns exit 0 (HTTP 204) if starred, non-zero (HTTP 404) if not
     let already_starred = Command::new("gh")
-        .args(["api", "/user/starred/junhoyeo/tokscale"])
+        .args(["api", "/user/starred/Annihilater/token-stats"])
         .stdout(std::process::Stdio::null())
         .stderr(std::process::Stdio::null())
         .status()
@@ -4653,15 +4653,15 @@ fn prompt_star_repo(username: &str) -> Result<()> {
     println!("{}", "  Help us grow! \u{2b50}".cyan());
     println!(
         "{}",
-        "  Starring tokscale helps others discover the project.".bright_black()
+        "  Starring token-stats helps others discover the project.".bright_black()
     );
     println!(
         "  {}\n",
-        osc8_link("https://github.com/junhoyeo/tokscale").bright_black()
+        osc8_link("https://github.com/Annihilater/token-stats").bright_black()
     );
     print!(
         "{}",
-        "  \u{2b50} Would you like to star tokscale? (Y/n): ".white()
+        "  \u{2b50} Would you like to star token-stats? (Y/n): ".white()
     );
     io::stdout().flush()?;
 
@@ -4681,7 +4681,7 @@ fn prompt_star_repo(username: &str) -> Result<()> {
             "--silent",
             "--method",
             "PUT",
-            "/user/starred/junhoyeo/tokscale",
+            "/user/starred/Annihilater/token-stats",
         ])
         .stdout(std::process::Stdio::null())
         .stderr(std::process::Stdio::null())
@@ -5198,7 +5198,7 @@ fn run_submit_command(
         }
     }
 
-    println!("\n  {}\n", "Tokscale - Submit Usage Data".cyan());
+    println!("\n  {}\n", "Token Stats - Submit Usage Data".cyan());
 
     let explicit_cursor_filter = client_filter_explicitly_requests_cursor(&clients);
     let explicit_warp_filter = client_filter_explicitly_requests_warp(&clients);

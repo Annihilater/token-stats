@@ -66,7 +66,7 @@ export function renderVitalsEmbedSvg(
   );
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg data-template="vitals" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tokscale usage signals for @${escapeXml(data.user.username)}">
+<svg data-template="vitals" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Token Stats usage signals for @${escapeXml(data.user.username)}">
   ${cardTextStyle()}
   ${cardSurface(W, H, palette)}
   ${cardHeader({

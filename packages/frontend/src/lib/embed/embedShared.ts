@@ -7,6 +7,7 @@
  * onto the embed accent colors, number-format parsing, font stacks, the
  * contribution-grid layout, and small SVG building blocks.
  */
+import { SITE_HOST, SITE_NAME } from "../brand";
 import { escapeXml } from "../format";
 import {
   colorPalettes,
@@ -511,7 +512,7 @@ export function cardHeader(options: CardHeaderOptions): string {
           minFontSize: 8,
         })
       : "",
-    `<text x="${right}" y="${y}" fill="${palette.muted}" font-size="11" font-weight="600" text-anchor="end" font-family="${FIGTREE_FONT_STACK}">Tokscale</text>`,
+    `<text x="${right}" y="${y}" fill="${palette.muted}" font-size="11" font-weight="600" text-anchor="end" font-family="${FIGTREE_FONT_STACK}">${SITE_NAME}</text>`,
   ]
     .filter(Boolean)
     .join("\n  ");
@@ -536,10 +537,10 @@ export function cardFooter(options: {
       fontSize: 10,
     }),
     fittedText({
-      text: "tokscale.ai",
+      text: SITE_HOST,
       x: options.right,
       y: options.y,
-      maxWidth: 78,
+      maxWidth: 96,
       fill: options.palette.muted,
       fontSize: 10,
       textAnchor: "end",

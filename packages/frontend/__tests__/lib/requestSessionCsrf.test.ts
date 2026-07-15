@@ -117,11 +117,11 @@ describe("getSessionFromRequest — CSRF origin check (B6)", () => {
     mockState.getSession.mockResolvedValue(validUser);
 
     const result = await getSessionFromRequest(
-      new Request("https://tokscale.ai/api/groups", {
+      new Request("https://token-stats.com/api/groups", {
         method: "POST",
         headers: {
           Cookie: "tt_session=session-token",
-          Origin: "https://tokscale.ai",
+          Origin: "https://token-stats.com",
         },
       }),
       { allowAuthorizationHeader: false }

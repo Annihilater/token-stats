@@ -884,7 +884,7 @@ fn test_login_command_help() {
         .arg("--help")
         .assert()
         .success()
-        .stdout(predicate::str::contains("Login to Tokscale"));
+        .stdout(predicate::str::contains("Login to Token Stats"));
 }
 
 #[test]
@@ -894,7 +894,7 @@ fn test_logout_command_help() {
         .arg("--help")
         .assert()
         .success()
-        .stdout(predicate::str::contains("Logout from Tokscale"));
+        .stdout(predicate::str::contains("Logout from Token Stats"));
 }
 
 #[test]
@@ -1415,7 +1415,7 @@ fn assert_cursor_setup_warning(json: &serde_json::Value) {
                 .contains("tokscale cursor login")
                 && text.contains("tokscale cursor sync --json")
                 && text.contains("cursor-cache/usage*.csv")
-                && text.contains("Tokscale does not parse local `~/.cursor`"))),
+                && text.contains("Token Stats does not parse local `~/.cursor`"))),
         "warnings did not explain Cursor setup: {warnings:?}"
     );
 }
@@ -1528,7 +1528,7 @@ fn test_models_cursor_explicit_missing_cache_reports_setup_warning_text() {
         .stderr(predicate::str::contains("tokscale cursor login"))
         .stderr(predicate::str::contains("tokscale cursor sync --json"))
         .stderr(predicate::str::contains(
-            "Tokscale does not parse local `~/.cursor`",
+            "Token Stats does not parse local `~/.cursor`",
         ));
 }
 
@@ -3064,7 +3064,7 @@ fn test_models_json_includes_claude_desktop_diagnostic_for_empty_explicit_claude
             && item["message"]
                 .as_str()
                 .unwrap()
-                .contains("Tokscale counts Claude Code JSONL transcripts")
+                .contains("Token Stats counts Claude Code JSONL transcripts")
     }));
 }
 

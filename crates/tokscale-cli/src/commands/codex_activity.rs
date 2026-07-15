@@ -340,7 +340,7 @@ fn initialize_request() -> Value {
         "params": {
             "clientInfo": {
                 "name": "tokscale",
-                "title": "Tokscale",
+                "title": "Token Stats",
                 "version": env!("CARGO_PKG_VERSION")
             }
         }

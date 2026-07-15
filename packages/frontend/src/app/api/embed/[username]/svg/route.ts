@@ -287,11 +287,11 @@ export async function GET(request: NextRequest, { params }: RouteParams) {
     const svg =
       view === "3d"
         ? renderIsometric3DErrorSvg(
-            "Tokscale stats are temporarily unavailable",
+            "Token Stats stats are temporarily unavailable",
             { theme },
           )
         : renderProfileEmbedErrorSvg(
-            "Tokscale stats are temporarily unavailable",
+            "Token Stats stats are temporarily unavailable",
             { theme, color, compact },
           );
 

@@ -145,7 +145,7 @@ function deviceRow(overrides: Partial<DeviceRow> = {}): DeviceRow {
 }
 
 function request(): Request {
-  return new Request("https://tokscale.ai/api/users/alice/devices");
+  return new Request("https://token-stats.com/api/users/alice/devices");
 }
 
 const params = { params: Promise.resolve({ username: "alice" }) };

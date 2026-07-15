@@ -2,7 +2,7 @@
   "name": "tokscale-monorepo",
   "version": "1.0.0",
   "private": true,
-  "description": "Token Usage Leaderboard - The Kardashev Scale for AI Devs",
+  "description": "Token Stats — local CLI + cloud leaderboard for AI coding token usage",
   "type": "module",
   "workspaces": [
     "packages/*"

@@ -327,7 +327,7 @@ fn run_summarizer(
 const GROUPING_SYSTEM_PROMPT: &str = r#"You are a task grouping assistant. Given a list of coding session titles, group them into high-level project tasks (2-5 words each).
 
 Rules:
-- Group related sessions under a single short label (e.g. "Kiro Auth", "Tokscale Report", "System Config")
+- Group related sessions under a single short label (e.g. "Kiro Auth", "Token Stats Report", "System Config")
 - Each group should represent a coherent project or feature area
 - Sessions that don't fit any group get their own group name
 - Aim for 3-8 groups total. Fewer is better.

@@ -7,12 +7,12 @@ export function ServiceFooter() {
   return (
     <Footer>
       <Inner>
-        <Product>Tokscale</Product>
+        <Product>Token Stats</Product>
         <Links aria-label="Footer links">
           <Link href="/leaderboard">Leaderboard</Link>
           <Link href="/leaderboard?view=groups">Groups</Link>
           <a
-            href="https://github.com/junhoyeo/tokscale"
+            href="https://github.com/Annihilater/token-stats"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -89,10 +89,10 @@ describe("renderIsometric3DEmbedSvg", () => {
     expect(svg).toContain('<svg data-template="3d"');
     expect(svg).toContain('role="img"');
     expect(svg).toContain(
-      'aria-label="Tokscale 3D contribution graph for @octocat"',
+      'aria-label="Token Stats 3D contribution graph for @octocat"',
     );
     expect(svg).toContain(
-      "<title>@octocat Tokscale 3D contribution graph</title>",
+      "<title>@octocat Token Stats 3D contribution graph</title>",
     );
   });
 
@@ -131,7 +131,8 @@ describe("renderIsometric3DEmbedSvg", () => {
     expect(svg).not.toContain("<animate");
     expect(svg).not.toContain("filter=");
     expect(svg).not.toContain('fill="url(');
-    expect(svg).not.toContain("Tokscale Stats");
+    // No leftover upstream brand or fabricated chrome stats
+    expect(svg).not.toContain("Tokscale");
     expect(svg).not.toContain("Token Usage");
     expect(svg).not.toContain("Streaks");
   });
@@ -161,10 +162,10 @@ describe("renderIsometric3DEmbedSvg", () => {
     expect(new Set(topFaceFills).size).toBe(5);
   });
 
-  it("includes tokscale.ai profile link", () => {
+  it("includes token-stats.com profile link", () => {
     const svg = renderIsometric3DEmbedSvg(mockStats, mockContributions);
 
-    expect(svg).toContain("tokscale.ai/u/octocat");
+    expect(svg).toContain("token-stats.com/u/octocat");
   });
 
   it("escapes XML in user-provided text", () => {
@@ -334,7 +335,7 @@ describe("renderIsometric3DErrorSvg", () => {
     expect(svg).toContain('<svg data-template="3d-error"');
     expect(svg).toContain('role="img"');
     expect(svg).toContain("Something went wrong");
-    expect(svg).toContain(">Tokscale</text>");
+    expect(svg).toContain(">Token Stats</text>");
   });
 
   it("escapes XML in error message", () => {
@@ -372,6 +373,6 @@ describe("renderIsometric3DErrorSvg", () => {
     expect(svg).not.toContain("@import");
     expect(svg).not.toContain("<linearGradient");
     expect(svg).not.toContain("<radialGradient");
-    expect(svg).not.toContain("Tokscale Stats");
+    expect(svg).not.toContain("Tokscale");
   });
 });

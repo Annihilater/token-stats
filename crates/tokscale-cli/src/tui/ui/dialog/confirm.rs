@@ -61,7 +61,7 @@ impl ConfirmDialog {
         Self {
             value: account_id,
             title: " Remove Codex Account ",
-            message: "This will remove the saved Codex account from Tokscale.",
+            message: "This will remove the saved Codex account from Token Stats.",
             target_label: account_label,
             effect: "Saved account is deleted; codex CLI login is unchanged",
             confirm_label: "Remove",

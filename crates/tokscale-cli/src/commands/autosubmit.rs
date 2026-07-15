@@ -505,13 +505,13 @@ fn render_systemd_spec(exe: &Path, settings: &AutosubmitSettings) -> Result<Sche
     let timer_path = user_dir.join("tokscale-autosubmit.timer");
     let log_path = autosubmit_log_path()?;
     let service = format!(
-        "[Unit]\nDescription=Tokscale autosubmit\n\n[Service]\nType=oneshot\nExecStart={} autosubmit run\nStandardOutput=append:{}\nStandardError=append:{}\n",
+        "[Unit]\nDescription=Token Stats autosubmit\n\n[Service]\nType=oneshot\nExecStart={} autosubmit run\nStandardOutput=append:{}\nStandardError=append:{}\n",
         systemd_escape_path(exe),
         systemd_escape_path(&log_path),
         systemd_escape_path(&log_path)
     );
     let timer = format!(
-        "[Unit]\nDescription=Run Tokscale autosubmit periodically\n\n[Timer]\nOnBootSec=5m\nOnUnitActiveSec={}min\nPersistent=true\n\n[Install]\nWantedBy=timers.target\n",
+        "[Unit]\nDescription=Run Token Stats autosubmit periodically\n\n[Timer]\nOnBootSec=5m\nOnUnitActiveSec={}min\nPersistent=true\n\n[Install]\nWantedBy=timers.target\n",
         settings.interval_minutes
     );
     Ok(SchedulerSpec {
