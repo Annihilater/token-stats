@@ -169,7 +169,9 @@ if [[ "${NPM_CHECK_AUTH}" != "0" ]]; then
   "${NPM_CMD}" whoami >/dev/null
 fi
 
-primary_packages=("@token-stats/cli" "token-stats")
+# Unscoped `token-stats` is blocked by npm (too similar to `tokenstats`).
+# The install entrypoint is scoped @token-stats/cli only.
+primary_packages=("@token-stats/cli")
 errors=()
 checked=0
 existing_targets=0

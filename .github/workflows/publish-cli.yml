@@ -508,33 +508,17 @@ jobs:
           RELEASE_RECOVERY: ${{ inputs.recovery }}
 
   publish-alias:
-    name: Publish token-stats (wrapper)
+    # Unscoped `token-stats` is blocked by npm (too similar to existing `tokenstats`).
+    # Install entrypoint is scoped @token-stats/cli; keep this job as a no-op gate for finalize.
+    name: Skip unscoped wrapper (use @token-stats/cli)
     needs: [prepare-release-provenance, publish-cli]
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.prepare-release-provenance.outputs.release_commit }}
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: 1.1.38
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org
-
-      - name: Publish token-stats
+      - name: Note install entrypoint
         run: |
-          echo "📦 Publishing version: $(jq -r '.version' packages/tokscale/package.json)"
-          bash scripts/publish-npm-package.sh packages/tokscale
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          RELEASE_RECOVERY: ${{ inputs.recovery }}
+          echo "Skipping unscoped token-stats package (npm name similarity block)."
+          echo "Users should install: bunx @token-stats/cli@latest"
 
   finalize:
     name: Create release

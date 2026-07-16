@@ -26,9 +26,9 @@ import {
 import { parseCustomDateRange } from "@/lib/leaderboard/dateRange";
 import type { LeaderboardData, LeaderboardUser, Period } from "@/lib/leaderboard/types";
 import {
-  CLI_BIN,
   CLI_LOGIN_CMD,
   CLI_LOGIN_SUBMIT_CMD,
+  CLI_NPM_PACKAGE,
   CLI_SUBMIT_CMD,
 } from "@/lib/brand";
 
@@ -1499,7 +1499,7 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
           <CodeLine>
             <CommandPrompt>$</CommandPrompt>
             <CommandPrefix>bunx</CommandPrefix>
-            <CommandName>{CLI_BIN}@latest</CommandName>
+            <CommandName>{CLI_NPM_PACKAGE}@latest</CommandName>
             <CommandArg>login</CommandArg>
             <CopyIconButton
               type="button"
@@ -1513,7 +1513,7 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
           <CodeLine>
             <CommandPrompt>$</CommandPrompt>
             <CommandPrefix>bunx</CommandPrefix>
-            <CommandName>{CLI_BIN}@latest</CommandName>
+            <CommandName>{CLI_NPM_PACKAGE}@latest</CommandName>
             <CommandArg>submit</CommandArg>
             <CopyIconButton
               type="button"

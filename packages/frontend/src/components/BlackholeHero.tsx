@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 import heroBg from "@/../public/assets/hero-bg.png";
-import { CLI_BIN, CLI_INSTALL_CMD } from "@/lib/brand";
+import { CLI_INSTALL_CMD, CLI_NPM_PACKAGE } from "@/lib/brand";
 
 export function BlackholeHero() {
   const [copied, setCopied] = useState(false);
@@ -56,8 +56,11 @@ export function BlackholeHero() {
           
           <CommandDisplay>
             <CommandTextWrapper>
+              <CommandPrefix>
+                bunx&nbsp;
+              </CommandPrefix>
               <CommandName>
-                {CLI_BIN}
+                {CLI_NPM_PACKAGE}
               </CommandName>
             </CommandTextWrapper>
             <GradientSeparator />

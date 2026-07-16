@@ -1,7 +1,8 @@
 {
   "name": "token-stats",
+  "private": true,
   "version": "0.1.0",
-  "description": "Token Stats CLI \u2014 track AI coding assistant token usage & costs (alias for @token-stats/cli).",
+  "description": "Unused unscoped alias. npm blocks the name token-stats (too similar to tokenstats). Install with: bunx @token-stats/cli@latest",
   "type": "module",
   "main": "index.js",
   "bin": {

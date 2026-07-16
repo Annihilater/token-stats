@@ -225,7 +225,7 @@ export default function ProfilePageClient({
           {showResubmitBanner && (
             <UpdateNotice role="status">
               <strong>Fresh detail is available.</strong> Re-submit with{" "}
-              <code>bunx token-stats@latest submit</code> to add daily model breakdowns.
+              <code>bunx @token-stats/cli@latest submit</code> to add daily model breakdowns.
             </UpdateNotice>
           )}
 

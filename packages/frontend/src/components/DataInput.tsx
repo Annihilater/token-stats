@@ -354,13 +354,13 @@ export function DataInput({ onDataLoaded }: DataInputProps) {
           <ListItem>
             Install Token Stats CLI:{" "}
             <SmallCodeSnippet>
-              bunx token-stats@latest
+              bunx @token-stats/cli@latest
             </SmallCodeSnippet>
           </ListItem>
           <ListItem>
             Run the graph command:{" "}
             <SmallCodeSnippet>
-              bunx token-stats@latest graph
+              bunx @token-stats/cli@latest graph
             </SmallCodeSnippet>
           </ListItem>
           <ListItem>Copy the JSON output and paste it above</ListItem>
