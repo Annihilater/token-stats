@@ -34,14 +34,14 @@ trap cleanup EXIT
 MATRIX_FILE="${TMP_ROOT}/release-matrix.tsv"
 node --input-type=module >"${MATRIX_FILE}" <<'NODE'
 const rows = [
-  ["cli-darwin-x64", "cli-binary-x86_64-apple-darwin", "tokscale"],
-  ["cli-darwin-arm64", "cli-binary-aarch64-apple-darwin", "tokscale"],
-  ["cli-linux-x64-gnu", "cli-binary-x86_64-unknown-linux-gnu", "tokscale"],
-  ["cli-linux-x64-musl", "cli-binary-x86_64-unknown-linux-musl", "tokscale"],
-  ["cli-linux-arm64-gnu", "cli-binary-aarch64-unknown-linux-gnu", "tokscale"],
-  ["cli-linux-arm64-musl", "cli-binary-aarch64-unknown-linux-musl", "tokscale"],
-  ["cli-win32-x64-msvc", "cli-binary-x86_64-pc-windows-msvc", "tokscale.exe"],
-  ["cli-win32-arm64-msvc", "cli-binary-aarch64-pc-windows-msvc", "tokscale.exe"],
+  ["cli-darwin-x64", "cli-binary-x86_64-apple-darwin", "token-stats"],
+  ["cli-darwin-arm64", "cli-binary-aarch64-apple-darwin", "token-stats"],
+  ["cli-linux-x64-gnu", "cli-binary-x86_64-unknown-linux-gnu", "token-stats"],
+  ["cli-linux-x64-musl", "cli-binary-x86_64-unknown-linux-musl", "token-stats"],
+  ["cli-linux-arm64-gnu", "cli-binary-aarch64-unknown-linux-gnu", "token-stats"],
+  ["cli-linux-arm64-musl", "cli-binary-aarch64-unknown-linux-musl", "token-stats"],
+  ["cli-win32-x64-msvc", "cli-binary-x86_64-pc-windows-msvc", "token-stats.exe"],
+  ["cli-win32-arm64-msvc", "cli-binary-aarch64-pc-windows-msvc", "token-stats.exe"],
 ];
 for (const row of rows) {
   console.log(row.join("\t"));
@@ -149,7 +149,7 @@ if [[ -n "${LDD_BIN}" ]]; then
   ln -s "${LDD_BIN}" "${NODE_ONLY_DIR}/ldd"
 fi
 
-echo "Building @tokscale/cli JavaScript entrypoint..."
+echo "Building @token-stats/cli JavaScript entrypoint..."
 bun run --cwd packages/cli build >/dev/null
 
 LOCAL_TARBALLS_FILE="${TMP_ROOT}/platform-tarballs.tsv"
@@ -163,7 +163,7 @@ while IFS=$'\t' read -r package_dir artifact_name binary_name; do
   cp -R "packages/${package_dir}" "${stage_dir}"
   mkdir -p "${stage_dir}/bin"
   cp "${source_binary}" "${stage_dir}/bin/${binary_name}"
-  if [[ "${binary_name}" == "tokscale" ]]; then
+  if [[ "${binary_name}" == "token-stats" ]]; then
     chmod +x "${stage_dir}/bin/${binary_name}"
   fi
 
@@ -207,39 +207,24 @@ fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 NODE
 CLI_TGZ="$(cd "${CLI_STAGE}" && NPM_CONFIG_CACHE="${NPM_CACHE}" npm pack --silent)"
 
-WRAPPER_STAGE="${PACKAGE_STAGE_ROOT}/tokscale"
-cp -R packages/tokscale "${WRAPPER_STAGE}"
-node --input-type=module - "${WRAPPER_STAGE}/package.json" "file:${CLI_STAGE}/${CLI_TGZ}" <<'NODE'
-import fs from "node:fs";
-const [manifestPath, cliSpec] = process.argv.slice(2);
-const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-manifest.dependencies = {
-  ...manifest.dependencies,
-  "@tokscale/cli": cliSpec,
-};
-fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
-NODE
-WRAPPER_TGZ="$(cd "${WRAPPER_STAGE}" && NPM_CONFIG_CACHE="${NPM_CACHE}" npm pack --silent)"
-
-echo "Installing release wrapper tarball with Bun..."
+# Unscoped token-stats is blocked on npm; smoke-test the scoped package only.
+echo "Installing release @token-stats/cli tarball with Bun..."
 (
   cd "${INSTALL_DIR}"
-  env PATH="${BUN_ONLY_DIR}" bun add "${WRAPPER_STAGE}/${WRAPPER_TGZ}" >/dev/null
+  env PATH="${BUN_ONLY_DIR}" bun add "file:${CLI_STAGE}/${CLI_TGZ}" >/dev/null
 )
 
-WRAPPER_BIN="${INSTALL_DIR}/node_modules/tokscale/bin.js"
-CLI_BIN="${INSTALL_DIR}/node_modules/@tokscale/cli/bin.js"
-HOST_BINARY="${INSTALL_DIR}/node_modules/@tokscale/${HOST_PACKAGE}/bin/${HOST_BINARY_NAME}"
-[[ -f "${WRAPPER_BIN}" ]] || fail "Installed wrapper bin.js missing"
-[[ -f "${CLI_BIN}" ]] || fail "Installed @tokscale/cli bin.js missing"
+CLI_BIN="${INSTALL_DIR}/node_modules/@token-stats/cli/bin.js"
+HOST_BINARY="${INSTALL_DIR}/node_modules/@token-stats/${HOST_PACKAGE}/bin/${HOST_BINARY_NAME}"
+[[ -f "${CLI_BIN}" ]] || fail "Installed @token-stats/cli bin.js missing"
 [[ -f "${HOST_BINARY}" ]] || fail "Installed host platform binary missing: ${HOST_BINARY}"
 
-echo "Checking installed wrapper with Node-only PATH..."
-VERSION_NODE="$(env PATH="${NODE_ONLY_DIR}" "${WRAPPER_BIN}" --version)"
-[[ "${VERSION_NODE}" == tokscale* ]] || fail "Unexpected Node-only wrapper output: ${VERSION_NODE}"
+echo "Checking installed launcher with Node-only PATH..."
+VERSION_NODE="$(env PATH="${NODE_ONLY_DIR}" "${CLI_BIN}" --version)"
+[[ "${VERSION_NODE}" == token-stats* ]] || fail "Unexpected Node-only launcher output: ${VERSION_NODE}"
 
 echo "Checking installed launcher with Bun runtime..."
-VERSION_BUN="$(env PATH="${BUN_ONLY_DIR}" bun "${INSTALL_DIR}/node_modules/.bin/tokscale" --version)"
-[[ "${VERSION_BUN}" == tokscale* ]] || fail "Unexpected Bun launcher output: ${VERSION_BUN}"
+VERSION_BUN="$(env PATH="${BUN_ONLY_DIR}" bun "${INSTALL_DIR}/node_modules/.bin/token-stats" --version)"
+[[ "${VERSION_BUN}" == token-stats* ]] || fail "Unexpected Bun launcher output: ${VERSION_BUN}"
 
 echo "Release artifact package smoke tests passed."
