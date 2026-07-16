@@ -1,6 +1,6 @@
 {
   "name": "@token-stats/cli-darwin-x64",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "token-stats CLI binary for darwin x64",
   "license": "MIT",
   "type": "module",
