@@ -34,3 +34,6 @@ self-host/
 .next/
 .vercel
 .env*.local
+
+# Native CLI binaries staged for npm publish (built by CI/local, not committed)
+packages/cli-*/bin/

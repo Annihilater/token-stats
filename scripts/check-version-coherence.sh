@@ -57,14 +57,14 @@ if not platform_packages:
 errors: list[str] = []
 
 required_platform_names = {
-    "@tokscale/cli-darwin-arm64",
-    "@tokscale/cli-darwin-x64",
-    "@tokscale/cli-linux-arm64-gnu",
-    "@tokscale/cli-linux-arm64-musl",
-    "@tokscale/cli-linux-x64-gnu",
-    "@tokscale/cli-linux-x64-musl",
-    "@tokscale/cli-win32-arm64-msvc",
-    "@tokscale/cli-win32-x64-msvc",
+    "@token-stats/cli-darwin-arm64",
+    "@token-stats/cli-darwin-x64",
+    "@token-stats/cli-linux-arm64-gnu",
+    "@token-stats/cli-linux-arm64-musl",
+    "@token-stats/cli-linux-x64-gnu",
+    "@token-stats/cli-linux-x64-musl",
+    "@token-stats/cli-win32-arm64-msvc",
+    "@token-stats/cli-win32-x64-msvc",
 }
 
 def expect_equal(label: str, actual: str, expected: str) -> None:
@@ -74,8 +74,8 @@ def expect_equal(label: str, actual: str, expected: str) -> None:
 expect_equal("packages/cli/package.json version", cli_package["version"], workspace_version)
 expect_equal("packages/tokscale/package.json version", wrapper_package["version"], workspace_version)
 expect_equal(
-    "packages/tokscale dependency on @tokscale/cli",
-    wrapper_package["dependencies"]["@tokscale/cli"],
+    "packages/tokscale dependency on @token-stats/cli",
+    wrapper_package["dependencies"]["@token-stats/cli"],
     workspace_version,
 )
 
@@ -86,8 +86,8 @@ for path in platform_packages:
     if not name:
         errors.append(f"{path} missing package name")
         continue
-    if not name.startswith("@tokscale/cli-"):
-        errors.append(f"{path} package name must start with @tokscale/cli-")
+    if not name.startswith("@token-stats/cli-"):
+        errors.append(f"{path} package name must start with @token-stats/cli-")
         continue
     platform_names.add(name)
     expect_equal(f"{path} version", manifest["version"], workspace_version)

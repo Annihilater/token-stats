@@ -4,13 +4,14 @@ import { existsSync, readdirSync, realpathSync } from "node:fs";
 import { resolve, join, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const binaryName = process.platform === "win32" ? "tokscale.exe" : "tokscale";
+const binaryName = process.platform === "win32" ? "token-stats.exe" : "token-stats";
+const npmScope = "@token-stats";
 
 const currentDir = fileURLToPath(new URL(".", import.meta.url));
 const dirName = basename(currentDir);
-// In npm install: currentDir = .../node_modules/@tokscale/cli/dist/
-//   cliDir = .../node_modules/@tokscale/cli/
-//   scopeDir = .../node_modules/@tokscale/
+// In npm install: currentDir = .../node_modules/@token-stats/cli/dist/
+//   cliDir = .../node_modules/@token-stats/cli/
+//   scopeDir = .../node_modules/@token-stats/
 // In monorepo dev (dist): currentDir = .../packages/cli/dist/
 //   cliDir = .../packages/cli/
 //   scopeDir = .../packages/
@@ -168,13 +169,13 @@ const searchPaths: string[] = [];
 
 if (targetPackage) {
   searchPaths.push(
-    // npm/bun install: sibling scoped package (node_modules/@tokscale/cli-<platform>/bin/...)
+    // npm/bun install: sibling scoped package (node_modules/@token-stats/cli-<platform>/bin/...)
     join(scopeDir, targetPackage, "bin", binaryName),
-    // Nested node_modules: non-hoisted / pnpm (node_modules/@tokscale/cli/node_modules/@tokscale/cli-<platform>/bin/...)
-    join(cliDir, "node_modules", "@tokscale", targetPackage, "bin", binaryName),
-    // Hoisted edge case (node_modules/@tokscale/node_modules/@tokscale/cli-<platform>/bin/...)
-    join(scopeDir, "node_modules", "@tokscale", targetPackage, "bin", binaryName),
-    join(workspaceRoot, "node_modules", "@tokscale", targetPackage, "bin", binaryName),
+    // Nested node_modules: non-hoisted / pnpm
+    join(cliDir, "node_modules", npmScope, targetPackage, "bin", binaryName),
+    // Hoisted edge case
+    join(scopeDir, "node_modules", npmScope, targetPackage, "bin", binaryName),
+    join(workspaceRoot, "node_modules", npmScope, targetPackage, "bin", binaryName),
     // Monorepo development
     join(workspaceRoot, "packages", targetPackage, "bin", binaryName),
   );
@@ -216,10 +217,10 @@ function isSelfReference(p: string): boolean {
 let binary = searchPaths.find((p) => existsSync(p) && !isSelfReference(p));
 
 if (!binary) {
-  console.error("Error: tokscale binary not found");
+  console.error("Error: token-stats binary not found");
   console.error("Build from source: cargo build --release -p tokscale-cli");
   if (targetPackage) {
-    console.error(`Expected optional package: @tokscale/${targetPackage}`);
+    console.error(`Expected optional package: ${npmScope}/${targetPackage}`);
   }
   process.exit(1);
 }

@@ -1,12 +1,12 @@
 {
-  "name": "@tokscale/cli",
-  "version": "4.5.3",
-  "description": "A high-performance CLI tool and visualization dashboard for tracking AI coding assistant token usage and costs across multiple platforms.",
+  "name": "@token-stats/cli",
+  "version": "0.1.0",
+  "description": "Token Stats CLI \u2014 track AI coding assistant token usage and costs.",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
-    "tokscale": "./bin.js"
+    "token-stats": "./bin.js"
   },
   "files": [
     "bin.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/junhoyeo/tokscale.git",
+    "url": "git+https://github.com/Annihilater/token-stats.git",
     "directory": "packages/cli"
   },
   "scripts": {
@@ -29,22 +29,22 @@
   },
   "dependencies": {},
   "optionalDependencies": {
-    "@tokscale/cli-darwin-arm64": "4.5.3",
-    "@tokscale/cli-darwin-x64": "4.5.3",
-    "@tokscale/cli-linux-x64-gnu": "4.5.3",
-    "@tokscale/cli-linux-x64-musl": "4.5.3",
-    "@tokscale/cli-linux-arm64-gnu": "4.5.3",
-    "@tokscale/cli-linux-arm64-musl": "4.5.3",
-    "@tokscale/cli-win32-x64-msvc": "4.5.3",
-    "@tokscale/cli-win32-arm64-msvc": "4.5.3"
+    "@token-stats/cli-darwin-arm64": "0.1.0",
+    "@token-stats/cli-darwin-x64": "0.1.0",
+    "@token-stats/cli-linux-arm64-gnu": "0.1.0",
+    "@token-stats/cli-linux-arm64-musl": "0.1.0",
+    "@token-stats/cli-linux-x64-gnu": "0.1.0",
+    "@token-stats/cli-linux-x64-musl": "0.1.0",
+    "@token-stats/cli-win32-arm64-msvc": "0.1.0",
+    "@token-stats/cli-win32-x64-msvc": "0.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0"
   },
   "keywords": [
-    "tokscale",
-    "opencode",
+    "token-stats",
+    "token-usage",
     "claude-code",
     "cursor",
     "gemini",

@@ -77,14 +77,14 @@ jobs:
           echo "✅ Updated packages/cli/package.json"
 
           # Update platform package versions
-          mapfile -t PLATFORM_PACKAGES < <(jq -r '.optionalDependencies | keys[] | sub("^@tokscale/"; "")' packages/cli/package.json | sort)
+          mapfile -t PLATFORM_PACKAGES < <(jq -r '.optionalDependencies | keys[] | sub("^@token-stats/"; "")' packages/cli/package.json | sort)
           for pkg in "${PLATFORM_PACKAGES[@]}"; do
             jq --arg v "$NEW_VERSION" '.version = $v' "packages/$pkg/package.json" > tmp.json && mv tmp.json "packages/$pkg/package.json"
             echo "✅ Updated packages/$pkg/package.json"
           done
           
-          # Update packages/tokscale/package.json (version + @tokscale/cli dependency)
-          jq --arg v "$NEW_VERSION" '.version = $v | .dependencies["@tokscale/cli"] = $v' packages/tokscale/package.json > tmp.json && mv tmp.json packages/tokscale/package.json
+          # Update packages/tokscale/package.json (version + @token-stats/cli dependency)
+          jq --arg v "$NEW_VERSION" '.version = $v | .dependencies["@token-stats/cli"] = $v' packages/tokscale/package.json > tmp.json && mv tmp.json packages/tokscale/package.json
           echo "✅ Updated packages/tokscale/package.json"
 
           # Update Rust workspace version so the published binary reports the same release version
@@ -122,10 +122,10 @@ jobs:
           print(match.group(1) if match else 'missing')
           PY
           )"
-          echo "  @tokscale/cli:   $(jq -r '.version' packages/cli/package.json)"
-          echo "  tokscale:        $(jq -r '.version' packages/tokscale/package.json)"
-          echo "  cli -> darwin arm64: $(jq -r '.optionalDependencies["@tokscale/cli-darwin-arm64"]' packages/cli/package.json)"
-          echo "  tokscale -> cli: $(jq -r '.dependencies["@tokscale/cli"]' packages/tokscale/package.json)"
+          echo "  @token-stats/cli:   $(jq -r '.version' packages/cli/package.json)"
+          echo "  token-stats:        $(jq -r '.version' packages/tokscale/package.json)"
+          echo "  cli -> darwin arm64: $(jq -r '.optionalDependencies["@token-stats/cli-darwin-arm64"]' packages/cli/package.json)"
+          echo "  token-stats -> cli: $(jq -r '.dependencies["@token-stats/cli"]' packages/tokscale/package.json)"
           echo "  Platform packages:"
           for pkg in "${PLATFORM_PACKAGES[@]}"; do
             echo "    $pkg: $(jq -r '.version' "packages/$pkg/package.json")"
@@ -158,9 +158,9 @@ jobs:
             target: x86_64-apple-darwin
             package_dir: cli-darwin-x64
             artifact_name: cli-binary-x86_64-apple-darwin
-            bin_name: tokscale
+            bin_name: token-stats
             build: cargo build --release -p tokscale-cli --target x86_64-apple-darwin
-            strip: strip -x target/x86_64-apple-darwin/release/tokscale
+            strip: strip -x target/x86_64-apple-darwin/release/token-stats
           # Apple Silicon ships with the `apple-fm` feature (on-device Apple
           # Foundation Models summarizer). Needs the macOS 26 SDK + Swift
           # toolchain (Xcode 26 on macos-26) to build the vendored
@@ -171,49 +171,49 @@ jobs:
             target: aarch64-apple-darwin
             package_dir: cli-darwin-arm64
             artifact_name: cli-binary-aarch64-apple-darwin
-            bin_name: tokscale
+            bin_name: token-stats
             build: cargo build --release -p tokscale-cli --target aarch64-apple-darwin --features apple-fm
-            strip: strip -x target/aarch64-apple-darwin/release/tokscale
+            strip: strip -x target/aarch64-apple-darwin/release/token-stats
           - host: ubuntu-latest
             target: x86_64-unknown-linux-gnu
             package_dir: cli-linux-x64-gnu
             artifact_name: cli-binary-x86_64-unknown-linux-gnu
-            bin_name: tokscale
+            bin_name: token-stats
             build: cargo zigbuild --release -p tokscale-cli --target x86_64-unknown-linux-gnu
-            strip: strip target/x86_64-unknown-linux-gnu/release/tokscale
+            strip: strip target/x86_64-unknown-linux-gnu/release/token-stats
           - host: ubuntu-latest
             target: x86_64-unknown-linux-musl
             package_dir: cli-linux-x64-musl
             artifact_name: cli-binary-x86_64-unknown-linux-musl
-            bin_name: tokscale
+            bin_name: token-stats
             build: cargo zigbuild --release -p tokscale-cli --target x86_64-unknown-linux-musl
-            strip: strip target/x86_64-unknown-linux-musl/release/tokscale
+            strip: strip target/x86_64-unknown-linux-musl/release/token-stats
           - host: ubuntu-latest
             target: aarch64-unknown-linux-gnu
             package_dir: cli-linux-arm64-gnu
             artifact_name: cli-binary-aarch64-unknown-linux-gnu
-            bin_name: tokscale
+            bin_name: token-stats
             build: cargo zigbuild --release -p tokscale-cli --target aarch64-unknown-linux-gnu
             strip: ""
           - host: ubuntu-latest
             target: aarch64-unknown-linux-musl
             package_dir: cli-linux-arm64-musl
             artifact_name: cli-binary-aarch64-unknown-linux-musl
-            bin_name: tokscale
+            bin_name: token-stats
             build: cargo zigbuild --release -p tokscale-cli --target aarch64-unknown-linux-musl
             strip: ""
           - host: windows-latest
             target: x86_64-pc-windows-msvc
             package_dir: cli-win32-x64-msvc
             artifact_name: cli-binary-x86_64-pc-windows-msvc
-            bin_name: tokscale.exe
+            bin_name: token-stats.exe
             build: cargo build --release -p tokscale-cli --target x86_64-pc-windows-msvc
             strip: ""
           - host: windows-latest
             target: aarch64-pc-windows-msvc
             package_dir: cli-win32-arm64-msvc
             artifact_name: cli-binary-aarch64-pc-windows-msvc
-            bin_name: tokscale.exe
+            bin_name: token-stats.exe
             build: cargo build --release -p tokscale-cli --target aarch64-pc-windows-msvc
             strip: ""
 
@@ -390,38 +390,38 @@ jobs:
       fail-fast: false
       matrix:
         settings:
-          - package_name: '@tokscale/cli-darwin-x64'
+          - package_name: '@token-stats/cli-darwin-x64'
             package_dir: cli-darwin-x64
             artifact_name: cli-binary-x86_64-apple-darwin
-            binary_name: tokscale
-          - package_name: '@tokscale/cli-darwin-arm64'
+            binary_name: token-stats
+          - package_name: '@token-stats/cli-darwin-arm64'
             package_dir: cli-darwin-arm64
             artifact_name: cli-binary-aarch64-apple-darwin
-            binary_name: tokscale
-          - package_name: '@tokscale/cli-linux-x64-gnu'
+            binary_name: token-stats
+          - package_name: '@token-stats/cli-linux-x64-gnu'
             package_dir: cli-linux-x64-gnu
             artifact_name: cli-binary-x86_64-unknown-linux-gnu
-            binary_name: tokscale
-          - package_name: '@tokscale/cli-linux-x64-musl'
+            binary_name: token-stats
+          - package_name: '@token-stats/cli-linux-x64-musl'
             package_dir: cli-linux-x64-musl
             artifact_name: cli-binary-x86_64-unknown-linux-musl
-            binary_name: tokscale
-          - package_name: '@tokscale/cli-linux-arm64-gnu'
+            binary_name: token-stats
+          - package_name: '@token-stats/cli-linux-arm64-gnu'
             package_dir: cli-linux-arm64-gnu
             artifact_name: cli-binary-aarch64-unknown-linux-gnu
-            binary_name: tokscale
-          - package_name: '@tokscale/cli-linux-arm64-musl'
+            binary_name: token-stats
+          - package_name: '@token-stats/cli-linux-arm64-musl'
             package_dir: cli-linux-arm64-musl
             artifact_name: cli-binary-aarch64-unknown-linux-musl
-            binary_name: tokscale
-          - package_name: '@tokscale/cli-win32-x64-msvc'
+            binary_name: token-stats
+          - package_name: '@token-stats/cli-win32-x64-msvc'
             package_dir: cli-win32-x64-msvc
             artifact_name: cli-binary-x86_64-pc-windows-msvc
-            binary_name: tokscale.exe
-          - package_name: '@tokscale/cli-win32-arm64-msvc'
+            binary_name: token-stats.exe
+          - package_name: '@token-stats/cli-win32-arm64-msvc'
             package_dir: cli-win32-arm64-msvc
             artifact_name: cli-binary-aarch64-pc-windows-msvc
-            binary_name: tokscale.exe
+            binary_name: token-stats.exe
 
     steps:
       - uses: actions/checkout@v5
@@ -450,8 +450,8 @@ jobs:
         run: |
           mkdir -p "packages/${{ matrix.settings.package_dir }}/bin"
           cp "artifacts/${{ matrix.settings.package_dir }}/${{ matrix.settings.binary_name }}" "packages/${{ matrix.settings.package_dir }}/bin/${{ matrix.settings.binary_name }}"
-          if [ "${{ matrix.settings.binary_name }}" = "tokscale" ]; then
-            chmod +x "packages/${{ matrix.settings.package_dir }}/bin/tokscale"
+          if [ "${{ matrix.settings.binary_name }}" = "token-stats" ]; then
+            chmod +x "packages/${{ matrix.settings.package_dir }}/bin/token-stats"
           fi
           # Ship the apple-fm sidecar dylib next to the binary when present (only
           # the arm64-darwin artifact carries it). tokscale dlopen's it at runtime
@@ -471,7 +471,7 @@ jobs:
           RELEASE_RECOVERY: ${{ inputs.recovery }}
 
   publish-cli:
-    name: Publish @tokscale/cli
+    name: Publish @token-stats/cli
     needs: [prepare-release-provenance, publish-platform-packages]
     runs-on: ubuntu-latest
 
@@ -499,7 +499,7 @@ jobs:
         working-directory: packages/cli
         run: bun run build
 
-      - name: Publish @tokscale/cli
+      - name: Publish @token-stats/cli
         run: |
           echo "📦 Publishing version: $(jq -r '.version' packages/cli/package.json)"
           bash scripts/publish-npm-package.sh packages/cli
@@ -508,7 +508,7 @@ jobs:
           RELEASE_RECOVERY: ${{ inputs.recovery }}
 
   publish-alias:
-    name: Publish tokscale (wrapper)
+    name: Publish token-stats (wrapper)
     needs: [prepare-release-provenance, publish-cli]
     runs-on: ubuntu-latest
 
@@ -528,7 +528,7 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org
 
-      - name: Publish tokscale
+      - name: Publish token-stats
         run: |
           echo "📦 Publishing version: $(jq -r '.version' packages/tokscale/package.json)"
           bash scripts/publish-npm-package.sh packages/tokscale

@@ -1,21 +1,21 @@
 {
-  "name": "tokscale",
-  "version": "4.5.3",
-  "description": "Alias for @tokscale/cli — A high-performance CLI tool and visualization dashboard for tracking AI coding assistant token usage and costs across multiple platforms.",
+  "name": "token-stats",
+  "version": "0.1.0",
+  "description": "Token Stats CLI \u2014 track AI coding assistant token usage & costs (alias for @token-stats/cli).",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "tokscale": "./bin.js"
+    "token-stats": "./bin.js"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/junhoyeo/tokscale.git"
+    "url": "git+https://github.com/Annihilater/token-stats.git"
   },
   "bugs": {
-    "url": "https://github.com/junhoyeo/tokscale/issues"
+    "url": "https://github.com/Annihilater/token-stats/issues"
   },
-  "homepage": "https://github.com/junhoyeo/tokscale#readme",
+  "homepage": "https://token-stats.com",
   "keywords": [
     "token",
     "tracker",
@@ -24,10 +24,11 @@
     "openai",
     "gemini",
     "cursor",
-    "cli"
+    "cli",
+    "token-stats"
   ],
   "dependencies": {
-    "@tokscale/cli": "4.5.3"
+    "@token-stats/cli": "0.1.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

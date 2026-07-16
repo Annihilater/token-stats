@@ -154,9 +154,9 @@ mkdir -p \
   "${BUN_ONLY_DIR}" \
   "${NODE_ONLY_DIR}" \
   "${STALE_PATH_DIR}"
-cp "${CARGO_BINARY_DIR}/tokscale" "${PLATFORM_STAGE}/bin/tokscale"
+cp "${CARGO_BINARY_DIR}/tokscale" "${PLATFORM_STAGE}/bin/token-stats"
 
-chmod +x "${CLI_STAGE}/bin.js" "${WRAPPER_STAGE}/bin.js" "${PLATFORM_STAGE}/bin/tokscale"
+chmod +x "${CLI_STAGE}/bin.js" "${WRAPPER_STAGE}/bin.js" "${PLATFORM_STAGE}/bin/token-stats"
 
 cat > "${STALE_PATH_DIR}/tokscale" <<'SH'
 #!/bin/sh
@@ -178,7 +178,7 @@ BUN_ONLY_PATH="${BUN_ONLY_DIR}"
 NODE_ONLY_PATH="${NODE_ONLY_DIR}"
 
 PLATFORM_TGZ="$(cd "${PLATFORM_STAGE}" && NPM_CONFIG_CACHE="${NPM_CACHE}" npm pack --silent)"
-node --input-type=module - "${CLI_STAGE}/package.json" "@tokscale/${PLATFORM_PACKAGE}" "file:${PLATFORM_STAGE}/${PLATFORM_TGZ}" <<'NODE'
+node --input-type=module - "${CLI_STAGE}/package.json" "@token-stats/${PLATFORM_PACKAGE}" "file:${PLATFORM_STAGE}/${PLATFORM_TGZ}" <<'NODE'
 import fs from "node:fs";
 
 const [manifestPath, packageName, packageSpec] = process.argv.slice(2);
@@ -194,7 +194,7 @@ const [manifestPath, cliSpec] = process.argv.slice(2);
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 manifest.dependencies = {
   ...manifest.dependencies,
-  "@tokscale/cli": cliSpec,
+  "@token-stats/cli": cliSpec,
 };
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 NODE
@@ -206,26 +206,26 @@ echo "Installing local wrapper tarball with Bun..."
   env PATH="${BUN_ONLY_PATH}" bun add "${WRAPPER_STAGE}/${WRAPPER_TGZ}" >/dev/null
 )
 
-INSTALLED_BIN="${INSTALL_DIR}/node_modules/.bin/tokscale"
+INSTALLED_BIN="${INSTALL_DIR}/node_modules/.bin/token-stats"
 if [[ ! -e "${INSTALLED_BIN}" ]]; then
   echo "Installed tokscale launcher not found at ${INSTALLED_BIN}" >&2
   exit 1
 fi
 WRAPPER_PACKAGE_DIR="${INSTALL_DIR}/node_modules/tokscale"
-CLI_PACKAGE_DIR="${INSTALL_DIR}/node_modules/@tokscale/cli"
-PLATFORM_PACKAGE_DIR="${INSTALL_DIR}/node_modules/@tokscale/${PLATFORM_PACKAGE}"
+CLI_PACKAGE_DIR="${INSTALL_DIR}/node_modules/@token-stats/cli"
+PLATFORM_PACKAGE_DIR="${INSTALL_DIR}/node_modules/@token-stats/${PLATFORM_PACKAGE}"
 WRAPPER_BIN="${WRAPPER_PACKAGE_DIR}/bin.js"
 for expected in \
   "${WRAPPER_BIN}" \
   "${CLI_PACKAGE_DIR}/bin.js" \
-  "${PLATFORM_PACKAGE_DIR}/bin/tokscale"; do
+  "${PLATFORM_PACKAGE_DIR}/bin/token-stats"; do
   if [[ ! -e "${expected}" ]]; then
     echo "Expected installed package path missing: ${expected}" >&2
     exit 1
   fi
 done
-grep -q 'await import("@tokscale/cli")' "${WRAPPER_PACKAGE_DIR}/bin.js" || {
-  echo "Installed tokscale wrapper does not import @tokscale/cli" >&2
+grep -q 'await import("@token-stats/cli")' "${WRAPPER_PACKAGE_DIR}/bin.js" || {
+  echo "Installed token-stats wrapper does not import @token-stats/cli" >&2
   exit 1
 }
 if [[ -L "${INSTALLED_BIN}" ]]; then
@@ -262,13 +262,13 @@ INSTALLED_VERSION_NODE="$(env PATH="${NODE_ONLY_PATH}" "${INSTALLED_BIN}" --vers
 }
 
 echo "Checking missing platform binary does not fall back to stale PATH tokscale..."
-rm -f "${INSTALL_DIR}/node_modules/@tokscale/${PLATFORM_PACKAGE}/bin/tokscale"
-rm -f "${INSTALL_DIR}/node_modules/@tokscale/cli/node_modules/@tokscale/${PLATFORM_PACKAGE}/bin/tokscale"
-rm -f "${INSTALL_DIR}/node_modules/@tokscale/node_modules/@tokscale/${PLATFORM_PACKAGE}/bin/tokscale"
-rm -f "${INSTALL_DIR}/node_modules/node_modules/@tokscale/${PLATFORM_PACKAGE}/bin/tokscale"
-rm -f "${INSTALL_DIR}/node_modules/packages/${PLATFORM_PACKAGE}/bin/tokscale"
+rm -f "${INSTALL_DIR}/node_modules/@token-stats/${PLATFORM_PACKAGE}/bin/token-stats"
+rm -f "${INSTALL_DIR}/node_modules/@token-stats/cli/node_modules/@token-stats/${PLATFORM_PACKAGE}/bin/token-stats"
+rm -f "${INSTALL_DIR}/node_modules/@token-stats/node_modules/@token-stats/${PLATFORM_PACKAGE}/bin/token-stats"
+rm -f "${INSTALL_DIR}/node_modules/node_modules/@token-stats/${PLATFORM_PACKAGE}/bin/token-stats"
+rm -f "${INSTALL_DIR}/node_modules/packages/${PLATFORM_PACKAGE}/bin/token-stats"
 rm -f "${INSTALL_DIR}/node_modules/target/release/tokscale"
-rm -f "${INSTALL_DIR}/node_modules/@tokscale/cli/bin/tokscale"
+rm -f "${INSTALL_DIR}/node_modules/@token-stats/cli/bin/token-stats"
 set +e
 STALE_OUTPUT="$(env PATH="${STALE_PATH_DIR}:${NODE_ONLY_PATH}" "${WRAPPER_BIN}" --version 2>&1)"
 STALE_CODE=$?

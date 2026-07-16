@@ -10,10 +10,12 @@ export const SITE_GITHUB_URL = "https://github.com/Annihilater/token-stats";
 export const SITE_TAGLINE =
   "Track, visualize, and compete on AI coding assistant token usage across Claude Code, Cursor, OpenCode, Codex, Gemini, Kimi, and Qwen.";
 
-/** CLI binary name (cargo [[bin]] / clap name). Not the upstream npm `tokscale` package. */
+/** CLI binary / npm package name. */
 export const CLI_BIN = "token-stats";
-/** Recommended install (from this repo; default API is token-stats.com). */
-export const CLI_INSTALL_CMD = `cargo install --git ${SITE_GITHUB_URL} --locked --bin ${CLI_BIN}`;
-export const CLI_LOGIN_CMD = `${CLI_BIN} login`;
-export const CLI_SUBMIT_CMD = `${CLI_BIN} submit`;
-export const CLI_LOGIN_SUBMIT_CMD = `${CLI_BIN} login && ${CLI_BIN} submit`;
+/** Recommended install via npm (default API is token-stats.com). */
+export const CLI_INSTALL_CMD = `bunx ${CLI_BIN}@latest`;
+export const CLI_LOGIN_CMD = `bunx ${CLI_BIN}@latest login`;
+export const CLI_SUBMIT_CMD = `bunx ${CLI_BIN}@latest submit`;
+export const CLI_LOGIN_SUBMIT_CMD = `${CLI_LOGIN_CMD} && ${CLI_SUBMIT_CMD}`;
+/** Source install fallback when npm binaries are unavailable. */
+export const CLI_SOURCE_INSTALL_CMD = `cargo install --git ${SITE_GITHUB_URL} --locked --bin ${CLI_BIN}`;

@@ -1,7 +1,7 @@
 {
-  "name": "@tokscale/cli-darwin-x64",
-  "version": "4.5.3",
-  "description": "tokscale CLI binary for darwin x64",
+  "name": "@token-stats/cli-darwin-x64",
+  "version": "0.1.0",
+  "description": "token-stats CLI binary for darwin x64",
   "license": "MIT",
   "type": "module",
   "os": [
@@ -10,7 +10,7 @@
   "cpu": [
     "x64"
   ],
-  "main": "bin/tokscale",
+  "main": "bin/token-stats",
   "files": [
     "bin"
   ],
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/junhoyeo/tokscale.git",
+    "url": "git+https://github.com/Annihilater/token-stats.git",
     "directory": "packages/cli-darwin-x64"
   }
 }

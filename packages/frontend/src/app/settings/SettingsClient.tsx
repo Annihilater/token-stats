@@ -946,7 +946,7 @@ export default function SettingsClient() {
             <CodeText
               style={{ backgroundColor: "var(--color-bg-subtle)" }}
             >
-              token-stats login
+              bunx token-stats@latest login
             </CodeText>{" "}
             from the CLI.
           </Description>
@@ -1002,7 +1002,7 @@ export default function SettingsClient() {
                 <CodeText
                   style={{ backgroundColor: "var(--color-bg-subtle)" }}
                 >
-                  token-stats login
+                  bunx token-stats@latest login
                 </CodeText>{" "}
                 from the CLI.
               </EmptyText>
@@ -1062,7 +1062,7 @@ export default function SettingsClient() {
                 <CodeText
                   style={{ backgroundColor: "var(--color-bg-subtle)" }}
                 >
-                  token-stats submit
+                  bunx token-stats@latest submit
                 </CodeText>{" "}
                 to register this machine.
               </EmptyText>

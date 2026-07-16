@@ -354,13 +354,13 @@ export function DataInput({ onDataLoaded }: DataInputProps) {
           <ListItem>
             Install Token Stats CLI:{" "}
             <SmallCodeSnippet>
-              cargo install --git https://github.com/Annihilater/token-stats --locked --bin token-stats
+              bunx token-stats@latest
             </SmallCodeSnippet>
           </ListItem>
           <ListItem>
             Run the graph command:{" "}
             <SmallCodeSnippet>
-              token-stats graph
+              bunx token-stats@latest graph
             </SmallCodeSnippet>
           </ListItem>
           <ListItem>Copy the JSON output and paste it above</ListItem>

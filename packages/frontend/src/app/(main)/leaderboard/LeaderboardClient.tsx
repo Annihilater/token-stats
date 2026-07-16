@@ -27,11 +27,9 @@ import { parseCustomDateRange } from "@/lib/leaderboard/dateRange";
 import type { LeaderboardData, LeaderboardUser, Period } from "@/lib/leaderboard/types";
 import {
   CLI_BIN,
-  CLI_INSTALL_CMD,
   CLI_LOGIN_CMD,
   CLI_LOGIN_SUBMIT_CMD,
   CLI_SUBMIT_CMD,
-  SITE_GITHUB_URL,
 } from "@/lib/brand";
 
 const Section = styled.div`
@@ -1500,22 +1498,8 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
           )}
           <CodeLine>
             <CommandPrompt>$</CommandPrompt>
-            <CommandName>cargo</CommandName>
-            <CommandArg>
-              install --git {SITE_GITHUB_URL} --locked --bin {CLI_BIN}
-            </CommandArg>
-            <CopyIconButton
-              type="button"
-              onClick={() => handleCopyCommand(CLI_INSTALL_CMD)}
-              className={copiedCommand === CLI_INSTALL_CMD ? "copied" : ""}
-              aria-label="Copy install command"
-            >
-              {copiedCommand === CLI_INSTALL_CMD ? <CheckIcon size={16} /> : <CopyIcon size={16} />}
-            </CopyIconButton>
-          </CodeLine>
-          <CodeLine>
-            <CommandPrompt>$</CommandPrompt>
-            <CommandName>{CLI_BIN}</CommandName>
+            <CommandPrefix>bunx</CommandPrefix>
+            <CommandName>{CLI_BIN}@latest</CommandName>
             <CommandArg>login</CommandArg>
             <CopyIconButton
               type="button"
@@ -1528,7 +1512,8 @@ export default function LeaderboardClient({ initialData, currentUser, initialSor
           </CodeLine>
           <CodeLine>
             <CommandPrompt>$</CommandPrompt>
-            <CommandName>{CLI_BIN}</CommandName>
+            <CommandPrefix>bunx</CommandPrefix>
+            <CommandName>{CLI_BIN}@latest</CommandName>
             <CommandArg>submit</CommandArg>
             <CopyIconButton
               type="button"

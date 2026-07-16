@@ -146,9 +146,9 @@ root = pathlib.Path(".")
 paths = [root / "packages/cli/package.json"]
 cli = json.loads(paths[0].read_text())
 for package_name in cli.get("optionalDependencies", {}):
-    if not package_name.startswith("@tokscale/cli-"):
+    if not package_name.startswith("@token-stats/cli-"):
         raise SystemExit(f"Unexpected optional dependency package name: {package_name}")
-    paths.append(root / "packages" / package_name.removeprefix("@tokscale/") / "package.json")
+    paths.append(root / "packages" / package_name.removeprefix("@token-stats/") / "package.json")
 paths.append(root / "packages/tokscale/package.json")
 
 seen = set()
@@ -169,7 +169,7 @@ if [[ "${NPM_CHECK_AUTH}" != "0" ]]; then
   "${NPM_CMD}" whoami >/dev/null
 fi
 
-primary_packages=("@tokscale/cli" "tokscale")
+primary_packages=("@token-stats/cli" "token-stats")
 errors=()
 checked=0
 existing_targets=0

@@ -29,9 +29,9 @@ paths = [
 ]
 cli = json.loads((root / paths[-1]).read_text())
 for package_name in sorted(cli.get("optionalDependencies", {})):
-    if not package_name.startswith("@tokscale/cli-"):
+    if not package_name.startswith("@token-stats/cli-"):
         raise SystemExit(f"Unexpected optional dependency package name: {package_name}")
-    paths.append(pathlib.Path("packages") / package_name.removeprefix("@tokscale/") / "package.json")
+    paths.append(pathlib.Path("packages") / package_name.removeprefix("@token-stats/") / "package.json")
 paths.append(pathlib.Path("packages/tokscale/package.json"))
 for path in paths:
     print(path.as_posix())
