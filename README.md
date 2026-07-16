@@ -2,32 +2,28 @@
 
 <div align="center">
 
-[![Tokscale](./.github/assets/hero-v2.png)](https://tokscale.ai)
+[![Token Stats](./.github/assets/hero-v2.png)](https://token-stats.com)
 
 </div>
 
 > A high-performance CLI tool and visualization dashboard for tracking token usage and costs across multiple AI coding agents.
 
-> [!TIP]
+> [!NOTE]
 >
-> v2 is here — native Rust TUI, cross-platform support, and more. <br />
-> I drop new open-source work every week. Don't miss the next one.
->
-> | [<img alt="GitHub Follow" src="https://img.shields.io/github/followers/junhoyeo?style=flat-square&logo=github&labelColor=black&color=24292f" width="156px" />](https://github.com/junhoyeo) | Follow [@junhoyeo](https://github.com/junhoyeo) on GitHub for more projects. Hacking on AI, infra, and everything in between. |
-> | :-----| :----- |
-> [<img alt="Discord link" src="https://img.shields.io/discord/1480206352755458110?color=5865F2&label=discord&labelColor=black&logo=discord&logoColor=white&style=flat-square" width="156px" />](https://discord.gg/h6DUGWdBbm) | Come hang out in our [Discord](https://discord.gg/h6DUGWdBbm) — and surround yourself with the world's top-tier vibers. |
+> **Token Stats** is a fork focused on `token-stats.com` and the `@token-stats/cli` npm package. <br />
+> Install: `bunx @token-stats/cli@latest` · Site: [token-stats.com](https://token-stats.com) · Repo: [Annihilater/token-stats](https://github.com/Annihilater/token-stats)
 
 <div align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/junhoyeo/tokscale?color=0073FF&labelColor=black&logo=github&style=flat-square)](https://github.com/junhoyeo/tokscale/releases)
-[![npm Version](https://img.shields.io/npm/v/tokscale?color=0073FF&labelColor=black&style=flat-square&logo=npm)](https://www.npmjs.com/package/tokscale)
-[![npm Downloads](https://img.shields.io/npm/dt/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://www.npmjs.com/package/tokscale)
-[![GitHub Contributors](https://img.shields.io/github/contributors/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/graphs/contributors)
-[![GitHub Forks](https://img.shields.io/github/forks/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/network/members)
-[![GitHub Stars](https://img.shields.io/github/stars/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/issues)
-[![License](https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/blob/master/LICENSE)
-[![Coverage](https://raw.githubusercontent.com/junhoyeo/tokscale/refs/heads/main/.github/badges/coverage.svg)](https://github.com/junhoyeo/tokscale/issues/403)
+[![GitHub Release](https://img.shields.io/github/v/release/Annihilater/token-stats?color=0073FF&labelColor=black&logo=github&style=flat-square)](https://github.com/Annihilater/token-stats/releases)
+[![npm Version](https://img.shields.io/npm/v/%40token-stats%2Fcli?color=0073FF&labelColor=black&style=flat-square&logo=npm)](https://www.npmjs.com/package/@token-stats/cli)
+[![npm Downloads](https://img.shields.io/npm/dt/%40token-stats%2Fcli?color=0073FF&labelColor=black&style=flat-square)](https://www.npmjs.com/package/@token-stats/cli)
+[![GitHub Contributors](https://img.shields.io/github/contributors/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/graphs/contributors)
+[![GitHub Forks](https://img.shields.io/github/forks/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/issues)
+[![License](https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/blob/master/LICENSE)
+[![Coverage](https://img.shields.io/badge/coverage-n%2Fa-lightgrey?labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/issues/403)
 
 [🇺🇸 English](README.md) | [🇰🇷 한국어](README.ko.md) | [🇯🇵 日本語](README.ja.md) | [🇨🇳 简体中文](README.zh-cn.md)
 
@@ -45,13 +41,16 @@
 
 | Frontend (3D Contributions Graph) | Wrapped 2025 |
 |:---:|:---:|
-| <a href="https://tokscale.ai"><img alt="Frontend (3D Contributions Graph)" src=".github/assets/frontend-contributions-graph.png" width="700px" /></a> | <a href="#wrapped-2025"><img alt="Wrapped 2025" src=".github/assets/wrapped-2025-agents.png" width="700px" /></a> |
+| <a href="https://token-stats.com"><img alt="Frontend (3D Contributions Graph)" src=".github/assets/frontend-contributions-graph.png" width="700px" /></a> | <a href="#wrapped-2025"><img alt="Wrapped 2025" src=".github/assets/wrapped-2025-agents.png" width="700px" /></a> |
 
-> **Run [`bunx tokscale@latest submit`](#social) to submit your usage data to the leaderboard and create your public profile!**
+> **Run [`bunx @token-stats/cli@latest submit`](#social) to submit your usage data to the leaderboard and create your public profile!**
 
 ## Overview
 
-**Tokscale** helps you monitor and analyze your token consumption from:
+**Token Stats** helps you monitor and analyze your token consumption from:
+
+> Based on the open-source [tokscale](https://github.com/junhoyeo/tokscale) project (MIT).
+
 
 | Logo | Client | Data Location |
 |------|----------|---------------|
@@ -76,10 +75,10 @@
 | <img width="48px" src=".github/assets/client-mux.png" alt="Mux" /> | [Mux](https://github.com/coder/mux) | `~/.mux/sessions/` |
 | <img width="48px" src=".github/assets/client-crush.png" alt="Crush" /> | [Crush](https://crush.ai/) | `$XDG_DATA_HOME/crush/projects.json` (project registry; fallback: `~/.local/share/crush/projects.json`) |
 | <img width="48px" src=".github/assets/client-goose.png" alt="Goose" /> | [Goose](https://github.com/aaif-goose/goose) | `~/.local/share/goose/sessions/sessions.db` (+ macOS Application Support, legacy Block/goose paths; override via `GOOSE_PATH_ROOT`) |
-| <img width="48px" src=".github/assets/client-antigravity.png" alt="Antigravity" /> | [Google Antigravity](https://antigravity.google/) | Cached via `tokscale antigravity sync` to `~/.config/tokscale/antigravity-cache/sessions/*.jsonl` (live RPC against the local language server) |
+| <img width="48px" src=".github/assets/client-antigravity.png" alt="Antigravity" /> | [Google Antigravity](https://antigravity.google/) | Cached via `token-stats antigravity sync` to `~/.config/tokscale/antigravity-cache/sessions/*.jsonl` (live RPC against the local language server) |
 | <img width="48px" src=".github/assets/client-antigravity.png" alt="Antigravity CLI" /> | [Antigravity CLI](https://antigravity.google/) | `~/.gemini/antigravity-cli/conversations/*.db` (override the Gemini home via `GEMINI_CLI_HOME`; local SQLite, read directly — no `antigravity sync` needed) |
-| <img width="48px" src=".github/assets/client-trae.png" alt="Trae" /> | [Trae IDE](https://www.trae.ai/) / [Trae Solo](https://www.trae.ai/solo) (international) | Cached via `tokscale trae sync` to `~/.config/tokscale/trae-cache/sessions/*.json` (account-level usage from the official API) |
-| <img width="48px" src="https://github.com/warpdotdev.png" alt="Warp" /> | [Warp](https://www.warp.dev/) / Oz | Cached via `tokscale warp sync` to `~/.config/tokscale/warp-cache/usage.json` (aggregate requests and spend only; no token transcripts) |
+| <img width="48px" src=".github/assets/client-trae.png" alt="Trae" /> | [Trae IDE](https://www.trae.ai/) / [Trae Solo](https://www.trae.ai/solo) (international) | Cached via `token-stats trae sync` to `~/.config/tokscale/trae-cache/sessions/*.json` (account-level usage from the official API) |
+| <img width="48px" src="https://github.com/warpdotdev.png" alt="Warp" /> | [Warp](https://www.warp.dev/) / Oz | Cached via `token-stats warp sync` to `~/.config/tokscale/warp-cache/usage.json` (aggregate requests and spend only; no token transcripts) |
 | <img width="48px" src="https://github.com/xai-org.png" alt="Grok Build" /> | Grok Build | `$GROK_HOME/sessions/*/*/updates.jsonl` (fallback: `~/.grok/sessions/*/*/updates.jsonl`) |
 | <img width="48px" src=".github/assets/client-zed.webp" alt="Zed Agent" /> | [Zed Agent](https://zed.dev/docs/ai/agent-panel) | `~/.local/share/zed/threads/threads.db` (macOS: `~/Library/Application Support/Zed/threads/threads.db`; Windows: `%LOCALAPPDATA%/Zed/threads/threads.db`; hosted Zed models only, not external ACP agents) |
 | <img width="48px" src="https://github.com/kirodotdev.png" alt="Kiro" /> | Kiro | `~/.kiro/sessions/cli/*.json` (+ `*.jsonl`), `~/.local/share/kiro-cli/data.sqlite3` (macOS: `~/Library/Application Support/kiro-cli/data.sqlite3`), and Kiro IDE globalStorage snapshots (`Kiro/User/globalStorage/kiro.kiroagent`; macOS Application Support, Linux `~/.config/Kiro`, Windows `%APPDATA%\Kiro`) |
@@ -99,18 +98,18 @@
 
 Get real-time pricing calculations using [🚅 LiteLLM's pricing data](https://github.com/BerriAI/litellm), with support for tiered pricing models and cache token discounts.
 
-### Why "Tokscale"?
+### Why "Token Stats"?
 
-[![Tokscale](./.github/assets/hero.png)](https://tokscale.ai)
+[![Token Stats](./.github/assets/hero.png)](https://token-stats.com)
 
 This project is inspired by the **[Kardashev scale](https://en.wikipedia.org/wiki/Kardashev_scale)**, a method proposed by astrophysicist Nikolai Kardashev to measure a civilization's level of technological advancement based on its energy consumption. A Type I civilization harnesses all energy available on its planet, Type II captures the entire output of its star, and Type III commands the energy of an entire galaxy.
 
-In the age of AI-assisted development, **tokens are the new energy**. They power our reasoning, fuel our productivity, and drive our creative output. Just as the Kardashev scale tracks energy consumption at cosmic scales, Tokscale measures your token consumption as you scale the ranks of AI-augmented development. Whether you're a casual user or burning through millions of tokens daily, Tokscale helps you visualize your journey up the scale—from planetary developer to galactic code architect.
+In the age of AI-assisted development, **tokens are the new energy**. They power our reasoning, fuel our productivity, and drive our creative output. Just as the Kardashev scale tracks energy consumption at cosmic scales, Token Stats measures your token consumption as you scale the ranks of AI-augmented development. Whether you're a casual user or burning through millions of tokens daily, Token Stats helps you visualize your journey up the scale—from planetary developer to galactic code architect.
 
 ## Contents
 
 - [Overview](#overview)
-  - [Why "Tokscale"?](#why-tokscale)
+  - [Why "Token Stats"?](#why-token-stats)
 - [Features](#features)
 - [Installation](#installation)
   - [Quick Start](#quick-start)
@@ -181,22 +180,19 @@ In the age of AI-assisted development, **tokens are the new energy**. They power
 ### Quick Start
 
 ```bash
-# Run directly with npx
-npx tokscale@latest
+# Run with bunx (recommended)
+bunx @token-stats/cli@latest
 
-# Or use bunx
-bunx tokscale@latest
-
-# Or use Deno without installing an alias
-deno x npm:tokscale@latest
+# Or with npx
+npx @token-stats/cli@latest
 
 # Light mode (table rendering only)
-npx tokscale@latest --light
+bunx @token-stats/cli@latest --light
 ```
 
 That's it! This gives you the full interactive TUI experience with zero setup.
 
-> **Package Structure**: `tokscale` is an alias package (like [`swc`](https://www.npmjs.com/package/swc)) that installs `@tokscale/cli`. Both install the same CLI with the native Rust core (`@tokscale/core`) included.
+> **Package Structure**: `@token-stats/cli` is the npm package (launcher + optional native binaries for each platform). Unscoped `token-stats` cannot be published on npm (name too similar to existing `tokenstats`).
 
 
 ### Prerequisites
@@ -210,8 +206,8 @@ For local development or building from source:
 
 ```bash
 # Clone the repository
-git clone https://github.com/junhoyeo/tokscale.git
-cd tokscale
+git clone https://github.com/Annihilater/token-stats.git
+cd token-stats
 
 # Install Bun (if not already installed)
 curl -fsSL https://bun.sh/install | bash
@@ -223,7 +219,7 @@ bun install
 bun run cli
 ```
 
-> **Note**: `bun run cli` is for local development. When installed via `bunx tokscale`, the command runs directly. The Usage section below shows the installed binary commands.
+> **Note**: `bun run cli` is for local development. When installed via `bunx @token-stats/cli`, the command runs directly. The Usage section below shows the installed binary commands.
 
 ### Building the Native Module
 
@@ -234,7 +230,7 @@ The native Rust module is **required** for CLI operation. It provides ~10x faste
 bun run build:core
 ```
 
-> **Note**: Native binaries are pre-built and included when you install via `bunx tokscale@latest`. Building from source is only needed for local development.
+> **Note**: Native binaries are pre-built and included when you install via `bunx @token-stats/cli@latest`. Building from source is only needed for local development.
 
 ## Usage
 
@@ -242,28 +238,28 @@ bun run build:core
 
 ```bash
 # Launch interactive TUI (default)
-tokscale
+token-stats
 
 # Launch TUI with specific tab
-tokscale models    # Models tab
-tokscale monthly   # Daily view (shows daily breakdown)
-tokscale hourly    # Hourly tab
+token-stats models    # Models tab
+token-stats monthly   # Daily view (shows daily breakdown)
+token-stats hourly    # Hourly tab
 
 # Use legacy CLI table output
-tokscale --light
-tokscale models --light
+token-stats --light
+token-stats models --light
 
 # Launch TUI explicitly
-tokscale tui
+token-stats tui
 
 # Export contribution graph data as JSON
-tokscale graph --output data.json
+token-stats graph --output data.json
 
 # Output data as JSON (for scripting/automation)
-tokscale --json                    # Default models view as JSON
-tokscale models --json             # Models breakdown as JSON
-tokscale monthly --json            # Monthly breakdown as JSON
-tokscale models --json > report.json   # Save to file
+token-stats --json                    # Default models view as JSON
+token-stats models --json             # Models breakdown as JSON
+token-stats monthly --json            # Monthly breakdown as JSON
+token-stats models --json > report.json   # Save to file
 ```
 
 ### TUI Features
@@ -328,7 +324,7 @@ Press `g` in the TUI or use `--group-by` in `--light`/`--json` mode to control h
 
 **`--group-by session,model`** (per-session cost attribution)
 
-`tokscale models --json --group-by session,model` emits one entry per `(session_id, model)`. Each entry includes a top-level `sessionId` field so downstream tools (e.g. multi-agent IDEs) can join cost data back to a specific agent-CLI session:
+`token-stats models --json --group-by session,model` emits one entry per `(session_id, model)`. Each entry includes a top-level `sessionId` field so downstream tools (e.g. multi-agent IDEs) can join cost data back to a specific agent-CLI session:
 
 ```json
 {
@@ -359,48 +355,48 @@ Use `--client` (short `-c`) to scope reports to one or more clients. The flag is
 
 ```bash
 # Show only OpenCode usage
-tokscale --client opencode
+token-stats --client opencode
 
 # Comma-separated: combine multiple clients
-tokscale --client opencode,claude
+token-stats --client opencode,claude
 
 # Repeated: same effect, useful with shell aliases
-tokscale -c opencode -c claude
+token-stats -c opencode -c claude
 
-# Cursor IDE uses Tokscale's API cache; run login + sync --json first
-tokscale --client cursor
+# Cursor IDE uses Token Stats' API cache; run login + sync --json first
+token-stats --client cursor
 
 # Synthetic (synthetic.new) is detected from other agent sessions
-tokscale --client synthetic
+token-stats --client synthetic
 
 # Combine with other filters
-tokscale --client opencode,claude --week --json
+token-stats --client opencode,claude --week --json
 ```
 
 Possible values: `opencode`, `claude`, `codex`, `copilot`, `gemini`, `cursor`, `amp`, `codebuff`, `droid`, `openclaw`, `hermes`, `pi`, `kimi`, `qwen`, `roocode`, `kilocode`, `kilo`, `mux`, `crush`, `goose`, `antigravity`, `antigravity-cli`, `zed`, `kiro`, `trae`, `warp`, `cline`, `gjc`, `grok`, `jcode`, `micode`, `commandcode`, `junie`, `zcode`, `opencodereview`, `codebuddy`, `synthetic`.
 
-> **Breaking change (v4.0.0):** The per-client boolean flags (`--opencode`, `--claude`, `--codex`, etc.) have been removed and now error. Use the canonical `--client`/`-c` flag instead — e.g. `tokscale --client opencode,claude`.
+> **Breaking change (v4.0.0):** The per-client boolean flags (`--opencode`, `--claude`, `--codex`, etc.) have been removed and now error. Use the canonical `--client`/`-c` flag instead — e.g. `token-stats --client opencode,claude`.
 
 ### Date Filtering
 
-Date filters work across all commands that generate reports (`tokscale`, `tokscale models`, `tokscale monthly`, `tokscale graph`):
+Date filters work across all commands that generate reports (`token-stats`, `token-stats models`, `token-stats monthly`, `token-stats graph`):
 
 ```bash
 # Quick date shortcuts
-tokscale --today              # Today only
-tokscale --yesterday          # Yesterday only
-tokscale --week               # Last 7 days
-tokscale --month              # Current calendar month
+token-stats --today              # Today only
+token-stats --yesterday          # Yesterday only
+token-stats --week               # Last 7 days
+token-stats --month              # Current calendar month
 
 # Custom date range (inclusive, local timezone)
-tokscale --since 2024-01-01 --until 2024-12-31
+token-stats --since 2024-01-01 --until 2024-12-31
 
 # Filter by year
-tokscale --year 2024
+token-stats --year 2024
 
 # Combine with other options
-tokscale models --week --client claude --json
-tokscale monthly --month --benchmark
+token-stats models --week --client claude --json
+token-stats monthly --month --benchmark
 ```
 
 > **Note**: Date filters use your local timezone. Both `--since` and `--until` are inclusive.
@@ -412,16 +408,16 @@ Look up real-time pricing for any model:
 
 ```bash
 # Look up model pricing
-tokscale pricing "claude-3-5-sonnet-20241022"
-tokscale pricing "gpt-4o"
-tokscale pricing "grok-code"
+token-stats pricing "claude-3-5-sonnet-20241022"
+token-stats pricing "gpt-4o"
+token-stats pricing "grok-code"
 
 # Force specific provider source
-tokscale pricing "grok-code" --provider openrouter
-tokscale pricing "claude-3-5-sonnet" --provider litellm
+token-stats pricing "grok-code" --provider openrouter
+token-stats pricing "claude-3-5-sonnet" --provider litellm
 
 # Inspect custom pricing overrides
-tokscale pricing list-overrides
+token-stats pricing list-overrides
 ```
 
 **Lookup Strategy:**
@@ -439,11 +435,11 @@ The pricing lookup uses a multi-step resolution strategy:
 
 ### Custom Pricing Overrides
 
-Create `custom-pricing.json` in Tokscale's config directory (`~/.config/tokscale/custom-pricing.json` on macOS/Linux by default; the same directory resolved by `TOKSCALE_CONFIG_DIR` when set) to override prices for model IDs that upstream pricing databases do not yet cover correctly.
+Create `custom-pricing.json` in Token Stats' config directory (`~/.config/tokscale/custom-pricing.json` on macOS/Linux by default; the same directory resolved by `TOKSCALE_CONFIG_DIR` when set) to override prices for model IDs that upstream pricing databases do not yet cover correctly.
 
 ```json
 {
-  "$schema": "https://tokscale.ai/custom-pricing.schema.json",
+  "$schema": "https://token-stats.com/custom-pricing.schema.json",
   "models": {
     "accounts/fireworks/routers/kimi-k2p6-turbo": {
       "input_cost_per_million_tokens": 2.00,
@@ -465,9 +461,9 @@ Create `custom-pricing.json` in Tokscale's config directory (`~/.config/tokscale
 }
 ```
 
-Override prices are entered in dollars per million tokens, matching how most API providers publish pricing; Tokscale converts them to per-token rates internally. At least one of `input_cost_per_million_tokens` or `output_cost_per_million_tokens` must be present and positive, and cache-read/cache-creation fields are optional. LiteLLM-style per-token field names such as `input_cost_per_token`, `output_cost_per_token`, and `cache_read_input_token_cost` are also accepted for copy/paste compatibility, but the per-million names are the recommended user-facing form. To omit a tier or cache price, leave the field out; negative or non-finite values are treated as invalid and the whole model entry is skipped so typos do not silently alter accounting. Optional `source` and `notes` fields are ignored by Tokscale and can be used for your own bookkeeping.
+Override prices are entered in dollars per million tokens, matching how most API providers publish pricing; Token Stats converts them to per-token rates internally. At least one of `input_cost_per_million_tokens` or `output_cost_per_million_tokens` must be present and positive, and cache-read/cache-creation fields are optional. LiteLLM-style per-token field names such as `input_cost_per_token`, `output_cost_per_token`, and `cache_read_input_token_cost` are also accepted for copy/paste compatibility, but the per-million names are the recommended user-facing form. To omit a tier or cache price, leave the field out; negative or non-finite values are treated as invalid and the whole model entry is skipped so typos do not silently alter accounting. Optional `source` and `notes` fields are ignored by Token Stats and can be used for your own bookkeeping.
 
-Overrides are exact-only and case-insensitive. Tokscale checks the raw model ID first, then the existing synthetic `/models/` normalization, then falls through to LiteLLM, OpenRouter, Cursor pricing, and fuzzy matching if no override matches. Raw exact matches beat normalized exact matches, so `accounts/fireworks/routers/kimi-k2p6-turbo` can override one gateway-specific model while `kimi-k2p6-turbo` can cover normalized `/models/` paths. Overrides are loaded once at startup; restart the command after editing the file. This is the recommended local fix for wrong-model pricing bugs while waiting on upstream LiteLLM pricing updates.
+Overrides are exact-only and case-insensitive. Token Stats checks the raw model ID first, then the existing synthetic `/models/` normalization, then falls through to LiteLLM, OpenRouter, Cursor pricing, and fuzzy matching if no override matches. Raw exact matches beat normalized exact matches, so `accounts/fireworks/routers/kimi-k2p6-turbo` can override one gateway-specific model while `kimi-k2p6-turbo` can cover normalized `/models/` paths. Overrides are loaded once at startup; restart the command after editing the file. This is the recommended local fix for wrong-model pricing bugs while waiting on upstream LiteLLM pricing updates.
 
 **Provider Preference:**
 
@@ -486,72 +482,72 @@ Example: `grok-code` matches `xai/grok-code-fast-1` ($0.20/$1.50) instead of `az
 ### Social
 
 ```bash
-# Login to Tokscale (opens browser for GitHub auth)
-tokscale login
+# Login to Token Stats (opens browser for GitHub auth)
+token-stats login
 
-# Save an existing Tokscale API token without browser auth
-tokscale login --token tt_xxx
+# Save an existing Token Stats API token without browser auth
+token-stats login --token tt_xxx
 
 # Check who you're logged in as
-tokscale whoami
+token-stats whoami
 
 # Display your saved API token as a QR code (useful for sharing to another device)
 # Encodes {"token":"tt_xxx","username":"..."} — scan with any QR reader
-tokscale qr
+token-stats qr
 
 # Submit your usage data to the leaderboard
-tokscale submit
+token-stats submit
 
 # Submit in CI/headless environments without writing credentials
 # Precedence: TOKSCALE_API_TOKEN env > saved credentials file (~/.config/tokscale/credentials.json).
 # When the env var is set, the saved file is ignored for that invocation.
-TOKSCALE_API_TOKEN=tt_xxx tokscale submit
+TOKSCALE_API_TOKEN=tt_xxx token-stats submit
 
 # Revoke a token: visit Settings > API Tokens on the leaderboard site
-# (https://tokscale.ai/settings) and click "Revoke" on the token row.
+# (https://token-stats.com/settings) and click "Revoke" on the token row.
 # Revocation takes effect immediately — subsequent requests with that
 # token will get HTTP 401 "Invalid API token".
 
 # Submit with filters
-tokscale submit --client opencode,claude --since 2024-01-01
+token-stats submit --client opencode,claude --since 2024-01-01
 
 # Preview what would be submitted (dry run)
-tokscale submit --dry-run
+token-stats submit --dry-run
 
 # Logout
-tokscale logout
+token-stats logout
 ```
 
 <img alt="CLI Submit" src="./.github/assets/cli-submit.png" />
 
 ### Autosubmit
 
-Autosubmit schedules the normal `tokscale submit` flow with the operating system scheduler. It is useful for keeping your public profile current without a manual terminal run.
+Autosubmit schedules the normal `token-stats submit` flow with the operating system scheduler. It is useful for keeping your public profile current without a manual terminal run.
 
 ```bash
 # Enable periodic submission. Uses launchd on macOS, systemd user timers on Linux
 # when available, cron as a Linux fallback, and Windows Task Scheduler on Windows.
-tokscale autosubmit enable --interval 24h
+token-stats autosubmit enable --interval 24h
 
 # Keep the same client and date filters you would pass to submit.
-tokscale autosubmit enable --interval 2h --client opencode,claude --week
+token-stats autosubmit enable --interval 2h --client opencode,claude --week
 
 # Show saved settings and the last run/error.
-tokscale autosubmit status
-tokscale autosubmit status --json
+token-stats autosubmit status
+token-stats autosubmit status --json
 
 # Run once now, even if the saved interval has not elapsed.
-tokscale autosubmit run --force
+token-stats autosubmit run --force
 
 # Disable autosubmit and remove the scheduler entry.
-tokscale autosubmit disable
+token-stats autosubmit disable
 ```
 
-Scheduled runs are non-interactive: they never prompt for GitHub auth or star confirmation. Run `tokscale login --token tt_xxx` once, or set `TOKSCALE_API_TOKEN` in the scheduler environment. Tokscale records scheduler state in `settings.json`, writes logs under `~/.config/tokscale/autosubmit/`, and uses a lock file so overlapping scheduler ticks do not submit twice.
+Scheduled runs are non-interactive: they never prompt for GitHub auth or star confirmation. Run `token-stats login --token tt_xxx` once, or set `TOKSCALE_API_TOKEN` in the scheduler environment. Token Stats records scheduler state in `settings.json`, writes logs under `~/.config/tokscale/autosubmit/`, and uses a lock file so overlapping scheduler ticks do not submit twice.
 
 ### Cursor IDE Commands
 
-Cursor IDE support uses Cursor's web API export, cached by Tokscale at `~/.config/tokscale/cursor-cache/usage*.csv`. Tokscale does not parse local Cursor Agent CLI state under `~/.cursor`.
+Cursor IDE support uses Cursor's web API export, cached by Token Stats at `~/.config/tokscale/cursor-cache/usage*.csv`. Token Stats does not parse local Cursor Agent CLI state under `~/.cursor`.
 
 Setup:
 
@@ -559,125 +555,125 @@ Setup:
 2. Copy the `WorkosCursorSessionToken` cookie value:
    - Network tab: make any request to `cursor.com/api/*`, then copy the value after `WorkosCursorSessionToken=` from the `Cookie` request header.
    - Application tab: open Cookies -> `https://www.cursor.com`, then copy the `WorkosCursorSessionToken` value.
-3. Run `tokscale cursor login --name work` and paste the token.
-4. Run `tokscale cursor sync --json` to populate `~/.config/tokscale/cursor-cache/usage.csv`.
-5. Run `tokscale --client cursor` or any report command.
+3. Run `token-stats cursor login --name work` and paste the token.
+4. Run `token-stats cursor sync --json` to populate `~/.config/tokscale/cursor-cache/usage.csv`.
+5. Run `token-stats --client cursor` or any report command.
 
 Treat the session token like a password. It is stored locally in `~/.config/tokscale/cursor-credentials.json`.
 
 ```bash
 # Login to Cursor (requires session token from browser)
 # --name is optional; it just helps you identify accounts later
-tokscale cursor login --name work
+token-stats cursor login --name work
 
 # Check Cursor authentication status and session validity
-tokscale cursor status
+token-stats cursor status
 
 # List saved Cursor accounts
-tokscale cursor accounts
+token-stats cursor accounts
 
 # Manually refresh cached Cursor usage
-tokscale cursor sync --json
+token-stats cursor sync --json
 
 # Switch active account (controls which account syncs to cursor-cache/usage.csv)
-tokscale cursor switch work
+token-stats cursor switch work
 
 # Logout from a specific account (keeps history; excludes it from aggregation)
-tokscale cursor logout --name work
+token-stats cursor logout --name work
 
 # Logout and delete cached usage for that account
-tokscale cursor logout --name work --purge-cache
+token-stats cursor logout --name work --purge-cache
 
 # Logout from all Cursor accounts (keeps history; excludes from aggregation)
-tokscale cursor logout --all
+token-stats cursor logout --all
 
 # Logout from all accounts and delete cached usage
-tokscale cursor logout --all --purge-cache
+token-stats cursor logout --all --purge-cache
 ```
 
-By default, Tokscale aggregates usage across all saved Cursor accounts by reading `cursor-cache/usage*.csv`. The active account syncs to `usage.csv`; additional accounts sync to `usage.<account>.csv`.
+By default, Token Stats aggregates usage across all saved Cursor accounts by reading `cursor-cache/usage*.csv`. The active account syncs to `usage.csv`; additional accounts sync to `usage.<account>.csv`.
 
-When you log out, Tokscale moves cached usage to `cursor-cache/archive/` so it is no longer aggregated. Use `--purge-cache` to delete cached usage instead.
+When you log out, Token Stats moves cached usage to `cursor-cache/archive/` so it is no longer aggregated. Use `--purge-cache` to delete cached usage instead.
 
 ### Antigravity Commands
 
-Antigravity sync currently works on macOS and Linux only. The Antigravity-enabled editor must be running and its local language server available; tokscale reads usage from that local language server and caches normalized artifacts locally.
+Antigravity sync currently works on macOS and Linux only. The Antigravity-enabled editor must be running and its local language server available; token-stats reads usage from that local language server and caches normalized artifacts locally.
 
 ```bash
-# Check whether tokscale can see running Antigravity language servers
-tokscale antigravity status
+# Check whether token-stats can see running Antigravity language servers
+token-stats antigravity status
 
-# Sync usage from local Antigravity language servers into tokscale's cache
-tokscale antigravity sync
+# Sync usage from local Antigravity language servers into Token Stats' cache
+token-stats antigravity sync
 
 # Delete the cached Antigravity artifacts
-tokscale antigravity purge-cache
+token-stats antigravity purge-cache
 ```
 
 **Cache location**: `~/.config/tokscale/antigravity-cache/`
 
-**How it works**: `tokscale antigravity sync` discovers local Antigravity session candidates, fetches confirmed usage data from the local language server RPC, and stores normalized JSONL artifacts for tokscale-core to parse later. Run sync before reports if you want the freshest Antigravity data.
+**How it works**: `token-stats antigravity sync` discovers local Antigravity session candidates, fetches confirmed usage data from the local language server RPC, and stores normalized JSONL artifacts for the Token Stats core parser to parse later. Run sync before reports if you want the freshest Antigravity data.
 
 ### Trae Commands
 
-Trae ([ByteDance's AI IDE](https://www.trae.ai/)) ships in two international product lines — Trae IDE and Trae Solo. They share the same account-level usage data (same backend, same JWT), so tokscale reports them as a single `trae` client. You can install either or both desktop apps; tokscale auto-discovers credentials from whichever is present.
+Trae ([ByteDance's AI IDE](https://www.trae.ai/)) ships in two international product lines — Trae IDE and Trae Solo. They share the same account-level usage data (same backend, same JWT), so token-stats reports them as a single `trae` client. You can install either or both desktop apps; token-stats auto-discovers credentials from whichever is present.
 
 Credentials are identified per desktop app via `--variant`:
 
 - **`--variant ide`** — credentials from Trae IDE (`~/Library/Application Support/Trae/`)
 - **`--variant solo`** — credentials from Trae Solo (`~/Library/Application Support/TRAE SOLO/`)
 
-`tokscale trae sync` calls the official `query_user_usage_group_by_session` API exactly once per run (regardless of how many desktop apps are installed) and persists the raw JSON to a local cache.
+`token-stats trae sync` calls the official `query_user_usage_group_by_session` API exactly once per run (regardless of how many desktop apps are installed) and persists the raw JSON to a local cache.
 
 ```bash
 # Log in (auto-detects credentials from any installed Trae desktop client)
-tokscale trae login
+token-stats trae login
 
 # Manual JWT entry (for environments where auto-detect can't find storage.json,
 # e.g. Linux/Windows or a headless server). Open https://www.trae.ai/account-setting#usage
 # in your browser, then F12 → Network → filter `query_user_usage` and copy the
 # `Authorization` header value.
-tokscale trae login --manual --variant solo
+token-stats trae login --manual --variant solo
 
 # Show which variants have cached credentials
-tokscale trae status
+token-stats trae status
 
 # Sync usage (uses the first available credential source)
-tokscale trae sync --since 30
+token-stats trae sync --since 30
 
 # Forget cached credentials for one variant
-tokscale trae logout --variant solo
+token-stats trae logout --variant solo
 ```
 
 **Cache location**: `~/.config/tokscale/trae-cache/`
 
-**How it works**: tokscale either decrypts the desktop client's `iCubeAuthInfo://*` blob (`globalStorage/storage.json`) to recover a JWT, or accepts one pasted via `--manual`. It then calls `POST /trae/api/v1/pay/query_user_usage_group_by_session` paginated and stores the raw JSON. Run sync before reports if you want the freshest Trae data.
+**How it works**: token-stats either decrypts the desktop client's `iCubeAuthInfo://*` blob (`globalStorage/storage.json`) to recover a JWT, or accepts one pasted via `--manual`. It then calls `POST /trae/api/v1/pay/query_user_usage_group_by_session` paginated and stores the raw JSON. Run sync before reports if you want the freshest Trae data.
 
-> **Note on pricing**: Trae cost figures are **vendor-reported** — tokscale surfaces the `dollar_float` value returned by Trae's own API rather than recomputing cost from token counts through tokscale's pricing engine. Numbers will match what you see on `trae.ai/account-setting#usage`, not what tokscale would otherwise calculate for the same usage.
+> **Note on pricing**: Trae cost figures are **vendor-reported** — token-stats surfaces the `dollar_float` value returned by Trae's own API rather than recomputing cost from token counts through Token Stats' pricing engine. Numbers will match what you see on `trae.ai/account-setting#usage`, not what token-stats would otherwise calculate for the same usage.
 
 > **China variants**: The China editions (`trae.com.cn`) are intentionally **not** supported. The CN backend does not expose a session-level usage query API. Trae CN / Trae Solo CN support will be added once an official endpoint becomes available upstream.
 
 ### Warp/Oz Commands
 
-Warp/Oz does not expose local token transcripts. Tokscale only syncs the aggregate request and spend counters returned by Warp's GraphQL API, then reports them as `warp` / `aggregate-requests` rows with zero token buckets.
+Warp/Oz does not expose local token transcripts. Token Stats only syncs the aggregate request and spend counters returned by Warp's GraphQL API, then reports them as `warp` / `aggregate-requests` rows with zero token buckets.
 
 ```bash
 # Save a bearer token or Cookie header copied from an authenticated Warp request
-tokscale warp login
+token-stats warp login
 
 # Inspect credential/cache state and diagnostics
-tokscale warp status
+token-stats warp status
 
-# Sync aggregate requests and spend into tokscale's local cache
-tokscale warp sync
+# Sync aggregate requests and spend into Token Stats' local cache
+token-stats warp sync
 
 # Remove saved credentials; add --purge-cache to delete synced usage too
-tokscale warp logout --purge-cache
+token-stats warp logout --purge-cache
 ```
 
 **Cache location**: `~/.config/tokscale/warp-cache/usage.json`
 
-**How it works**: `tokscale warp sync` calls Warp's authenticated GraphQL API for account and workspace aggregate counters. Tokscale preserves request counts as message counts and vendor-reported spend as cost, but it never converts requests into synthetic tokens. Warp is excluded from default `submit` data because the public leaderboard accepts token-attributed usage, not aggregate request counters.
+**How it works**: `token-stats warp sync` calls Warp's authenticated GraphQL API for account and workspace aggregate counters. Token Stats preserves request counts as message counts and vendor-reported spend as cost, but it never converts requests into synthetic tokens. Warp is excluded from default `submit` data because the public leaderboard accepts token-attributed usage, not aggregate request counters.
 
 ### Task-Attributed Report
 
@@ -685,30 +681,30 @@ The `report` command generates a task-attributed usage breakdown. It uses an LLM
 
 ```bash
 # Basic report (today, default Apple FM summarizer)
-tokscale report
+token-stats report
 
 # Last 7 days
-tokscale report --week
+token-stats report --week
 
 # Use Claude Code as the summarizer backend
-tokscale report --week --summarizer claude
+token-stats report --week --summarizer claude
 
 # Use Codex, Gemini, or Kiro
-tokscale report --summarizer codex
-tokscale report --summarizer gemini
-tokscale report --summarizer kiro
+token-stats report --summarizer codex
+token-stats report --summarizer gemini
+token-stats report --summarizer kiro
 
 # Skip LLM summarization (show raw data only)
-tokscale report --no-summarize
+token-stats report --no-summarize
 
 # Re-summarize from scratch (resets cached summaries in range)
-tokscale report --week --rebuild
+token-stats report --week --rebuild
 
 # Output as JSON
-tokscale report --week --json
+token-stats report --week --json
 
 # Filter by workspace or client
-tokscale report --workspace my-project --client opencode
+token-stats report --workspace my-project --client opencode
 ```
 
 **Summarizer backends:**
@@ -725,7 +721,7 @@ tokscale report --workspace my-project --client opencode
 
 1. Sessions are scanned and inserted into a local SQLite wiki database (`wiki.db` in your platform config dir — e.g. `~/.config/tokscale/` on Linux, `~/Library/Application Support/tokscale/` on macOS)
 2. Unsummarized sessions are sent to the chosen LLM backend in batches, which returns a title, category, description, and complexity for each
-3. A second LLM pass groups all titled sessions into 3–8 high-level task clusters (e.g. "Kiro Auth", "Tokscale Report", "System Config")
+3. A second LLM pass groups all titled sessions into 3–8 high-level task clusters (e.g. "Kiro Auth", "Token Stats Report", "System Config")
 4. Results are cached in the wiki DB — subsequent runs skip already-summarized sessions
 
 **Example output:**
@@ -733,7 +729,7 @@ tokscale report --workspace my-project --client opencode
 ```
   Task Group                                  Sess     Tokens     Cost
   ───────────────────────────────────────────────────────────────────────
-  Tokscale Development                          19      4.2B    $22.66
+  Token Stats Development                          19      4.2B    $22.66
     Add task-attributed report command
     Implement wiki DB schema
     Fix pricing lookup for new models
@@ -746,29 +742,29 @@ tokscale report --workspace my-project --client opencode
 
 ### Subscription Usage
 
-Tokscale can fetch and display your real-time subscription quota across AI providers. This shows how much of your plan you've used and when limits reset.
+Token Stats can fetch and display your real-time subscription quota across AI providers. This shows how much of your plan you've used and when limits reset.
 
 ```bash
 # Show subscription usage for all detected providers
-tokscale usage
+token-stats usage
 
 # Output as JSON (for scripting)
-tokscale usage --json
+token-stats usage --json
 
 # Lightweight terminal output (no TUI)
-tokscale usage --light
+token-stats usage --light
 ```
 
 In the TUI, navigate to the **Usage** tab to see subscription data. Use `[Refresh]` to refresh subscription quotas. The keyboard refresh shortcut `r` uses the same refresh path.
 
-> **Note**: Subscription quotas and balances are **vendor-reported** — tokscale calls each provider's own quota endpoint and surfaces the response verbatim. Numbers reflect what the provider reports (which is also what shows up in their official dashboards) and are not independently verified against tokscale's own usage tracking.
+> **Note**: Subscription quotas and balances are **vendor-reported** — token-stats calls each provider's own quota endpoint and surfaces the response verbatim. Numbers reflect what the provider reports (which is also what shows up in their official dashboards) and are not independently verified against Token Stats' own usage tracking.
 
 #### Supported Providers
 
 | Provider | Auth Method | Metrics | Setup |
 |----------|-------------|---------|-------|
 | **Claude** | OAuth (credentials file or macOS Keychain) | Session (5hr), Weekly, Opus quotas | Run `claude` to log in |
-| **Codex** (OpenAI) | OAuth (`~/.config/codex/auth.json`, `~/.codex/auth.json`, or saved Tokscale accounts) | Session, Weekly quotas | Use `[Add Codex]` in the TUI Usage tab, run `codex` to log in, or import an existing auth with `tokscale codex import --name work` |
+| **Codex** (OpenAI) | OAuth (`~/.config/codex/auth.json`, `~/.codex/auth.json`, or saved Token Stats accounts) | Session, Weekly quotas | Use `[Add Codex]` in the TUI Usage tab, run `codex` to log in, or import an existing auth with `token-stats codex import --name work` |
 | **Z.ai** | API key (env var) | Token limits, Web Searches | Set `ZAI_API_KEY` or `GLM_API_KEY` |
 | **Amp** | API key (`~/.local/share/amp/secrets.json`) | Free tier balance, Credits | Run `amp` to log in |
 | **GitHub Copilot** | GitHub token (keychain or `~/.config/gh/hosts.yml`) | Premium interactions, Chat quotas | Run `gh auth login` |
@@ -782,39 +778,39 @@ Providers are auto-detected — only those with valid credentials are shown. If 
 
 #### Codex Multi-Account Usage
 
-Tokscale can save multiple Codex OAuth accounts for subscription usage display. The TUI Usage tab groups saved accounts under one **Codex** section. The active account is marked with `*`; inactive accounts can be selected with `[Use]`; account removal uses `[Remove]` followed by `[Confirm]`.
+Token Stats can save multiple Codex OAuth accounts for subscription usage display. The TUI Usage tab groups saved accounts under one **Codex** section. The active account is marked with `*`; inactive accounts can be selected with `[Use]`; account removal uses `[Remove]` followed by `[Confirm]`.
 
-To add an account without leaving the TUI, click `[Add Codex]` in the Usage tab. Tokscale starts `codex login` with a temporary `CODEX_HOME`, displays the login output in the Usage tab, imports the resulting auth into Tokscale's saved account store, and then refreshes usage. This keeps the login isolated and does not switch the current Codex auth; click `[Use]` on a saved account when you want Tokscale to write that account into the real Codex auth file.
+To add an account without leaving the TUI, click `[Add Codex]` in the Usage tab. Token Stats starts `codex login` with a temporary `CODEX_HOME`, displays the login output in the Usage tab, imports the resulting auth into Token Stats' saved account store, and then refreshes usage. This keeps the login isolated and does not switch the current Codex auth; click `[Use]` on a saved account when you want Token Stats to write that account into the real Codex auth file.
 
 The CLI commands are still available for scripted or manual account management, plus a separate opt-in account-activity snapshot:
 
 ```bash
-# Save the current Codex auth as a named Tokscale account
-tokscale codex import --name work
+# Save the current Codex auth as a named Token Stats account
+token-stats codex import --name work
 
 # List saved Codex accounts
-tokscale codex accounts
-tokscale codex accounts --json
+token-stats codex accounts
+token-stats codex accounts --json
 
 # Switch the active Codex account and write Codex auth.json
-tokscale codex switch work
+token-stats codex switch work
 
-# Stop tracking a saved Codex account (removes it from Tokscale's store
+# Stop tracking a saved Codex account (removes it from Token Stats' store
 # only — the codex CLI's own auth.json/login is never touched)
-tokscale codex remove personal
+token-stats codex remove personal
 
 # Check subscription usage for the active or a named account
-tokscale codex status
-tokscale codex status --name personal --json
+token-stats codex status
+token-stats codex status --name personal --json
 
 # Fetch the active Codex app-server account activity separately from local totals
-tokscale codex activity
-tokscale codex activity --json
+token-stats codex activity
+token-stats codex activity --json
 ```
 
-When saved Codex accounts exist, `tokscale usage --json` includes structured account metadata for each Codex entry and the TUI displays those entries under one Codex group. Without saved accounts, Tokscale falls back to the current Codex auth discovery path (`CODEX_HOME/auth.json`, `~/.config/codex/auth.json`, `~/.codex/auth.json`, then macOS Keychain).
+When saved Codex accounts exist, `token-stats usage --json` includes structured account metadata for each Codex entry and the TUI displays those entries under one Codex group. Without saved accounts, Token Stats falls back to the current Codex auth discovery path (`CODEX_HOME/auth.json`, `~/.config/codex/auth.json`, `~/.codex/auth.json`, then macOS Keychain).
 
-`tokscale codex activity` uses only the installed Codex app-server's active authentication to fetch a timestamped, account-level snapshot. It is supplemental data: it is never included in local totals, reports, exports, submissions, or leaderboards.
+`token-stats codex activity` uses only the installed Codex app-server's active authentication to fetch a timestamped, account-level snapshot. It is supplemental data: it is never included in local totals, reports, exports, submissions, or leaderboards.
 
 #### Example Output
 
@@ -838,7 +834,7 @@ When saved Codex accounts exist, `tokscale usage --json` includes structured acc
 
 ### Configuration
 
-Tokscale stores settings in `~/.config/tokscale/settings.json`:
+Token Stats stores settings in `~/.config/tokscale/settings.json`:
 
 ```json
 {
@@ -868,14 +864,14 @@ Tokscale stores settings in `~/.config/tokscale/settings.json`:
 | `autoRefreshMs` | number | `60000` | Auto-refresh interval (30000-3600000ms) |
 | `nativeTimeoutMs` | number | `300000` | Maximum time for native subprocess processing (5000-3600000ms) |
 | `defaultClients` | string[] | `[]` | Client filter applied when no `--client/-c` flag is passed. Accepts the same ids as `--client` (e.g. `["opencode", "claude", "synthetic"]`). Unknown ids are silently dropped. CLI flags always override this list completely — no merging. |
-| `light.writeCache` | boolean | `false` | When true, `tokscale --light` overwrites the TUI cache atomically after rendering. CLI flags `--write-cache` / `--no-write-cache` override per-invocation. |
+| `light.writeCache` | boolean | `false` | When true, `token-stats --light` overwrites the TUI cache atomically after rendering. CLI flags `--write-cache` / `--no-write-cache` override per-invocation. |
 | `minutelyTabEnabled` | boolean | `false` | Show the per-minute Minutely tab in the TUI and aggregate per-minute usage during data loading. Default-off because minute-granularity is a niche/diagnostic view for most users and the per-minute bucketing has a non-trivial cost on large datasets. |
-| `autosubmit` | object | disabled | Saved `tokscale autosubmit` state: interval, client/date filters, scheduler backend, last run time, and last error. Prefer `tokscale autosubmit enable/status/disable` over editing this object by hand. |
-| `scanner.extraScanPaths` | object | `{}` | Additional per-client scan roots for sessions outside Tokscale's default home-root locations |
+| `autosubmit` | object | disabled | Saved `token-stats autosubmit` state: interval, client/date filters, scheduler backend, last run time, and last error. Prefer `token-stats autosubmit enable/status/disable` over editing this object by hand. |
+| `scanner.extraScanPaths` | object | `{}` | Additional per-client scan roots for sessions outside Token Stats' default home-root locations |
 
-Use `scanner.extraScanPaths` for persistent extra roots such as project-level `.codex` directories or imported Gemini/OpenClaw histories. Tokscale automatically discovers Hermes profile databases under `$HERMES_HOME/profiles/*/state.db` (or `~/.hermes/profiles/*/state.db` when `HERMES_HOME` is unset). Use `scanner.extraScanPaths.hermes` only for non-standard Hermes profile locations; entries may point at a profile directory containing `state.db` or directly at a `state.db` file. Tokscale merges these paths with the default scan roots on every run and deduplicates overlapping roots by canonical path.
+Use `scanner.extraScanPaths` for persistent extra roots such as project-level `.codex` directories or imported Gemini/OpenClaw histories. Token Stats automatically discovers Hermes profile databases under `$HERMES_HOME/profiles/*/state.db` (or `~/.hermes/profiles/*/state.db` when `HERMES_HOME` is unset). Use `scanner.extraScanPaths.hermes` only for non-standard Hermes profile locations; entries may point at a profile directory containing `state.db` or directly at a `state.db` file. Token Stats merges these paths with the default scan roots on every run and deduplicates overlapping roots by canonical path.
 
-Use `defaultClients` to pin a personal default — for example, set it to `["opencode", "claude"]` if those are the only clients you use, and `tokscale` (with no flags) will scope every report to them automatically. Pass `--client` on the command line to override for a single run.
+Use `defaultClients` to pin a personal default — for example, set it to `["opencode", "claude"]` if those are the only clients you use, and `token-stats` (with no flags) will scope every report to them automatically. Pass `--client` on the command line to override for a single run.
 
 #### Enabling the Minutely tab
 
@@ -901,7 +897,7 @@ The regenerable CLI/TUI/pricing/Wrapped caches now live under `~/.config/tokscal
 - `opencode-migration.json` — OpenCode migration record
 - `fonts/` and `images/` — Wrapped asset caches
 
-It is safe to delete this directory. Tokscale will recreate and repopulate it on demand.
+It is safe to delete this directory. Token Stats will recreate and repopulate it on demand.
 
 ### Environment Variables
 
@@ -910,27 +906,27 @@ Environment variables override config file values. For CI/CD or one-off use:
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `TOKSCALE_NATIVE_TIMEOUT_MS` | `300000` (5 min) | Overrides `nativeTimeoutMs` config |
-| `TOKSCALE_API_TOKEN` | unset | Tokscale personal API token for non-interactive `submit` and `delete-submitted-data` runs. Create one from Settings > API Tokens or save it locally with `tokscale login --token tt_xxx`. |
+| `TOKSCALE_API_TOKEN` | unset | Token Stats personal API token for non-interactive `submit` and `delete-submitted-data` runs. Create one from Settings > API Tokens or save it locally with `token-stats login --token tt_xxx`. |
 | `TOKSCALE_EXTRA_DIRS` | unset | One-off extra session roots as `client:/abs/path,client:/abs/path` |
-| `TOKSCALE_CONFIG_DIR` | unset | Overrides the config directory root (where `settings.json`, `star-cache.json`, `cache/`, `antigravity-cache/`, and `trae-cache/` live). Absolute path recommended; relative paths resolve against the process CWD. Useful for CI sandboxes or pinning a non-default location. When set, tokscale will not fall back to the legacy macOS `~/Library/Application Support/tokscale/` path. |
+| `TOKSCALE_CONFIG_DIR` | unset | Overrides the config directory root (where `settings.json`, `star-cache.json`, `cache/`, `antigravity-cache/`, and `trae-cache/` live). Absolute path recommended; relative paths resolve against the process CWD. Useful for CI sandboxes or pinning a non-default location. When set, token-stats will not fall back to the legacy macOS `~/Library/Application Support/tokscale/` path. |
 | `TOKSCALE_FM_DEBUG` | unset | When set, prints Apple Foundation Models diagnostics (macOS version gate, dlopen dylib path, load/symbol errors) to stderr to explain why on-device apple-fm did or didn't engage. |
 
 ```bash
 # Example: Increase timeout for very large datasets
-TOKSCALE_NATIVE_TIMEOUT_MS=600000 tokscale graph --output data.json
+TOKSCALE_NATIVE_TIMEOUT_MS=600000 token-stats graph --output data.json
 
 # Example: one-off extra scan roots
-TOKSCALE_EXTRA_DIRS='codex:/Users/me/workspace/project-a/.codex/sessions,gemini:/Users/me/imports/imac/gemini/tmp' tokscale
+TOKSCALE_EXTRA_DIRS='codex:/Users/me/workspace/project-a/.codex/sessions,gemini:/Users/me/imports/imac/gemini/tmp' token-stats
 
 # Example: submit from CI without an interactive browser login
-TOKSCALE_API_TOKEN=tt_xxx tokscale submit
+TOKSCALE_API_TOKEN=tt_xxx token-stats submit
 ```
 
 > **Note**: For persistent extra roots, prefer `scanner.extraScanPaths` in `~/.config/tokscale/settings.json`. `TOKSCALE_EXTRA_DIRS` is best for one-off overrides or CI/CD.
 
 ### Headless Mode
 
-Tokscale can aggregate token usage from **Codex CLI headless outputs** for automation, CI/CD pipelines, and batch processing.
+Token Stats can aggregate token usage from **Codex CLI headless outputs** for automation, CI/CD pipelines, and batch processing.
 
 **What is headless mode?**
 
@@ -938,9 +934,9 @@ When you run Codex CLI with JSON output flags (e.g., `codex exec --json`), it ou
 
 **Storage location:** `~/.config/tokscale/headless/`
 
-On macOS, Tokscale also scans `~/Library/Application Support/tokscale/headless/` when `TOKSCALE_HEADLESS_DIR` is not set.
+On macOS, Token Stats also scans `~/Library/Application Support/tokscale/headless/` when `TOKSCALE_HEADLESS_DIR` is not set.
 
-Tokscale automatically scans this directory structure:
+Token Stats automatically scans this directory structure:
 ```
 ~/.config/tokscale/headless/
 └── codex/       # Codex CLI JSONL outputs
@@ -955,7 +951,7 @@ export TOKSCALE_HEADLESS_DIR="$HOME/my-custom-logs"
 
 | Tool | Command Example |
 |------|-----------------|
-| **Codex CLI** | `tokscale headless codex exec -m gpt-5 "implement feature"` |
+| **Codex CLI** | `token-stats headless codex exec -m gpt-5 "implement feature"` |
 
 **Manual redirect (optional):**
 
@@ -967,8 +963,8 @@ export TOKSCALE_HEADLESS_DIR="$HOME/my-custom-logs"
 
 ```bash
 # Show scan locations and headless counts
-tokscale sources
-tokscale sources --json
+token-stats sources
+token-stats sources --json
 ```
 
 **CI/CD integration example:**
@@ -983,7 +979,7 @@ tokscale sources --json
 
 # Later, track usage
 - name: Report token usage
-  run: tokscale --json
+  run: token-stats --json
 ```
 
 > **Note**: Headless capture is supported for Codex CLI only. If you run Codex directly, redirect stdout to the headless directory as shown above.
@@ -1018,7 +1014,7 @@ Open [http://localhost:3000](http://localhost:3000) to access the social platfor
 
 ## Social Platform
 
-Tokscale includes a social platform where you can share your usage data and compete with other developers.
+Token Stats includes a social platform where you can share your usage data and compete with other developers.
 
 ### Features
 
@@ -1030,10 +1026,10 @@ Tokscale includes a social platform where you can share your usage data and comp
 
 ### GitHub Profile Embed Widget
 
-You can embed your public Tokscale stats directly in your GitHub profile README:
+You can embed your public Token Stats stats directly in your GitHub profile README:
 
 ```md
-[![Tokscale Stats](https://tokscale.ai/api/embed/<username>/svg)](https://tokscale.ai/u/<username>)
+[![Token Stats Stats](https://token-stats.com/api/embed/<username>/svg)](https://token-stats.com/u/<username>)
 ```
 
 Replace `<username>` with your GitHub username. With no query parameters this
@@ -1055,11 +1051,11 @@ customize the design.
 Examples:
 
 ```md
-![](https://tokscale.ai/api/embed/<username>/svg?template=minimal&color=purple&graph=1)
-![](https://tokscale.ai/api/embed/<username>/svg?template=orbit&color=pink&rank=percent)
-![](https://tokscale.ai/api/embed/<username>/svg?template=terminal&color=green&theme=light)
-![](https://tokscale.ai/api/embed/<username>/svg?template=receipt&color=YlGnBu&graph=1)
-![](https://tokscale.ai/api/embed/<username>/svg?view=3d&compact=1)
+![](https://token-stats.com/api/embed/<username>/svg?template=minimal&color=purple&graph=1)
+![](https://token-stats.com/api/embed/<username>/svg?template=orbit&color=pink&rank=percent)
+![](https://token-stats.com/api/embed/<username>/svg?template=terminal&color=green&theme=light)
+![](https://token-stats.com/api/embed/<username>/svg?template=receipt&color=YlGnBu&graph=1)
+![](https://token-stats.com/api/embed/<username>/svg?view=3d&compact=1)
 ```
 
 ### GitHub Profile Badge
@@ -1067,7 +1063,7 @@ Examples:
 You can also use a shields.io-style badge for a more compact display:
 
 ```md
-![Tokscale Tokens](https://tokscale.ai/api/badge/<username>/svg)
+![Token Stats Tokens](https://token-stats.com/api/badge/<username>/svg)
 ```
 
 - Replace `<username>` with your GitHub username
@@ -1079,13 +1075,13 @@ You can also use a shields.io-style badge for a more compact display:
   - `label=<text>` to override the left-side label
   - `color=<hex>` to override the right-side color (e.g., `color=ff5733`)
 - Examples:
-  - `https://tokscale.ai/api/badge/<username>/svg?metric=cost&compact=1`
-  - `https://tokscale.ai/api/badge/<username>/svg?metric=rank&sort=cost&style=flat-square`
+  - `https://token-stats.com/api/badge/<username>/svg?metric=cost&compact=1`
+  - `https://token-stats.com/api/badge/<username>/svg?metric=rank&sort=cost&style=flat-square`
 
 ### Getting Started
 
-1. **Login** - Run `tokscale login` to authenticate via GitHub, or create an API token in Settings for CI/headless use
-2. **Submit** - Run `tokscale submit` to upload your usage data
+1. **Login** - Run `token-stats login` to authenticate via GitHub, or create an API token in Settings for CI/headless use
+2. **Submit** - Run `token-stats submit` to upload your usage data
 3. **View** - Visit the web platform to see your profile and the leaderboard
 
 ### Data Validation
@@ -1102,7 +1098,7 @@ Submitted data goes through Level 1 validation:
 
 Generate a beautiful year-in-review image summarizing your AI coding assistant usage—inspired by Spotify Wrapped.
 
-| `bunx tokscale@latest wrapped` | `bunx tokscale@latest wrapped --clients` | `bunx tokscale@latest wrapped --agents --disable-pinned` |
+| `bunx @token-stats/cli@latest wrapped` | `bunx @token-stats/cli@latest wrapped --clients` | `bunx @token-stats/cli@latest wrapped --agents --disable-pinned` |
 |:---:|:---:|:---:|
 | ![Wrapped 2025 (Agents + Pin Sisyphus)](.github/assets/wrapped-2025-agents.png) | ![Wrapped 2025 (Clients)](.github/assets/wrapped-2025-clients.png) | ![Wrapped 2025 (Agents + Disable Pinned)](.github/assets/wrapped-2025-agents-disable-pinned.png) |
 
@@ -1110,10 +1106,10 @@ Generate a beautiful year-in-review image summarizing your AI coding assistant u
 
 ```bash
 # Generate wrapped image for current year
-tokscale wrapped
+token-stats wrapped
 
 # Generate for a specific year
-tokscale wrapped --year 2025
+token-stats wrapped --year 2025
 ```
 
 ### What's Included
@@ -1209,19 +1205,19 @@ bun run bench
 
 ```bash
 # Export graph data to file
-tokscale graph --output usage-data.json
+token-stats graph --output usage-data.json
 
 # Date filtering (all shortcuts work)
-tokscale graph --today
-tokscale graph --week
-tokscale graph --since 2024-01-01 --until 2024-12-31
-tokscale graph --year 2024
+token-stats graph --today
+token-stats graph --week
+token-stats graph --since 2024-01-01 --until 2024-12-31
+token-stats graph --year 2024
 
 # Filter by platform
-tokscale graph --client opencode,claude
+token-stats graph --client opencode,claude
 
 # Show processing time benchmark
-tokscale graph --output data.json --benchmark
+token-stats graph --output data.json --benchmark
 ```
 
 ### Benchmark Flag
@@ -1229,17 +1225,17 @@ tokscale graph --output data.json --benchmark
 Show processing time for performance analysis:
 
 ```bash
-tokscale --benchmark           # Show processing time with default view
-tokscale models --benchmark    # Benchmark models report
-tokscale monthly --benchmark   # Benchmark monthly report
-tokscale graph --benchmark     # Benchmark graph generation
+token-stats --benchmark           # Show processing time with default view
+token-stats models --benchmark    # Benchmark models report
+token-stats monthly --benchmark   # Benchmark monthly report
+token-stats graph --benchmark     # Benchmark graph generation
 ```
 
 ### Generating Data for Frontend
 
 ```bash
 # Export data for visualization
-tokscale graph --output packages/frontend/public/my-data.json
+token-stats graph --output packages/frontend/public/my-data.json
 ```
 
 ### Performance
@@ -1294,15 +1290,15 @@ On Linux, the launcher detects glibc vs musl automatically (via `process.report`
 
 ### Windows Support
 
-Tokscale fully supports Windows. The TUI and CLI work the same as on macOS/Linux.
+Token Stats fully supports Windows. The TUI and CLI work the same as on macOS/Linux.
 
 **Installation on Windows:**
 ```powershell
 # Install Bun (PowerShell)
 powershell -c "irm bun.sh/install.ps1 | iex"
 
-# Run tokscale
-bunx tokscale@latest
+# Run token-stats
+bunx @token-stats/cli@latest
 ```
 
 #### Data Locations on Windows
@@ -1333,11 +1329,11 @@ AI coding tools store their session data in cross-platform locations. Most tools
 | Kilo CLI | `~/.local/share/kilo/` | `%USERPROFILE%\.local\share\kilo\` | Uses `xdg-basedir` like OpenCode |
 | Crush | `$XDG_DATA_HOME/crush/` (fallback: `~/.local/share/crush/`) | `%USERPROFILE%\.local\share\crush\` (or `%XDG_DATA_HOME%\crush\` if set) | Uses XDG data directory with fallback |
 | Goose | `~/.local/share/goose/sessions/` (+ macOS Application Support, legacy Block paths) | `%USERPROFILE%\.local\share\goose\sessions\` | Configurable via `GOOSE_PATH_ROOT` env var |
-| Antigravity | `~/.config/tokscale/antigravity-cache/sessions/` | — | `tokscale antigravity sync` is currently supported on macOS/Linux only |
+| Antigravity | `~/.config/tokscale/antigravity-cache/sessions/` | — | `token-stats antigravity sync` is currently supported on macOS/Linux only |
 | Zed Agent | `~/.local/share/zed/threads/threads.db` | `%LOCALAPPDATA%\Zed\threads\threads.db` | Hosted Zed model usage only; external ACP agents are not included |
 | Kiro | `~/.kiro/sessions/cli/` and `~/.local/share/kiro-cli/data.sqlite3` | `%USERPROFILE%\.kiro\sessions\cli\` and `%USERPROFILE%\.local\share\kiro-cli\data.sqlite3` | Parses Kiro session files plus the Kiro CLI SQLite database when present |
-| Trae | `~/.config/tokscale/trae-cache/sessions/` | `%APPDATA%\tokscale\trae-cache\sessions\` | Synced once via `tokscale trae sync`; credentials are auto-discovered from any installed Trae IDE or Trae Solo desktop app |
-| Warp/Oz | `~/.config/tokscale/warp-cache/usage.json` | `%APPDATA%\tokscale\warp-cache\usage.json` | Synced via `tokscale warp sync`; aggregate requests and spend only, no token transcripts |
+| Trae | `~/.config/tokscale/trae-cache/sessions/` | `%APPDATA%\tokscale\trae-cache\sessions\` | Synced once via `token-stats trae sync`; credentials are auto-discovered from any installed Trae IDE or Trae Solo desktop app |
+| Warp/Oz | `~/.config/tokscale/warp-cache/usage.json` | `%APPDATA%\tokscale\warp-cache\usage.json` | Synced via `token-stats warp sync`; aggregate requests and spend only, no token transcripts |
 | Grok Build | `~/.grok/sessions/` | `%USERPROFILE%\.grok\sessions\` | Configurable via `GROK_HOME` env var; parses `updates.jsonl` session updates |
 | Jcode | `~/.jcode/sessions/` | `%USERPROFILE%\.jcode\sessions\` | Configurable via `JCODE_HOME` env var; parses `session_*.json` snapshots plus `session_*.journal.jsonl` sidecars |
 | MiMo Code | `~/.local/share/mimocode/` | `%USERPROFILE%\.local\share\mimocode\` | Uses XDG data directory; SQLite database `mimocode.db` |
@@ -1355,13 +1351,13 @@ AI coding tools store their session data in cross-platform locations. Most tools
 
 #### Windows-Specific Configuration
 
-Tokscale stores its configuration in:
+Token Stats stores its configuration in:
 - **TUI settings**: `%APPDATA%\tokscale\settings.json` (platform default; override with `TOKSCALE_CONFIG_DIR`)
 - **Cache**: `%APPDATA%\tokscale\cache\` (consolidated cache root)
 - **Legacy cache paths**: `%USERPROFILE%\.cache\tokscale\` and `%LOCALAPPDATA%\tokscale\cache\` equivalents from older releases may still exist until regenerated data is written to the new path
 - **Cursor credentials**: `%USERPROFILE%\.config\tokscale\cursor-credentials.json`
 - **Trae credentials and synced usage**: `%APPDATA%\tokscale\trae-cache\`
-- **Tokscale account credentials**: `%USERPROFILE%\.config\tokscale\credentials.json`
+- **Token Stats account credentials**: `%USERPROFILE%\.config\tokscale\credentials.json`
 
 ## Session Data Retention
 
@@ -1438,11 +1434,11 @@ OpenCode does not have built-in session cleanup. Sessions in `~/.local/share/ope
 
 Location: `~/.local/share/opencode/opencode.db` (v1.2+) or `storage/message/{sessionId}/*.json` (legacy)
 
-OpenCode 1.2+ stores sessions in SQLite. Tokscale reads from SQLite first and falls back to legacy JSON files for older versions.
+OpenCode 1.2+ stores sessions in SQLite. Token Stats reads from SQLite first and falls back to legacy JSON files for older versions.
 
-OpenCode picks the db filename from the release channel the binary was built against: the `latest` and `beta` channels use `opencode.db`, while other channels use `opencode-<channel>.db` (e.g. `opencode-stable.db`, `opencode-nightly.db`). Tokscale scans all of them, so users running multiple channels side by side get a unified view.
+OpenCode picks the db filename from the release channel the binary was built against: the `latest` and `beta` channels use `opencode.db`, while other channels use `opencode-<channel>.db` (e.g. `opencode-stable.db`, `opencode-nightly.db`). Token Stats scans all of them, so users running multiple channels side by side get a unified view.
 
-If you launched opencode with `OPENCODE_DB` pointing at a file outside `~/.local/share/opencode`, add the absolute path to `~/.config/tokscale/settings.json` so tokscale can find it on every run:
+If you launched opencode with `OPENCODE_DB` pointing at a file outside `~/.local/share/opencode`, add the absolute path to `~/.config/tokscale/settings.json` so token-stats can find it on every run:
 
 ```json
 {
@@ -1457,7 +1453,7 @@ If you launched opencode with `OPENCODE_DB` pointing at a file outside `~/.local
 
 Paths are merged with auto-discovery, deduped by canonical path, and non-existent entries are silently skipped (so stale config never breaks a scan). `opencode.db-wal`, `opencode.db-shm`, and other SQLite sidecars are rejected.
 
-If you keep sessions outside Tokscale's default home-root locations, you can also persist extra scan roots per client:
+If you keep sessions outside Token Stats' default home-root locations, you can also persist extra scan roots per client:
 
 ```json
 {
@@ -1478,7 +1474,7 @@ If you keep sessions outside Tokscale's default home-root locations, you can als
 }
 ```
 
-This is useful for project-level `.codex` directories, imported histories, and Hermes profile databases outside the default `$HERMES_HOME/state.db` or `~/.hermes/state.db` location. Tokscale still scans its default roots, then merges `scanner.extraScanPaths` and `TOKSCALE_EXTRA_DIRS` on top with canonical-path deduplication. It does not auto-discover your whole workspace.
+This is useful for project-level `.codex` directories, imported histories, and Hermes profile databases outside the default `$HERMES_HOME/state.db` or `~/.hermes/state.db` location. Token Stats still scans its default roots, then merges `scanner.extraScanPaths` and `TOKSCALE_EXTRA_DIRS` on top with canonical-path deduplication. It does not auto-discover your whole workspace.
 
 Each message contains:
 ```json
@@ -1508,7 +1504,7 @@ JSONL format with assistant messages containing usage data:
 
 Wrapper transcript files under `~/.claude/transcripts/` are counted only when they contain real Claude usage metadata. Files with user/tool events but no `usage` block are skipped rather than estimated.
 
-Tokscale's `claude` client is Claude Code token accounting, not Claude Desktop chat accounting. Claude Desktop stores app data under locations such as `~/Library/Application Support/Claude`, but Anthropic does not document a stable local per-message token ledger for consumer desktop chat or chat-history exports. Run `tokscale clients` to see a diagnostic when Claude Desktop data is present but only Claude Code JSONL roots are scannable. `tokscale usage` can show best-effort Claude subscription quota bars from Claude Code credentials, while organization/API usage belongs to Anthropic's Admin Usage and Cost APIs and is intentionally separate from local transcript scanning.
+Token Stats' `claude` client is Claude Code token accounting, not Claude Desktop chat accounting. Claude Desktop stores app data under locations such as `~/Library/Application Support/Claude`, but Anthropic does not document a stable local per-message token ledger for consumer desktop chat or chat-history exports. Run `token-stats clients` to see a diagnostic when Claude Desktop data is present but only Claude Code JSONL roots are scannable. `token-stats usage` can show best-effort Claude subscription quota bars from Claude Code credentials, while organization/API usage belongs to Anthropic's Admin Usage and Cost APIs and is intentionally separate from local transcript scanning.
 
 ### Codex CLI
 
@@ -1544,13 +1540,13 @@ $env:COPILOT_OTEL_FILE_EXPORTER_PATH = Join-Path $otelDir ("copilot-otel-{0}.jso
 
 Using a timestamped filename is recommended so each Copilot session writes to a fresh file instead of accumulating into one huge OTEL log.
 
-Tokscale treats `chat` spans as the source of truth for token accounting and ignores tool spans plus cumulative metrics in phase 1:
+Token Stats treats `chat` spans as the source of truth for token accounting and ignores tool spans plus cumulative metrics in phase 1:
 
 ```json
 {"type":"span","name":"chat gpt-5.4-mini","attributes":{"gen_ai.operation.name":"chat","gen_ai.response.model":"gpt-5.4-mini","gen_ai.conversation.id":"session-id","gen_ai.usage.input_tokens":1234,"gen_ai.usage.output_tokens":567,"gen_ai.usage.cache_read.input_tokens":890,"gen_ai.usage.reasoning.output_tokens":123}}
 ```
 
-> Copilot's OTEL payloads currently do not expose stable workspace metadata, so Copilot rows may appear without workspace attribution. Tokscale prices these rows from the reported model when possible and does not trust `github.copilot.cost` directly.
+> Copilot's OTEL payloads currently do not expose stable workspace metadata, so Copilot rows may appear without workspace attribution. Token Stats prices these rows from the reported model when possible and does not trust `github.copilot.cost` directly.
 
 ### Gemini CLI
 
@@ -1570,37 +1566,37 @@ Session files containing message arrays:
 
 Location: `~/.config/tokscale/cursor-cache/usage*.csv` (synced via Cursor API)
 
-Cursor data is fetched from the Cursor API using your session token and cached locally. Tokscale reads those cache files for reports; it does not parse local `~/.cursor` session data. See [Cursor IDE Commands](#cursor-ide-commands) for setup.
+Cursor data is fetched from the Cursor API using your session token and cached locally. Token Stats reads those cache files for reports; it does not parse local `~/.cursor` session data. See [Cursor IDE Commands](#cursor-ide-commands) for setup.
 
 ### Antigravity
 
 Location: `~/.config/tokscale/antigravity-cache/sessions/*.jsonl` (synced via local Antigravity language server RPC)
 
-Antigravity data is not fetched automatically by the root command. Run `tokscale antigravity sync` while the Antigravity-enabled editor is open to refresh the local cache, then use normal tokscale reports and filters against the cached JSONL artifacts.
+Antigravity data is not fetched automatically by the root command. Run `token-stats antigravity sync` while the Antigravity-enabled editor is open to refresh the local cache, then use normal token-stats reports and filters against the cached JSONL artifacts.
 
 ### Trae
 
 Location: `~/.config/tokscale/trae-cache/sessions/*.json` (synced via official usage API)
 
-Trae data is not fetched automatically by the root command. Run `tokscale trae login` once, then `tokscale trae sync` before reports. Tokscale parses the synced API dumps as session-level records and preserves the cost totals reported by Trae.
+Trae data is not fetched automatically by the root command. Run `token-stats trae login` once, then `token-stats trae sync` before reports. Token Stats parses the synced API dumps as session-level records and preserves the cost totals reported by Trae.
 
 ### Warp/Oz
 
 Location: `~/.config/tokscale/warp-cache/usage.json` (synced via authenticated GraphQL API)
 
-Warp/Oz data is not fetched automatically by the root command. Run `tokscale warp login`, then `tokscale warp sync` before reports. Tokscale records only aggregate request counts and spend because Warp does not expose token-attributed local transcripts.
+Warp/Oz data is not fetched automatically by the root command. Run `token-stats warp login`, then `token-stats warp sync` before reports. Token Stats records only aggregate request counts and spend because Warp does not expose token-attributed local transcripts.
 
 ### Grok Build
 
 Location: `$GROK_HOME/sessions/*/*/updates.jsonl` (fallback: `~/.grok/sessions/*/*/updates.jsonl`)
 
-Grok Build data is parsed directly from local session updates. Current logs expose cumulative `totalTokens` counters without a stable input/output split, so Tokscale records positive per-turn deltas as input tokens. `grok-composer-2.5-fast` is temporarily mapped to the Composer 2.5 Fast pricing override until a dedicated public price is available.
+Grok Build data is parsed directly from local session updates. Current logs expose cumulative `totalTokens` counters without a stable input/output split, so Token Stats records positive per-turn deltas as input tokens. `grok-composer-2.5-fast` is temporarily mapped to the Composer 2.5 Fast pricing override until a dedicated public price is available.
 
 ### Jcode
 
 Location: `$JCODE_HOME/sessions/session_*.json` (fallback: `~/.jcode/sessions/session_*.json`) plus matching `session_*.journal.jsonl` sidecars.
 
-Jcode data is parsed directly from local session snapshots. Tokscale reads assistant `messages[].token_usage` fields (`input_tokens`, `output_tokens`, `cache_read_input_tokens`, `cache_creation_input_tokens`, and `reasoning_output_tokens`) without spoofing another client identity. Matching journal sidecars are merged into the same session stream before deduplication so recent appended messages are included until Jcode checkpoints them into the snapshot. Stable message IDs are used for replay dedupe; malformed/custom records without IDs use a scoped fallback key.
+Jcode data is parsed directly from local session snapshots. Token Stats reads assistant `messages[].token_usage` fields (`input_tokens`, `output_tokens`, `cache_read_input_tokens`, `cache_creation_input_tokens`, and `reasoning_output_tokens`) without spoofing another client identity. Matching journal sidecars are merged into the same session stream before deduplication so recent appended messages are included until Jcode checkpoints them into the snapshot. Stable message IDs are used for replay dedupe; malformed/custom records without IDs use a scoped fallback key.
 
 ### OpenClaw
 
@@ -1626,7 +1622,7 @@ Session JSONL format with model_change events and assistant messages:
 
 Location: `$HERMES_HOME/state.db` (fallback: `~/.hermes/state.db`) plus standard profile databases at `$HERMES_HOME/profiles/*/state.db` (or sibling `~/.hermes/profiles/*/state.db` when `HERMES_HOME` points at an active profile)
 
-Hermes stores session-level usage in a SQLite `sessions` table. Tokscale imports rows where `model` is present and token or cost totals are non-zero, uses `started_at` as the timestamp, preserves `message_count`, and prefers `actual_cost_usd` over `estimated_cost_usd`.
+Hermes stores session-level usage in a SQLite `sessions` table. Token Stats imports rows where `model` is present and token or cost totals are non-zero, uses `started_at` as the timestamp, preserves `message_count`, and prefers `actual_cost_usd` over `estimated_cost_usd`.
 
 ### Pi
 
@@ -1675,7 +1671,7 @@ Location:
 
 Each task directory may also include `api_conversation_history.json` with `<environment_details>` blocks used for model/agent metadata.
 
-`ui_messages.json` is an array of UI events. Tokscale counts only:
+`ui_messages.json` is an array of UI events. Token Stats counts only:
 - `type == "say"`
 - `say == "api_req_started"`
 
@@ -1695,7 +1691,7 @@ Location:
 - Local: `~/.config/Code/User/globalStorage/kilocode.kilo-code/tasks/{TASK_ID}/ui_messages.json`
 - Server (best-effort): `~/.vscode-server/data/User/globalStorage/kilocode.kilo-code/tasks/{TASK_ID}/ui_messages.json`
 
-Kilo uses the same task log shape as Roo Code. Tokscale applies the same rules:
+Kilo uses the same task log shape as Roo Code. Token Stats applies the same rules:
 - count only `say/api_req_started` events from `ui_messages.json`
 - parse `tokensIn`, `tokensOut`, `cacheReads`, `cacheWrites`, `cost`, and `apiProtocol` from `text` JSON
 - enrich model/agent metadata from sibling `api_conversation_history.json` when available
@@ -1708,7 +1704,7 @@ Location:
 - Windows desktop VS Code: `%APPDATA%\Code\User\globalStorage\saoudrizwan.claude-dev\tasks\{TASK_ID}\ui_messages.json`
 - Server (best-effort): `~/.vscode-server/data/User/globalStorage/saoudrizwan.claude-dev/tasks/{TASK_ID}/ui_messages.json`
 
-Cline is the upstream project that Roo Code and Kilo forked from, so it uses the same VS Code globalStorage task log shape. Tokscale applies the same rules:
+Cline is the upstream project that Roo Code and Kilo forked from, so it uses the same VS Code globalStorage task log shape. Token Stats applies the same rules:
 - count only `say/api_req_started` events from `ui_messages.json`
 - parse `tokensIn`, `tokensOut`, `cacheReads`, `cacheWrites`, `cost`, and `apiProtocol` from `text` JSON
 - enrich model/agent metadata from sibling `api_conversation_history.json` when available
@@ -1720,7 +1716,7 @@ Location:
 
 Mux stores cumulative per-session token usage in `session-usage.json` files. Each file contains a `byModel` map with per-model token breakdowns:
 - `input`, `cached` (cache reads), `cacheCreate` (cache writes), `output`, `reasoning`
-- Model names use `provider:model` format (e.g., `anthropic:claude-opus-4-6`) — tokscale strips the provider prefix for model identification
+- Model names use `provider:model` format (e.g., `anthropic:claude-opus-4-6`) — token-stats strips the provider prefix for model identification
 - Sub-agent usage is automatically rolled up into parent sessions by Mux, so there is no double-counting
 
 ### Kilo CLI
@@ -1733,25 +1729,25 @@ Kilo CLI stores session data in a SQLite database similar to OpenCode. Each mess
 
 Location: Project-level SQLite databases discovered via `$XDG_DATA_HOME/crush/projects.json` (fallback: `~/.local/share/crush/projects.json`)
 
-Crush stores usage in per-project SQLite databases (`crush.db`). Tokscale imports session-level cost totals from root sessions only, because Crush does not expose reliable per-message or per-model token accounting. Records appear as `model=session-total` with zero token breakdown.
+Crush stores usage in per-project SQLite databases (`crush.db`). Token Stats imports session-level cost totals from root sessions only, because Crush does not expose reliable per-message or per-model token accounting. Records appear as `model=session-total` with zero token breakdown.
 
 ### Goose
 
 Location: `~/.local/share/goose/sessions/sessions.db` (also scans `~/Library/Application Support/goose/`, `~/Library/Application Support/Block/goose/`, `~/.local/share/Block/goose/`; override via `GOOSE_PATH_ROOT`)
 
-Goose stores per-session usage in a SQLite `sessions.db`. Tokscale extracts the model from `model_config_json`, the provider from `provider_name`, and accumulated input/output token totals per session. Reasoning tokens are inferred when the column is populated.
+Goose stores per-session usage in a SQLite `sessions.db`. Token Stats extracts the model from `model_config_json`, the provider from `provider_name`, and accumulated input/output token totals per session. Reasoning tokens are inferred when the column is populated.
 
 ### Codebuff
 
 Location: `~/.config/manicode/projects/<project>/chats/<chatId>/chat-messages.json` (also scans `manicode-dev` and `manicode-staging` channels; override via `CODEBUFF_DATA_DIR`)
 
-Codebuff (formerly Manicode) writes per-chat JSON files. Tokscale parses token usage from `metadata.usage`, `metadata.codebuff.usage`, and the run-state `messageHistory[*].providerOptions` fallback, walking the history in reverse so partial newer entries don't shadow earlier entries that carry the actual token counts. Per-message timestamps fall back to the chat-id directory name and finally to file mtime when missing.
+Codebuff (formerly Manicode) writes per-chat JSON files. Token Stats parses token usage from `metadata.usage`, `metadata.codebuff.usage`, and the run-state `messageHistory[*].providerOptions` fallback, walking the history in reverse so partial newer entries don't shadow earlier entries that carry the actual token counts. Per-message timestamps fall back to the chat-id directory name and finally to file mtime when missing.
 
 ### Gajae-Code (gjc)
 
 Location: `~/.gjc/agent/sessions/<project-slug>/*.jsonl` (override the agent dir via `GJC_CODING_AGENT_DIR`; also resolves `GJC_CONFIG_DIR`/`PI_CONFIG_DIR` joined with `agent/sessions`, and the flattened `$XDG_DATA_HOME/gjc/sessions/` redirect on Linux/macOS). Depth-2 per-pass sub-agent transcripts (`<slug>/<session>/N-*.jsonl`) are discovered too.
 
-JSONL format with a session header and message entries. Tokscale emits only assistant messages and reuses gjc's authoritative per-message `usage.cost.total` (USD) when present, recomputing from tokens only when it is absent:
+JSONL format with a session header and message entries. Token Stats emits only assistant messages and reuses gjc's authoritative per-message `usage.cost.total` (USD) when present, recomputing from tokens only when it is absent:
 ```json
 {"type":"session","id":"S1","timestamp":"2026-01-01T00:00:00.000Z","cwd":"/work/proj"}
 {"type":"message","id":"M1","timestamp":"2026-01-01T00:00:01.000Z","message":{"role":"assistant","model":"claude-sonnet-4","provider":"anthropic","usage":{"input":1000,"output":500,"cacheRead":0,"cacheWrite":0,"totalTokens":1500,"cost":{"input":0.1,"output":0.2,"total":0.3}}}}
@@ -1762,13 +1758,13 @@ Messages dedup by `<session id>:<message id>` (with a deterministic fallback) so
 
 Synthetic usage is detected via post-processing of existing agent session files. Messages are re-attributed to `synthetic` when they use `hf:` model IDs or synthetic providers (`synthetic`, `glhf`, `octofriend`).
 
-Tokscale also checks Octofriend SQLite at `~/.local/share/octofriend/sqlite.db` and parses token-bearing records when available.
+Token Stats also checks Octofriend SQLite at `~/.local/share/octofriend/sqlite.db` and parses token-bearing records when available.
 
 ### MiMo Code
 
 Location: `~/.local/share/mimocode/mimocode.db` (XDG data directory)
 
-MiMo Code stores session data in a SQLite database. Tokscale queries the `message` table joined with `session` for workspace context:
+MiMo Code stores session data in a SQLite database. Token Stats queries the `message` table joined with `session` for workspace context:
 
 ```sql
 SELECT m.id, m.session_id, m.data, NULLIF(s.directory, '') AS workspace_root
@@ -1797,15 +1793,15 @@ The `data` column is a JSON blob with the following token-relevant fields:
 }
 ```
 
-Tokscale deduplicates messages across forked sessions using a fingerprint of timestamps, model, provider, token counts, cost, and agent name.
+Token Stats deduplicates messages across forked sessions using a fingerprint of timestamps, model, provider, token counts, cost, and agent name.
 
 ## Pricing
 
-Tokscale fetches real-time pricing from [LiteLLM's pricing database](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json).
+Token Stats fetches real-time pricing from [LiteLLM's pricing database](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json).
 
-**Dynamic Fallback**: For models not yet available in LiteLLM (e.g., recently released models), Tokscale automatically fetches pricing from [OpenRouter's endpoints API](https://openrouter.ai/docs/api/api-reference/endpoints/list-endpoints). This ensures you get accurate pricing from the model's author provider (e.g., Z.AI for glm-4.7) without waiting for LiteLLM updates.
+**Dynamic Fallback**: For models not yet available in LiteLLM (e.g., recently released models), Token Stats automatically fetches pricing from [OpenRouter's endpoints API](https://openrouter.ai/docs/api/api-reference/endpoints/list-endpoints). This ensures you get accurate pricing from the model's author provider (e.g., Z.AI for glm-4.7) without waiting for LiteLLM updates.
 
-**Cursor Model Pricing**: For very recently released models not yet in either LiteLLM or OpenRouter (e.g., `gpt-5.3-codex`), Tokscale includes hardcoded pricing sourced from [Cursor's model docs](https://cursor.com/en-US/docs/models). These overrides are checked after all upstream sources but before fuzzy matching, so they automatically yield once real upstream pricing becomes available.
+**Cursor Model Pricing**: For very recently released models not yet in either LiteLLM or OpenRouter (e.g., `gpt-5.3-codex`), Token Stats includes hardcoded pricing sourced from [Cursor's model docs](https://cursor.com/en-US/docs/models). These overrides are checked after all upstream sources but before fuzzy matching, so they automatically yield once real upstream pricing becomes available.
 
 **Sakana Fugu Pricing**: Fugu Ultra cost is estimated from Sakana's published pay-as-you-go rates; the `fugu` router model is intentionally left unpriced because its cost is the variable rate of whichever underlying model it orchestrated.
 
@@ -1852,13 +1848,13 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 <p align="center">
-  <a href="https://github.com/junhoyeo">
+  <a href="https://github.com/Annihilater">
     <img src=".github/assets/labtocat-on-spaceship.png" width="540">
   </a>
 </p>
 
 <p align="center">
-  <strong>MIT © <a href="https://github.com/junhoyeo">Junho Yeo</a></strong>
+  <strong>MIT © <a href="https://github.com/Annihilater">Junho Yeo</a></strong>
 </p>
 
-If you find this project intriguing, **please consider starring it ⭐** or [follow me on GitHub](https://github.com/junhoyeo) and join the ride (1.1k+ already aboard). I code around the clock and ship mind-blowing things on a regular basis—your support won't go to waste.
+If you find this project intriguing, **please consider starring it ⭐** or [follow me on GitHub](https://github.com/Annihilater) and join the ride (1.1k+ already aboard). I code around the clock and ship mind-blowing things on a regular basis—your support won't go to waste.

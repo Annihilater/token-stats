@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Tokscale](./.github/assets/hero-v2.png)](https://tokscale.ai)
+[![Token Stats](./.github/assets/hero-v2.png)](https://token-stats.com)
 
 </div>
 
@@ -13,20 +13,20 @@
 > **v2 リリース — ネイティブ Rust TUI、クロスプラットフォーム対応など。** <br />
 > 毎週新しいオープンソースプロジェクトを公開しています。お見逃しなく。
 >
-> | [<img alt="GitHub Follow" src="https://img.shields.io/github/followers/junhoyeo?style=flat-square&logo=github&labelColor=black&color=24292f" width="156px" />](https://github.com/junhoyeo) | GitHubで[@junhoyeo](https://github.com/junhoyeo)をフォローして、他のプロジェクトもチェックしてください。AI、インフラ、その他様々な分野で開発しています。 |
+> | [<img alt="GitHub Follow" src="https://img.shields.io/github/followers/Annihilater?style=flat-square&logo=github&labelColor=black&color=24292f" width="156px" />](https://github.com/Annihilater) | GitHubで[@Annihilater](https://github.com/Annihilater)をフォローして、他のプロジェクトもチェックしてください。AI、インフラ、その他様々な分野で開発しています。 |
 > | :-----| :----- |
 > [<img alt="Discord link" src="https://img.shields.io/discord/1480206352755458110?color=5865F2&label=discord&labelColor=black&logo=discord&logoColor=white&style=flat-square" width="156px" />](https://discord.gg/h6DUGWdBbm) | [Discord](https://discord.gg/h6DUGWdBbm)に参加しよう — 世界最高のバイバーたちと一緒に。 |
 
 <div align="center">
 
-[![GitHub Release](https://img.shields.io/github/v/release/junhoyeo/tokscale?color=0073FF&labelColor=black&logo=github&style=flat-square)](https://github.com/junhoyeo/tokscale/releases)
-[![npm Downloads](https://img.shields.io/npm/dt/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://www.npmjs.com/package/tokscale)
-[![GitHub Contributors](https://img.shields.io/github/contributors/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/graphs/contributors)
-[![GitHub Forks](https://img.shields.io/github/forks/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/network/members)
-[![GitHub Stars](https://img.shields.io/github/stars/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/stargazers)
-[![GitHub Issues](https://img.shields.io/github/issues/junhoyeo/tokscale?color=0073FF&labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/issues)
-[![License](https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square)](https://github.com/junhoyeo/tokscale/blob/master/LICENSE)
-[![Coverage](https://raw.githubusercontent.com/junhoyeo/tokscale/refs/heads/main/.github/badges/coverage.svg)](https://github.com/junhoyeo/tokscale/issues/403)
+[![GitHub Release](https://img.shields.io/github/v/release/Annihilater/token-stats?color=0073FF&labelColor=black&logo=github&style=flat-square)](https://github.com/Annihilater/token-stats/releases)
+[![npm Downloads](https://img.shields.io/npm/dt/%40token-stats%2Fcli?color=0073FF&labelColor=black&style=flat-square)](https://www.npmjs.com/package/@token-stats/cli)
+[![GitHub Contributors](https://img.shields.io/github/contributors/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/graphs/contributors)
+[![GitHub Forks](https://img.shields.io/github/forks/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/Annihilater/token-stats?color=0073FF&labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/issues)
+[![License](https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/blob/master/LICENSE)
+[![Coverage](https://img.shields.io/badge/coverage-n%2Fa-lightgrey?labelColor=black&style=flat-square)](https://github.com/Annihilater/token-stats/issues/403)
 
 [🇺🇸 English](README.md) | [🇰🇷 한국어](README.ko.md) | [🇯🇵 日本語](README.ja.md) | [🇨🇳 简体中文](README.zh-cn.md)
 
@@ -44,13 +44,13 @@
 
 | Frontend (3D Contributions Graph) | Wrapped 2025 |
 |:---:|:---:|
-| <a href="https://tokscale.ai"><img alt="Frontend (3D Contributions Graph)" src=".github/assets/frontend-contributions-graph.png" width="700px" /></a> | <a href="#wrapped-2025"><img alt="Wrapped 2025" src=".github/assets/wrapped-2025-agents.png" width="700px" /></a> |
+| <a href="https://token-stats.com"><img alt="Frontend (3D Contributions Graph)" src=".github/assets/frontend-contributions-graph.png" width="700px" /></a> | <a href="#wrapped-2025"><img alt="Wrapped 2025" src=".github/assets/wrapped-2025-agents.png" width="700px" /></a> |
 
-> **[`bunx tokscale submit`](#ソーシャルプラットフォームコマンド)を実行して、使用量データをリーダーボードに送信し、公開プロフィールを作成しましょう！**
+> **[`bunx @token-stats/cli submit`](#ソーシャルプラットフォームコマンド)を実行して、使用量データをリーダーボードに送信し、公開プロフィールを作成しましょう！**
 
 ## 概要
 
-**Tokscale**は以下のプラットフォームからのトークン消費を監視・分析するのに役立ちます：
+**Token Stats**は以下のプラットフォームからのトークン消費を監視・分析するのに役立ちます：
 
 | ロゴ | クライアント | データ場所 |
 |------|----------|---------------|
@@ -75,10 +75,10 @@
 | <img width="48px" src=".github/assets/client-mux.png" alt="Mux" /> | [Mux](https://github.com/coder/mux) | `~/.mux/sessions/` |
 | <img width="48px" src=".github/assets/client-crush.png" alt="Crush" /> | [Crush](https://crush.ai/) | `$XDG_DATA_HOME/crush/projects.json`（プロジェクトレジストリ。フォールバック: `~/.local/share/crush/projects.json`） |
 | <img width="48px" src=".github/assets/client-goose.png" alt="Goose" /> | [Goose](https://github.com/aaif-goose/goose) | `~/.local/share/goose/sessions/sessions.db` (+ macOS Application Support、レガシー Block/goose パス; `GOOSE_PATH_ROOT` でオーバーライド可能) |
-| <img width="48px" src=".github/assets/client-antigravity.png" alt="Antigravity" /> | [Google Antigravity](https://antigravity.google/) | `tokscale antigravity sync` で `~/.config/tokscale/antigravity-cache/sessions/*.jsonl` にキャッシュ（ローカル言語サーバ RPC を使用） |
+| <img width="48px" src=".github/assets/client-antigravity.png" alt="Antigravity" /> | [Google Antigravity](https://antigravity.google/) | `token-stats antigravity sync` で `~/.config/tokscale/antigravity-cache/sessions/*.jsonl` にキャッシュ（ローカル言語サーバ RPC を使用） |
 | <img width="48px" src=".github/assets/client-antigravity.png" alt="Antigravity CLI" /> | [Antigravity CLI](https://antigravity.google/) | `~/.gemini/antigravity-cli/conversations/*.db`（Gemini ホームは `GEMINI_CLI_HOME` でオーバーライド可能；ローカル SQLite を直接読み取るため `antigravity sync` は不要） |
-| <img width="48px" src=".github/assets/client-trae.png" alt="Trae" /> | [Trae IDE](https://www.trae.ai/) / [Trae Solo](https://www.trae.ai/solo)（国際版） | `tokscale trae sync` で `~/.config/tokscale/trae-cache/sessions/*.json` にキャッシュ（公式 API のアカウント単位使用量） |
-| <img width="48px" src="https://github.com/warpdotdev.png" alt="Warp" /> | [Warp](https://www.warp.dev/) / Oz | `tokscale warp sync` で `~/.config/tokscale/warp-cache/usage.json` にキャッシュ（集計リクエスト数と使用金額のみ。トークントランスクリプトは含まない） |
+| <img width="48px" src=".github/assets/client-trae.png" alt="Trae" /> | [Trae IDE](https://www.trae.ai/) / [Trae Solo](https://www.trae.ai/solo)（国際版） | `token-stats trae sync` で `~/.config/tokscale/trae-cache/sessions/*.json` にキャッシュ（公式 API のアカウント単位使用量） |
+| <img width="48px" src="https://github.com/warpdotdev.png" alt="Warp" /> | [Warp](https://www.warp.dev/) / Oz | `token-stats warp sync` で `~/.config/tokscale/warp-cache/usage.json` にキャッシュ（集計リクエスト数と使用金額のみ。トークントランスクリプトは含まない） |
 | <img width="48px" src="https://github.com/xai-org.png" alt="Grok Build" /> | Grok Build | `$GROK_HOME/sessions/*/*/updates.jsonl`（フォールバック: `~/.grok/sessions/*/*/updates.jsonl`） |
 | <img width="48px" src=".github/assets/client-zed.webp" alt="Zed Agent" /> | [Zed Agent](https://zed.dev/docs/ai/agent-panel) | `~/.local/share/zed/threads/threads.db`（macOS: `~/Library/Application Support/Zed/threads/threads.db`; Windows: `%LOCALAPPDATA%/Zed/threads/threads.db`; ホスティング済み Zed モデル専用、外部 ACP エージェントは対象外） |
 | <img width="48px" src="https://github.com/kirodotdev.png" alt="Kiro" /> | Kiro | `~/.kiro/sessions/cli/*.json`（+ `*.jsonl`）、`~/.local/share/kiro-cli/data.sqlite3`（macOS: `~/Library/Application Support/kiro-cli/data.sqlite3`）、および Kiro IDE の globalStorage スナップショット（`Kiro/User/globalStorage/kiro.kiroagent`; macOS は Application Support、Linux は `~/.config/Kiro`、Windows は `%APPDATA%\Kiro`） |
@@ -98,18 +98,18 @@
 
 [🚅 LiteLLMの価格データ](https://github.com/BerriAI/litellm)を使用してリアルタイム価格計算を提供し、階層型価格モデルとキャッシュトークン割引をサポートしています。
 
-### なぜ「Tokscale」？
+### なぜ「Token Stats」？
 
-[![Tokscale](./.github/assets/hero.png)](https://tokscale.ai)
+[![Token Stats](./.github/assets/hero.png)](https://token-stats.com)
 
 このプロジェクトは **[カルダシェフ・スケール(Kardashev Scale)](https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AB%E3%83%80%E3%82%B7%E3%82%A7%E3%83%95%E3%83%BB%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)** に触発されています。これは天体物理学者ニコライ・カルダシェフがエネルギー消費量に基づいて文明の技術的発展レベルを測定するために提案した方法です。タイプI文明は惑星上で利用可能なすべてのエネルギーを活用し、タイプIIは恒星の全出力を捕捉し、タイプIIIは銀河全体のエネルギーを支配します。
 
-AI支援開発の時代において、**トークンは新しいエネルギー**です。トークンは私たちの思考力を動かし、生産性を高め、創造的な成果を駆動します。カルダシェフ・スケールが宇宙規模でエネルギー消費を追跡するように、Tokscaleは AI増強開発のランクを上げながらトークン消費を測定します。カジュアルユーザーでも毎日数百万のトークンを消費する人でも、Tokscaleは惑星級開発者から銀河級コードアーキテクトへの旅を視覚化するのに役立ちます。
+AI支援開発の時代において、**トークンは新しいエネルギー**です。トークンは私たちの思考力を動かし、生産性を高め、創造的な成果を駆動します。カルダシェフ・スケールが宇宙規模でエネルギー消費を追跡するように、Token Statsは AI増強開発のランクを上げながらトークン消費を測定します。カジュアルユーザーでも毎日数百万のトークンを消費する人でも、Token Statsは惑星級開発者から銀河級コードアーキテクトへの旅を視覚化するのに役立ちます。
 
 ## 目次
 
 - [概要](#概要)
-  - [なぜ「Tokscale」？](#なぜtokscale)
+  - [なぜ「Token Stats」？](#なぜtokscale)
 - [機能](#機能)
 - [インストール](#インストール)
   - [クイックスタート](#クイックスタート)
@@ -184,21 +184,21 @@ AI支援開発の時代において、**トークンは新しいエネルギー*
 
 ```bash
 # npxで直接実行
-npx tokscale@latest
+bunx @token-stats/cli@latest
 
 # またはbunxを使用
-bunx tokscale@latest
+bunx @token-stats/cli@latest
 
 # またはエイリアスをインストールせずにDenoを使用
-deno x npm:tokscale@latest
+bunx @token-stats/cli@latest
 
 # ライトモード（テーブルレンダリングのみ）
-npx tokscale@latest --light
+bunx @token-stats/cli@latest --light
 ```
 
 これだけです！セットアップ不要で完全なインタラクティブTUI体験が得られます。
 
-> **パッケージ構造**: `tokscale`は`@tokscale/cli`をインストールするエイリアスパッケージです（[`swc`](https://www.npmjs.com/package/swc)のように）。どちらもネイティブRustコア（`@tokscale/core`）を含む同じCLIをインストールします。
+> **パッケージ構造**: `token-stats`は`@token-stats/cli`をインストールするエイリアスパッケージです（[`swc`](https://www.npmjs.com/package/swc)のように）。どちらもネイティブRustコア（`@tokscale/core`）を含む同じCLIをインストールします。
 
 
 ### 前提条件
@@ -212,8 +212,8 @@ npx tokscale@latest --light
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/junhoyeo/tokscale.git
-cd tokscale
+git clone https://github.com/Annihilater/token-stats.git
+cd token-stats
 
 # Bunをインストール（まだインストールしていない場合）
 curl -fsSL https://bun.sh/install | bash
@@ -225,7 +225,7 @@ bun install
 bun run cli
 ```
 
-> **注**: `bun run cli`はローカル開発用です。`bunx tokscale`でインストールすると、コマンドが直接実行されます。以下の使用法セクションはインストールされたバイナリコマンドを示しています。
+> **注**: `bun run cli`はローカル開発用です。`bunx @token-stats/cli`でインストールすると、コマンドが直接実行されます。以下の使用法セクションはインストールされたバイナリコマンドを示しています。
 
 ### ネイティブモジュールのビルド
 
@@ -236,7 +236,7 @@ bun run cli
 bun run build:core
 ```
 
-> **注**: `bunx tokscale@latest`でインストールすると、ネイティブバイナリはビルド済みで含まれています。ソースからのビルドはローカル開発にのみ必要です。
+> **注**: `bunx @token-stats/cli@latest`でインストールすると、ネイティブバイナリはビルド済みで含まれています。ソースからのビルドはローカル開発にのみ必要です。
 
 ## 使用方法
 
@@ -244,28 +244,28 @@ bun run build:core
 
 ```bash
 # インタラクティブTUIを起動（デフォルト）
-tokscale
+token-stats
 
 # 特定のタブでTUIを起動
-tokscale models    # モデルタブ
-tokscale monthly   # 日別ビュー（日別内訳を表示）
-tokscale hourly    # 時間別タブ
+token-stats models    # モデルタブ
+token-stats monthly   # 日別ビュー（日別内訳を表示）
+token-stats hourly    # 時間別タブ
 
 # レガシーCLIテーブル出力を使用
-tokscale --light
-tokscale models --light
+token-stats --light
+token-stats models --light
 
 # 明示的にTUIを起動
-tokscale tui
+token-stats tui
 
 # 貢献グラフデータをJSONとしてエクスポート
-tokscale graph --output data.json
+token-stats graph --output data.json
 
 # JSONとしてデータを出力（スクリプト/自動化用）
-tokscale --json                    # デフォルトのモデルビューをJSON形式で
-tokscale models --json             # モデル内訳をJSON形式で
-tokscale monthly --json            # 月別内訳をJSON形式で
-tokscale models --json > report.json   # ファイルに保存
+token-stats --json                    # デフォルトのモデルビューをJSON形式で
+token-stats models --json             # モデル内訳をJSON形式で
+token-stats monthly --json            # 月別内訳をJSON形式で
+token-stats models --json > report.json   # ファイルに保存
 ```
 
 ### TUI機能
@@ -330,7 +330,7 @@ TUIで`g`を押すか、`--light`/`--json`モードで`--group-by`を使用し�
 
 **`--group-by session,model`**（セッション単位のコスト帰属）
 
-`tokscale models --json --group-by session,model` は `(session_id, model)` ごとに1エントリを出力します。各エントリにはトップレベルの `sessionId` フィールドが含まれるため、ダウンストリームツール（例: マルチエージェント IDE）はコストデータを特定のエージェント CLI セッションに結合できます：
+`token-stats models --json --group-by session,model` は `(session_id, model)` ごとに1エントリを出力します。各エントリにはトップレベルの `sessionId` フィールドが含まれるため、ダウンストリームツール（例: マルチエージェント IDE）はコストデータを特定のエージェント CLI セッションに結合できます：
 
 ```json
 {
@@ -361,48 +361,48 @@ TUIで`g`を押すか、`--light`/`--json`モードで`--group-by`を使用し�
 
 ```bash
 # OpenCodeの使用量のみ表示
-tokscale --client opencode
+token-stats --client opencode
 
 # カンマ区切り：複数のクライアントを同時にフィルター
-tokscale --client opencode,claude
+token-stats --client opencode,claude
 
 # 繰り返し：同じ効果（シェルエイリアスと相性が良い）
-tokscale -c opencode -c claude
+token-stats -c opencode -c claude
 
-# Cursor IDE は事前に `tokscale cursor login` が必要
-tokscale --client cursor
+# Cursor IDE は事前に `token-stats cursor login` が必要
+token-stats --client cursor
 
 # Synthetic（synthetic.new）は他のエージェントセッションから検出されます
-tokscale --client synthetic
+token-stats --client synthetic
 
 # 他のフィルターと組み合わせ
-tokscale --client opencode,claude --week --json
+token-stats --client opencode,claude --week --json
 ```
 
 利用可能な値: `opencode`, `claude`, `codex`, `copilot`, `gemini`, `cursor`, `amp`, `codebuff`, `droid`, `openclaw`, `hermes`, `pi`, `kimi`, `qwen`, `roocode`, `kilocode`, `kilo`, `mux`, `crush`, `goose`, `antigravity`, `antigravity-cli`, `zed`, `kiro`, `trae`, `warp`, `cline`, `gjc`, `grok`, `jcode`, `micode`, `commandcode`, `junie`, `zcode`, `synthetic`。
 
-> **破壊的変更 (v4.0.0)**: クライアント単位のブール型フラグ（`--opencode`、`--claude`、`--codex` など）は削除され、現在はエラーになります。代わりに正規の `--client`/`-c` フラグを使用してください — 例: `tokscale --client opencode,claude`。
+> **破壊的変更 (v4.0.0)**: クライアント単位のブール型フラグ（`--opencode`、`--claude`、`--codex` など）は削除され、現在はエラーになります。代わりに正規の `--client`/`-c` フラグを使用してください — 例: `token-stats --client opencode,claude`。
 
 ### 日付フィルタリング
 
-日付フィルターはレポートを生成するすべてのコマンドで機能します（`tokscale`、`tokscale models`、`tokscale monthly`、`tokscale graph`）：
+日付フィルターはレポートを生成するすべてのコマンドで機能します（`token-stats`、`token-stats models`、`token-stats monthly`、`token-stats graph`）：
 
 ```bash
 # クイック日付ショートカット
-tokscale --today              # 今日のみ
-tokscale --yesterday          # 昨日のみ
-tokscale --week               # 過去7日間
-tokscale --month              # 今月
+token-stats --today              # 今日のみ
+token-stats --yesterday          # 昨日のみ
+token-stats --week               # 過去7日間
+token-stats --month              # 今月
 
 # カスタム日付範囲（包括的、ローカルタイムゾーン）
-tokscale --since 2024-01-01 --until 2024-12-31
+token-stats --since 2024-01-01 --until 2024-12-31
 
 # 年別フィルター
-tokscale --year 2024
+token-stats --year 2024
 
 # 他のオプションと組み合わせ
-tokscale models --week --client claude --json
-tokscale monthly --month --benchmark
+token-stats models --week --client claude --json
+token-stats monthly --month --benchmark
 ```
 
 > **注**: 日付フィルターはローカルタイムゾーンを使用します。`--since`と`--until`は両方とも包括的です。
@@ -414,16 +414,16 @@ tokscale monthly --month --benchmark
 
 ```bash
 # モデル価格を検索
-tokscale pricing "claude-3-5-sonnet-20241022"
-tokscale pricing "gpt-4o"
-tokscale pricing "grok-code"
+token-stats pricing "claude-3-5-sonnet-20241022"
+token-stats pricing "gpt-4o"
+token-stats pricing "grok-code"
 
 # 特定のプロバイダーソースを強制
-tokscale pricing "grok-code" --provider openrouter
-tokscale pricing "claude-3-5-sonnet" --provider litellm
+token-stats pricing "grok-code" --provider openrouter
+token-stats pricing "claude-3-5-sonnet" --provider litellm
 
 # カスタム価格オーバーライドを確認
-tokscale pricing list-overrides
+token-stats pricing list-overrides
 ```
 
 **検索戦略：**
@@ -441,11 +441,11 @@ tokscale pricing list-overrides
 
 ### カスタム価格オーバーライド
 
-アップストリームの価格データベースがまだ正しくカバーしていないモデル ID の価格を上書きするには、Tokscale の設定ディレクトリ（デフォルトでは macOS/Linux の `~/.config/tokscale/custom-pricing.json`；`TOKSCALE_CONFIG_DIR` を設定した場合は同じく解決されるディレクトリ）に `custom-pricing.json` を作成します。
+アップストリームの価格データベースがまだ正しくカバーしていないモデル ID の価格を上書きするには、Token Stats の設定ディレクトリ（デフォルトでは macOS/Linux の `~/.config/tokscale/custom-pricing.json`；`TOKSCALE_CONFIG_DIR` を設定した場合は同じく解決されるディレクトリ）に `custom-pricing.json` を作成します。
 
 ```json
 {
-  "$schema": "https://tokscale.ai/custom-pricing.schema.json",
+  "$schema": "https://token-stats.com/custom-pricing.schema.json",
   "models": {
     "accounts/fireworks/routers/kimi-k2p6-turbo": {
       "input_cost_per_million_tokens": 2.00,
@@ -467,9 +467,9 @@ tokscale pricing list-overrides
 }
 ```
 
-オーバーライド価格は、ほとんどの API プロバイダーが価格を公開する方法と同じく、100万トークンあたりのドルで入力します；Tokscale は内部でこれをトークンあたりのレートに変換します。`input_cost_per_million_tokens` または `output_cost_per_million_tokens` の少なくとも一方が存在し正の値である必要があり、キャッシュ読み取り/キャッシュ作成フィールドは任意です。コピー/ペーストの互換性のため、`input_cost_per_token`、`output_cost_per_token`、`cache_read_input_token_cost` などの LiteLLM スタイルのトークンあたりフィールド名も受け付けますが、ユーザー向けには100万トークンあたりの名前を推奨します。ティアやキャッシュ価格を省略するにはフィールドを残さないでください；負の値や非有限な値は無効として扱われ、タイプミスが集計を密かに変えないようにモデルエントリ全体がスキップされます。任意の `source` および `notes` フィールドは Tokscale には無視され、自分の記録用に使用できます。
+オーバーライド価格は、ほとんどの API プロバイダーが価格を公開する方法と同じく、100万トークンあたりのドルで入力します；Token Stats は内部でこれをトークンあたりのレートに変換します。`input_cost_per_million_tokens` または `output_cost_per_million_tokens` の少なくとも一方が存在し正の値である必要があり、キャッシュ読み取り/キャッシュ作成フィールドは任意です。コピー/ペーストの互換性のため、`input_cost_per_token`、`output_cost_per_token`、`cache_read_input_token_cost` などの LiteLLM スタイルのトークンあたりフィールド名も受け付けますが、ユーザー向けには100万トークンあたりの名前を推奨します。ティアやキャッシュ価格を省略するにはフィールドを残さないでください；負の値や非有限な値は無効として扱われ、タイプミスが集計を密かに変えないようにモデルエントリ全体がスキップされます。任意の `source` および `notes` フィールドは Token Stats には無視され、自分の記録用に使用できます。
 
-オーバーライドは完全一致のみで、大文字小文字を区別しません。Tokscale はまず生のモデル ID をチェックし、次に既存の synthetic な `/models/` 正規化、その後オーバーライドが一致しなければ LiteLLM、OpenRouter、Cursor 価格、ファジーマッチングへフォールスルーします。生の完全一致は正規化された完全一致より優先されるため、`accounts/fireworks/routers/kimi-k2p6-turbo` で特定のゲートウェイ固有モデルを上書きしつつ、`kimi-k2p6-turbo` で正規化された `/models/` パスをカバーできます。オーバーライドは起動時に一度だけ読み込まれます；ファイルを編集したらコマンドを再起動してください。これは、アップストリームの LiteLLM 価格更新を待つ間、誤ったモデル価格のバグを修正するための推奨ローカル対処法です。
+オーバーライドは完全一致のみで、大文字小文字を区別しません。Token Stats はまず生のモデル ID をチェックし、次に既存の synthetic な `/models/` 正規化、その後オーバーライドが一致しなければ LiteLLM、OpenRouter、Cursor 価格、ファジーマッチングへフォールスルーします。生の完全一致は正規化された完全一致より優先されるため、`accounts/fireworks/routers/kimi-k2p6-turbo` で特定のゲートウェイ固有モデルを上書きしつつ、`kimi-k2p6-turbo` で正規化された `/models/` パスをカバーできます。オーバーライドは起動時に一度だけ読み込まれます；ファイルを編集したらコマンドを再起動してください。これは、アップストリームの LiteLLM 価格更新を待つ間、誤ったモデル価格のバグを修正するための推奨ローカル対処法です。
 
 **プロバイダー優先順位：**
 
@@ -488,68 +488,68 @@ tokscale pricing list-overrides
 ### ソーシャルプラットフォームコマンド
 
 ```bash
-# Tokscaleにログイン（GitHub認証用にブラウザを開く）
-tokscale login
+# Token Statsにログイン（GitHub認証用にブラウザを開く）
+token-stats login
 
-# ブラウザ認証なしで既存の Tokscale API トークンを保存
-tokscale login --token tt_xxx
+# ブラウザ認証なしで既存の Token Stats API トークンを保存
+token-stats login --token tt_xxx
 
 # ログイン中のユーザーを確認
-tokscale whoami
+token-stats whoami
 
 # 保存済みの API トークンを QR コードとして表示（別デバイスへの共有に便利）
 # {"token":"tt_xxx","username":"..."} をエンコード — 任意の QR リーダーでスキャン
-tokscale qr
+token-stats qr
 
 # 使用量データをリーダーボードに送信
-tokscale submit
+token-stats submit
 
 # 認証情報を書き込まずに CI/ヘッドレス環境で送信
 # 優先順位: TOKSCALE_API_TOKEN 環境変数 > 保存済み認証情報ファイル（~/.config/tokscale/credentials.json）。
 # 環境変数が設定されている場合、その実行では保存済みファイルは無視されます。
-TOKSCALE_API_TOKEN=tt_xxx tokscale submit
+TOKSCALE_API_TOKEN=tt_xxx token-stats submit
 
 # トークンの失効: リーダーボードサイトの Settings > API Tokens
-# （https://tokscale.ai/settings）を開き、該当トークン行の "Revoke" をクリック。
+# （https://token-stats.com/settings）を開き、該当トークン行の "Revoke" をクリック。
 # 失効は即座に有効になり、以降そのトークンを使ったリクエストは
 # HTTP 401 "Invalid API token" を返します。
 
 # フィルター付きで送信
-tokscale submit --client opencode,claude --since 2024-01-01
+token-stats submit --client opencode,claude --since 2024-01-01
 
 # 送信内容をプレビュー（ドライラン）
-tokscale submit --dry-run
+token-stats submit --dry-run
 
 # ログアウト
-tokscale logout
+token-stats logout
 ```
 
 <img alt="CLI Submit" src="./.github/assets/cli-submit.png" />
 
 ### Autosubmit
 
-Autosubmit は、通常の `tokscale submit` フローを OS のスケジューラーに登録します。手動でターミナルを実行しなくても、公開プロフィールを最新の状態に保てるので便利です。
+Autosubmit は、通常の `token-stats submit` フローを OS のスケジューラーに登録します。手動でターミナルを実行しなくても、公開プロフィールを最新の状態に保てるので便利です。
 
 ```bash
 # 定期送信を有効化。macOS では launchd、Linux では利用可能な場合は systemd ユーザータイマー
 # （フォールバックとして cron）、Windows では Windows タスクスケジューラーを使用します。
-tokscale autosubmit enable --interval 24h
+token-stats autosubmit enable --interval 24h
 
 # submit に渡すのと同じクライアント/日付フィルターをそのまま指定できます。
-tokscale autosubmit enable --interval 2h --client opencode,claude --week
+token-stats autosubmit enable --interval 2h --client opencode,claude --week
 
 # 保存済みの設定と直近の実行/エラーを表示。
-tokscale autosubmit status
-tokscale autosubmit status --json
+token-stats autosubmit status
+token-stats autosubmit status --json
 
 # 保存済みの間隔が経過していなくても、その場で一度だけ実行。
-tokscale autosubmit run --force
+token-stats autosubmit run --force
 
 # Autosubmit を無効化し、スケジューラーのエントリを削除。
-tokscale autosubmit disable
+token-stats autosubmit disable
 ```
 
-スケジュールされた実行は非対話的です。GitHub 認証やスター確認を求めることはありません。`tokscale login --token tt_xxx` を一度実行するか、スケジューラー環境で `TOKSCALE_API_TOKEN` を設定してください。Tokscale はスケジューラーの状態を `settings.json` に記録し、ログを `~/.config/tokscale/autosubmit/` に書き込み、ロックファイルを使用することで、スケジューラーのティックが重なっても二重送信を防ぎます。
+スケジュールされた実行は非対話的です。GitHub 認証やスター確認を求めることはありません。`token-stats login --token tt_xxx` を一度実行するか、スケジューラー環境で `TOKSCALE_API_TOKEN` を設定してください。Token Stats はスケジューラーの状態を `settings.json` に記録し、ログを `~/.config/tokscale/autosubmit/` に書き込み、ロックファイルを使用することで、スケジューラーのティックが重なっても二重送信を防ぎます。
 
 ### Cursor IDEコマンド
 
@@ -558,36 +558,36 @@ Cursor IDEはセッショントークンによる別途認証が必要です（�
 ```bash
 # Cursorにログイン（ブラウザからセッショントークンが必要）
 # --name は任意で、後でアカウントを識別するためのラベルです
-tokscale cursor login --name work
+token-stats cursor login --name work
 
 # Cursor認証ステータスとセッションの有効性を確認
-tokscale cursor status
+token-stats cursor status
 
 # 保存済みのCursorアカウント一覧
-tokscale cursor accounts
+token-stats cursor accounts
 
 # キャッシュされたCursor使用量を手動で更新
-tokscale cursor sync --json
+token-stats cursor sync --json
 
 # アクティブアカウントを切り替え（cursor-cache/usage.csvに同期されるアカウント）
-tokscale cursor switch work
+token-stats cursor switch work
 
 # 特定アカウントからログアウト（履歴は保持、集計から除外）
-tokscale cursor logout --name work
+token-stats cursor logout --name work
 
 # ログアウト + そのアカウントのキャッシュ削除
-tokscale cursor logout --name work --purge-cache
+token-stats cursor logout --name work --purge-cache
 
 # すべてのCursorアカウントからログアウト（履歴は保持、集計から除外）
-tokscale cursor logout --all
+token-stats cursor logout --all
 
 # 全アカウントをログアウトしてキャッシュも削除
-tokscale cursor logout --all --purge-cache
+token-stats cursor logout --all --purge-cache
 ```
 
 **資格情報の保存**: Cursorアカウントは`~/.config/tokscale/cursor-credentials.json`に保存されます。使用量データは`~/.config/tokscale/cursor-cache/`にキャッシュされます（アクティブアカウントは`usage.csv`、追加アカウントは`usage.<account>.csv`）。
 
-デフォルトでは、tokscale は **保存済みのすべての Cursor アカウントの使用量を合算**します（`cursor-cache/usage*.csv`）。後方互換のため、アクティブアカウントは `cursor-cache/usage.csv` に同期されます。
+デフォルトでは、token-stats は **保存済みのすべての Cursor アカウントの使用量を合算**します（`cursor-cache/usage*.csv`）。後方互換のため、アクティブアカウントは `cursor-cache/usage.csv` に同期されます。
 
 ログアウト時はキャッシュされた履歴を `cursor-cache/archive/` に移動して保持します（そのため集計には含まれません）。完全に削除したい場合は `--purge-cache` を使ってください。
 
@@ -601,76 +601,76 @@ tokscale cursor logout --all --purge-cache
 
 ### Antigravity コマンド
 
-Antigravity の同期は現在 macOS / Linux でのみサポートされています。Antigravity 対応エディタが起動していてローカル言語サーバが利用可能な場合にのみ動作し、tokscale はそのローカル言語サーバから使用量を読み取り、正規化されたアーティファクトをローカルにキャッシュします。
+Antigravity の同期は現在 macOS / Linux でのみサポートされています。Antigravity 対応エディタが起動していてローカル言語サーバが利用可能な場合にのみ動作し、token-stats はそのローカル言語サーバから使用量を読み取り、正規化されたアーティファクトをローカルにキャッシュします。
 
 ```bash
-# 実行中の Antigravity 言語サーバを tokscale が認識できるか確認
-tokscale antigravity status
+# 実行中の Antigravity 言語サーバを token-stats が認識できるか確認
+token-stats antigravity status
 
-# ローカル Antigravity 言語サーバから使用量を tokscale のキャッシュに同期
-tokscale antigravity sync
+# ローカル Antigravity 言語サーバから使用量を token-stats のキャッシュに同期
+token-stats antigravity sync
 
 # キャッシュされた Antigravity アーティファクトを削除
-tokscale antigravity purge-cache
+token-stats antigravity purge-cache
 ```
 
 **キャッシュ場所**: `~/.config/tokscale/antigravity-cache/`
 
-**仕組み**: `tokscale antigravity sync` はローカルの Antigravity セッション候補を検出し、ローカル言語サーバ RPC から確定済みの使用量データを取得して、tokscale-core が後で解析できるよう正規化された JSONL アーティファクトとして保存します。最新の Antigravity データをレポートに反映したい場合は、レポート実行前に sync を実行してください。
+**仕組み**: `token-stats antigravity sync` はローカルの Antigravity セッション候補を検出し、ローカル言語サーバ RPC から確定済みの使用量データを取得して、tokscale-core が後で解析できるよう正規化された JSONL アーティファクトとして保存します。最新の Antigravity データをレポートに反映したい場合は、レポート実行前に sync を実行してください。
 
 ### Trae コマンド
 
-Trae（[ByteDance の AI IDE](https://www.trae.ai/)）には 2 つの国際版プロダクトラインがあります。使用量データはアカウント単位で共有されるため、tokscale では単一の `trae` クライアントとして表示します:
+Trae（[ByteDance の AI IDE](https://www.trae.ai/)）には 2 つの国際版プロダクトラインがあります。使用量データはアカウント単位で共有されるため、token-stats では単一の `trae` クライアントとして表示します:
 
 - **`--variant ide`** — Trae IDE（国際版）の資格情報を使用
 - **`--variant solo`** — Trae Solo（国際版）の資格情報を使用
 
-`tokscale trae sync` は公式の `query_user_usage_group_by_session` API を呼び出し、未加工 JSON をローカルキャッシュに保存します。`--variant solo` / `--variant ide` は `login`/`logout` で資格情報の取得元を選ぶ場合にのみ使い、sync は保存済み Trae トークンで単一の `trae` レポートクライアントを更新します。
+`token-stats trae sync` は公式の `query_user_usage_group_by_session` API を呼び出し、未加工 JSON をローカルキャッシュに保存します。`--variant solo` / `--variant ide` は `login`/`logout` で資格情報の取得元を選ぶ場合にのみ使い、sync は保存済み Trae トークンで単一の `trae` レポートクライアントを更新します。
 
 ```bash
 # ログイン（Trae デスクトップクライアントから資格情報を自動検出）
-tokscale trae login
+token-stats trae login
 
 # 手動 JWT 入力（storage.json を自動検出できない環境向け）
-tokscale trae login --manual --variant solo
+token-stats trae login --manual --variant solo
 
 # 資格情報がキャッシュされているバリアントを確認
-tokscale trae status
+token-stats trae status
 
 # 過去30日間の使用量を同期
-tokscale trae sync --since 30
+token-stats trae sync --since 30
 
 # バリアントの資格情報キャッシュを削除
-tokscale trae logout --variant solo
+token-stats trae logout --variant solo
 ```
 
 **キャッシュ場所**: `~/.config/tokscale/trae-cache/`
 
-**仕組み**: tokscale はデスクトップクライアントの `iCubeAuthInfo://*` blob（`globalStorage/storage.json`）を復号して JWT を取得するか、`--manual` で貼り付けられた JWT を使用します。その後 `POST /trae/api/v1/pay/query_user_usage_group_by_session` をページングしながら呼び出し、未加工 JSON を保存します。最新の Trae データをレポートに反映したい場合は、レポート実行前に sync を実行してください。
+**仕組み**: token-stats はデスクトップクライアントの `iCubeAuthInfo://*` blob（`globalStorage/storage.json`）を復号して JWT を取得するか、`--manual` で貼り付けられた JWT を使用します。その後 `POST /trae/api/v1/pay/query_user_usage_group_by_session` をページングしながら呼び出し、未加工 JSON を保存します。最新の Trae データをレポートに反映したい場合は、レポート実行前に sync を実行してください。
 
 > **中国版**: 中国版（`trae.com.cn`）は意図的に未対応です。CN バックエンドはセッション単位の使用量クエリ API を公開していません。上流で公式エンドポイントが提供された場合に追加します。
 
 ### Warp/Oz コマンド
 
-Warp/Oz はローカルのトークントランスクリプトを公開していません。Tokscale は Warp の GraphQL API が返す集計リクエスト数と使用金額カウンターのみを同期し、トークンバケットがゼロの `warp` / `aggregate-requests` 行としてレポートします。
+Warp/Oz はローカルのトークントランスクリプトを公開していません。Token Stats は Warp の GraphQL API が返す集計リクエスト数と使用金額カウンターのみを同期し、トークンバケットがゼロの `warp` / `aggregate-requests` 行としてレポートします。
 
 ```bash
 # 認証済み Warp リクエストからコピーした Bearer トークンまたは Cookie ヘッダーを保存
-tokscale warp login
+token-stats warp login
 
 # 認証情報・キャッシュの状態と診断情報を確認
-tokscale warp status
+token-stats warp status
 
-# 集計リクエスト数と使用金額を tokscale のローカルキャッシュに同期
-tokscale warp sync
+# 集計リクエスト数と使用金額を token-stats のローカルキャッシュに同期
+token-stats warp sync
 
 # 保存済み認証情報を削除。--purge-cache を付けると同期済み使用量も削除
-tokscale warp logout --purge-cache
+token-stats warp logout --purge-cache
 ```
 
 **キャッシュ場所**: `~/.config/tokscale/warp-cache/usage.json`
 
-**仕組み**: `tokscale warp sync` は Warp の認証済み GraphQL API を呼び出し、アカウントおよびワークスペースの集計カウンターを取得します。Tokscale はリクエスト数をメッセージ数として、ベンダー報告の使用金額をコストとして保持しますが、リクエストを合成トークンに変換することはありません。Warp はトークン単位の使用量ではなく集計リクエストカウンターのみを持つため、公開リーダーボード向けの `submit` データからは除外されます。
+**仕組み**: `token-stats warp sync` は Warp の認証済み GraphQL API を呼び出し、アカウントおよびワークスペースの集計カウンターを取得します。Token Stats はリクエスト数をメッセージ数として、ベンダー報告の使用金額をコストとして保持しますが、リクエストを合成トークンに変換することはありません。Warp はトークン単位の使用量ではなく集計リクエストカウンターのみを持つため、公開リーダーボード向けの `submit` データからは除外されます。
 
 ### タスク別レポート
 
@@ -678,30 +678,30 @@ tokscale warp logout --purge-cache
 
 ```bash
 # 基本レポート（今日、デフォルトの Apple FM サマライザー）
-tokscale report
+token-stats report
 
 # 過去7日間
-tokscale report --week
+token-stats report --week
 
 # Claude Code をサマライザーバックエンドとして使用
-tokscale report --week --summarizer claude
+token-stats report --week --summarizer claude
 
 # Codex、Gemini、Kiro を使用
-tokscale report --summarizer codex
-tokscale report --summarizer gemini
-tokscale report --summarizer kiro
+token-stats report --summarizer codex
+token-stats report --summarizer gemini
+token-stats report --summarizer kiro
 
 # LLM 要約をスキップ（生データのみ表示）
-tokscale report --no-summarize
+token-stats report --no-summarize
 
 # 一から再要約（範囲内のキャッシュ済み要約をリセット）
-tokscale report --week --rebuild
+token-stats report --week --rebuild
 
 # JSON として出力
-tokscale report --week --json
+token-stats report --week --json
 
 # ワークスペースやクライアントでフィルター
-tokscale report --workspace my-project --client opencode
+token-stats report --workspace my-project --client opencode
 ```
 
 LLM 要約は**デフォルトで有効**になっています（`--no-summarize` でオプトアウト可能）。
@@ -720,7 +720,7 @@ LLM 要約は**デフォルトで有効**になっています（`--no-summarize
 
 1. セッションがスキャンされ、プラットフォームの設定ディレクトリにあるローカルの SQLite wiki データベース（`wiki.db`）に挿入されます（Linux では `~/.config/tokscale/`、macOS では `~/Library/Application Support/tokscale/`）
 2. 未要約のセッションがバッチで選択した LLM バックエンドに送られ、それぞれにタイトル・カテゴリ・説明・複雑度が返されます
-3. 2 回目の LLM パスで、タイトル付けされたすべてのセッションを 3〜8 個の高レベルなタスククラスタにまとめます（例: "Kiro Auth"、"Tokscale Report"、"System Config"）
+3. 2 回目の LLM パスで、タイトル付けされたすべてのセッションを 3〜8 個の高レベルなタスククラスタにまとめます（例: "Kiro Auth"、"Token Stats Report"、"System Config"）
 4. 結果は wiki DB にキャッシュされ、以降の実行では要約済みのセッションをスキップします
 
 **出力例:**
@@ -728,7 +728,7 @@ LLM 要約は**デフォルトで有効**になっています（`--no-summarize
 ```
   Task Group                                  Sess     Tokens     Cost
   ───────────────────────────────────────────────────────────────────────
-  Tokscale Development                          19      4.2B    $22.66
+  Token Stats Development                          19      4.2B    $22.66
     Add task-attributed report command
     Implement wiki DB schema
     Fix pricing lookup for new models
@@ -741,29 +741,29 @@ LLM 要約は**デフォルトで有効**になっています（`--no-summarize
 
 ### サブスクリプション使用量
 
-Tokscale は AI プロバイダー横断でリアルタイムのサブスクリプションクォータを取得・表示できます。プランをどれだけ使用したか、いつ上限がリセットされるかを確認できます。
+Token Stats は AI プロバイダー横断でリアルタイムのサブスクリプションクォータを取得・表示できます。プランをどれだけ使用したか、いつ上限がリセットされるかを確認できます。
 
 ```bash
 # 検出されたすべてのプロバイダーのサブスクリプション使用量を表示
-tokscale usage
+token-stats usage
 
 # JSON として出力（スクリプト用）
-tokscale usage --json
+token-stats usage --json
 
 # 軽量なターミナル出力（TUI なし）
-tokscale usage --light
+token-stats usage --light
 ```
 
 TUI では **Usage** タブに移動するとサブスクリプションデータを確認できます。`[Refresh]` でサブスクリプションクォータを更新できます。キーボードの更新ショートカット `r` も同じ更新パスを使用します。
 
-> **注**: サブスクリプションのクォータと残高は**ベンダー報告**です — tokscale は各プロバイダー自身のクォータエンドポイントを呼び出し、そのレスポンスをそのまま表示します。数値はプロバイダーが報告する内容（公式ダッシュボードに表示されるものと同じ）を反映しており、tokscale 独自の使用量追跡とは独立して検証されていません。
+> **注**: サブスクリプションのクォータと残高は**ベンダー報告**です — token-stats は各プロバイダー自身のクォータエンドポイントを呼び出し、そのレスポンスをそのまま表示します。数値はプロバイダーが報告する内容（公式ダッシュボードに表示されるものと同じ）を反映しており、token-stats 独自の使用量追跡とは独立して検証されていません。
 
 #### 対応プロバイダー
 
 | プロバイダー | 認証方法 | メトリクス | セットアップ |
 |----------|-------------|---------|-------|
 | **Claude** | OAuth（資格情報ファイルまたは macOS Keychain） | Session（5時間）、Weekly、Opus クォータ | `claude` を実行してログイン |
-| **Codex**（OpenAI） | OAuth（`~/.config/codex/auth.json`、`~/.codex/auth.json`、または保存済み Tokscale アカウント） | Session、Weekly クォータ | TUI の Usage タブで `[Add Codex]` を使用するか、`codex` を実行してログイン、または `tokscale codex import --name work` で既存の認証をインポート |
+| **Codex**（OpenAI） | OAuth（`~/.config/codex/auth.json`、`~/.codex/auth.json`、または保存済み Token Stats アカウント） | Session、Weekly クォータ | TUI の Usage タブで `[Add Codex]` を使用するか、`codex` を実行してログイン、または `token-stats codex import --name work` で既存の認証をインポート |
 | **Z.ai** | API キー（環境変数） | トークン上限、Web 検索 | `ZAI_API_KEY` または `GLM_API_KEY` を設定 |
 | **Amp** | API キー（`~/.local/share/amp/secrets.json`） | 無料枠残高、クレジット | `amp` を実行してログイン |
 | **GitHub Copilot** | GitHub トークン（keychain または `~/.config/gh/hosts.yml`） | プレミアムインタラクション、チャットクォータ | `gh auth login` を実行 |
@@ -777,33 +777,33 @@ TUI では **Usage** タブに移動するとサブスクリプションデー�
 
 #### Codex マルチアカウント使用量
 
-Tokscale はサブスクリプション使用量表示のために複数の Codex OAuth アカウントを保存できます。TUI の Usage タブでは、保存済みアカウントを 1 つの **Codex** セクションにまとめて表示します。アクティブなアカウントは `*` で示され、非アクティブなアカウントは `[Use]` で選択でき、アカウントの削除は `[Remove]` に続けて `[Confirm]` を使用します。
+Token Stats はサブスクリプション使用量表示のために複数の Codex OAuth アカウントを保存できます。TUI の Usage タブでは、保存済みアカウントを 1 つの **Codex** セクションにまとめて表示します。アクティブなアカウントは `*` で示され、非アクティブなアカウントは `[Use]` で選択でき、アカウントの削除は `[Remove]` に続けて `[Confirm]` を使用します。
 
-TUI を離れずにアカウントを追加するには、Usage タブで `[Add Codex]` をクリックします。Tokscale は一時的な `CODEX_HOME` で `codex login` を起動し、ログイン出力を Usage タブに表示し、生成された認証を Tokscale の保存済みアカウントストアにインポートしてから使用量を更新します。これによりログインが隔離され、現在の Codex 認証は切り替わりません。保存済みアカウントを実際の Codex 認証ファイルに書き込みたい場合は、そのアカウントの `[Use]` をクリックしてください。
+TUI を離れずにアカウントを追加するには、Usage タブで `[Add Codex]` をクリックします。Token Stats は一時的な `CODEX_HOME` で `codex login` を起動し、ログイン出力を Usage タブに表示し、生成された認証を Token Stats の保存済みアカウントストアにインポートしてから使用量を更新します。これによりログインが隔離され、現在の Codex 認証は切り替わりません。保存済みアカウントを実際の Codex 認証ファイルに書き込みたい場合は、そのアカウントの `[Use]` をクリックしてください。
 
 スクリプトや手動でのアカウント管理のために、CLI コマンドも引き続き利用できます：
 
 ```bash
-# 現在の Codex 認証を名前付きの Tokscale アカウントとして保存
-tokscale codex import --name work
+# 現在の Codex 認証を名前付きの Token Stats アカウントとして保存
+token-stats codex import --name work
 
 # 保存済みの Codex アカウント一覧
-tokscale codex accounts
-tokscale codex accounts --json
+token-stats codex accounts
+token-stats codex accounts --json
 
 # アクティブな Codex アカウントを切り替えて Codex の auth.json を書き込む
-tokscale codex switch work
+token-stats codex switch work
 
-# 保存済みの Codex アカウントの追跡を停止（Tokscale のストアからのみ削除 —
+# 保存済みの Codex アカウントの追跡を停止（Token Stats のストアからのみ削除 —
 # codex CLI 自身の auth.json/ログインには一切触れません）
-tokscale codex remove personal
+token-stats codex remove personal
 
 # アクティブまたは指定アカウントのサブスクリプション使用量を確認
-tokscale codex status
-tokscale codex status --name personal --json
+token-stats codex status
+token-stats codex status --name personal --json
 ```
 
-保存済みの Codex アカウントが存在する場合、`tokscale usage --json` は各 Codex エントリの構造化されたアカウントメタデータを含み、TUI はそれらのエントリを 1 つの Codex グループにまとめて表示します。保存済みアカウントがない場合、Tokscale は現在の Codex 認証検出パス（`CODEX_HOME/auth.json`、`~/.config/codex/auth.json`、`~/.codex/auth.json`、その後 macOS Keychain）にフォールバックします。
+保存済みの Codex アカウントが存在する場合、`token-stats usage --json` は各 Codex エントリの構造化されたアカウントメタデータを含み、TUI はそれらのエントリを 1 つの Codex グループにまとめて表示します。保存済みアカウントがない場合、Token Stats は現在の Codex 認証検出パス（`CODEX_HOME/auth.json`、`~/.config/codex/auth.json`、`~/.codex/auth.json`、その後 macOS Keychain）にフォールバックします。
 
 #### 出力例
 
@@ -827,7 +827,7 @@ tokscale codex status --name personal --json
 
 ### 設定
 
-Tokscaleは設定を`~/.config/tokscale/settings.json`に保存します：
+Token Statsは設定を`~/.config/tokscale/settings.json`に保存します：
 
 ```json
 {
@@ -857,11 +857,11 @@ Tokscaleは設定を`~/.config/tokscale/settings.json`に保存します：
 | `autoRefreshMs` | number | `60000` | 自動更新間隔（30000-3600000ms） |
 | `nativeTimeoutMs` | number | `300000` | ネイティブサブプロセス処理の最大時間（5000-3600000ms） |
 | `defaultClients` | string[] | `[]` | `--client/-c` フラグを渡さない場合に適用されるクライアントフィルター。`--client` と同じ ID を受け付けます（例: `["opencode", "claude", "synthetic"]`）。未知の ID は無視されます。CLI フラグが指定されるとこのリストは完全に無視されます — マージはしません。 |
-| `light.writeCache` | boolean | `false` | `true` のとき、`tokscale --light` はレンダリング直後に TUI キャッシュを原子的に上書きします。CLI フラグ `--write-cache` / `--no-write-cache` が実行ごとに優先されます。 |
+| `light.writeCache` | boolean | `false` | `true` のとき、`token-stats --light` はレンダリング直後に TUI キャッシュを原子的に上書きします。CLI フラグ `--write-cache` / `--no-write-cache` が実行ごとに優先されます。 |
 | `minutelyTabEnabled` | boolean | `false` | TUI に分単位の Minutely タブを表示し、データ読み込み時に分単位の集計を実行します。分単位の粒度はほとんどのユーザーにとってニッチな診断ビューであり、大規模データセットでは分単位のバケット処理に無視できないコストがかかるため、既定では無効になっています。 |
-| `scanner.extraScanPaths` | object | `{}` | Tokscale のデフォルトのホームルート以外にあるセッション向けの、クライアントごとの追加スキャンルート |
+| `scanner.extraScanPaths` | object | `{}` | Token Stats のデフォルトのホームルート以外にあるセッション向けの、クライアントごとの追加スキャンルート |
 
-プロジェクトレベルの `.codex` ディレクトリや、インポートした Gemini/OpenClaw 履歴など、恒久的な追加ルートには `scanner.extraScanPaths` を使用してください。Tokscale は `$HERMES_HOME/profiles/*/state.db` 以下の Hermes プロファイルデータベースを自動的に検出します（`HERMES_HOME` が未設定の場合は `~/.hermes/profiles/*/state.db`）。標準外の Hermes プロファイル場所にのみ `scanner.extraScanPaths.hermes` を使用してください。Hermes のエントリは `state.db` を含むプロファイルディレクトリ、または `state.db` ファイルを直接指すことができます。Tokscale はこれらのパスを毎回デフォルトのスキャンルートとマージし、重複するルートを正規パスで重複排除します。
+プロジェクトレベルの `.codex` ディレクトリや、インポートした Gemini/OpenClaw 履歴など、恒久的な追加ルートには `scanner.extraScanPaths` を使用してください。Token Stats は `$HERMES_HOME/profiles/*/state.db` 以下の Hermes プロファイルデータベースを自動的に検出します（`HERMES_HOME` が未設定の場合は `~/.hermes/profiles/*/state.db`）。標準外の Hermes プロファイル場所にのみ `scanner.extraScanPaths.hermes` を使用してください。Hermes のエントリは `state.db` を含むプロファイルディレクトリ、または `state.db` ファイルを直接指すことができます。Token Stats はこれらのパスを毎回デフォルトのスキャンルートとマージし、重複するルートを正規パスで重複排除します。
 
 #### Minutely タブの有効化
 
@@ -887,7 +887,7 @@ Minutely タブはトークン使用量を分単位で表示し、バースト�
 - `opencode-migration.json` — OpenCode 移行記録
 - `fonts/`、`images/` — Wrapped アセットキャッシュ
 
-このディレクトリは削除しても安全です。必要になれば Tokscale が再作成し、再生成します。
+このディレクトリは削除しても安全です。必要になれば Token Stats が再作成し、再生成します。
 
 ### 環境変数
 
@@ -896,27 +896,27 @@ Minutely タブはトークン使用量を分単位で表示し、バースト�
 | 変数 | デフォルト | 説明 |
 |----------|---------|-------------|
 | `TOKSCALE_NATIVE_TIMEOUT_MS` | `300000`（5分） | `nativeTimeoutMs` 設定をオーバーライド |
-| `TOKSCALE_API_TOKEN` | unset | 非対話的な `submit` および `delete-submitted-data` 実行用の Tokscale 個人 API トークン。Settings > API Tokens から作成するか、`tokscale login --token tt_xxx` でローカルに保存できます。 |
+| `TOKSCALE_API_TOKEN` | unset | 非対話的な `submit` および `delete-submitted-data` 実行用の Token Stats 個人 API トークン。Settings > API Tokens から作成するか、`token-stats login --token tt_xxx` でローカルに保存できます。 |
 | `TOKSCALE_EXTRA_DIRS` | unset | 一時的な追加セッションルートを `client:/abs/path,client:/abs/path` 形式で指定 |
-| `TOKSCALE_CONFIG_DIR` | unset | 設定ディレクトリのルート（`settings.json`、`star-cache.json`、`cache/`、`antigravity-cache/`、`trae-cache/` の保存場所）をオーバーライドします。絶対パス推奨；相対パスはプロセス CWD を基準に解決されます。CI サンドボックスや非デフォルトの場所を固定したい場合に便利です。設定されている場合、tokscale は macOS のレガシーパス（`~/Library/Application Support/tokscale/`）にフォールバックしません。 |
+| `TOKSCALE_CONFIG_DIR` | unset | 設定ディレクトリのルート（`settings.json`、`star-cache.json`、`cache/`、`antigravity-cache/`、`trae-cache/` の保存場所）をオーバーライドします。絶対パス推奨；相対パスはプロセス CWD を基準に解決されます。CI サンドボックスや非デフォルトの場所を固定したい場合に便利です。設定されている場合、token-stats は macOS のレガシーパス（`~/Library/Application Support/tokscale/`）にフォールバックしません。 |
 | `TOKSCALE_FM_DEBUG` | unset | 設定すると、Apple Foundation Models の診断情報（macOS バージョンゲート、dlopen の dylib パス、ロード/シンボルエラー）を stderr に出力し、オンデバイスの apple-fm が動作した（またはしなかった）理由を説明します。 |
 
 ```bash
 # 例：非常に大きなデータセット用にタイムアウトを増加
-TOKSCALE_NATIVE_TIMEOUT_MS=600000 tokscale graph --output data.json
+TOKSCALE_NATIVE_TIMEOUT_MS=600000 token-stats graph --output data.json
 
 # 例：一時的な追加スキャンルート
-TOKSCALE_EXTRA_DIRS='codex:/Users/me/workspace/project-a/.codex/sessions,gemini:/Users/me/imports/imac/gemini/tmp' tokscale
+TOKSCALE_EXTRA_DIRS='codex:/Users/me/workspace/project-a/.codex/sessions,gemini:/Users/me/imports/imac/gemini/tmp' token-stats
 
 # 例：対話的なブラウザログインなしで CI から送信
-TOKSCALE_API_TOKEN=tt_xxx tokscale submit
+TOKSCALE_API_TOKEN=tt_xxx token-stats submit
 ```
 
 > **注**: 恒久的な追加ルートには、`~/.config/tokscale/settings.json` の `scanner.extraScanPaths` を推奨します。`TOKSCALE_EXTRA_DIRS` は一時的なオーバーライドや CI/CD に適しています。
 
 ### ヘッドレスモード
 
-Tokscaleは、自動化、CI/CDパイプライン、バッチ処理のための**Codex CLIヘッドレス出力**からトークン使用量を集計できます。
+Token Statsは、自動化、CI/CDパイプライン、バッチ処理のための**Codex CLIヘッドレス出力**からトークン使用量を集計できます。
 
 **ヘッドレスモードとは？**
 
@@ -924,9 +924,9 @@ Codex CLIをJSON出力フラグ付きで実行すると（例：\`codex exec --j
 
 **保存場所:** \`~/.config/tokscale/headless/\`
 
-macOSでは、\`TOKSCALE_HEADLESS_DIR\`が設定されていない場合、Tokscaleは\`~/Library/Application Support/tokscale/headless/\`もスキャンします。
+macOSでは、\`TOKSCALE_HEADLESS_DIR\`が設定されていない場合、Token Statsは\`~/Library/Application Support/tokscale/headless/\`もスキャンします。
 
-Tokscaleは次のディレクトリ構造を自動的にスキャンします:
+Token Statsは次のディレクトリ構造を自動的にスキャンします:
 ```
 ~/.config/tokscale/headless/
 └── codex/       # Codex CLI JSONL出力
@@ -941,7 +941,7 @@ export TOKSCALE_HEADLESS_DIR="$HOME/my-custom-logs"
 
 | ツール | コマンド例 |
 |--------|-----------|
-| **Codex CLI** | \`tokscale headless codex exec -m gpt-5 "implement feature"\` |
+| **Codex CLI** | \`token-stats headless codex exec -m gpt-5 "implement feature"\` |
 
 **手動リダイレクト（オプション）:**
 
@@ -953,8 +953,8 @@ export TOKSCALE_HEADLESS_DIR="$HOME/my-custom-logs"
 
 ```bash
 # スキャン場所とヘッドレスカウントを表示
-tokscale sources
-tokscale sources --json
+token-stats sources
+token-stats sources --json
 ```
 
 **CI/CD統合例:**
@@ -969,7 +969,7 @@ tokscale sources --json
 
 # 後で使用量を追跡
 - name: Report token usage
-  run: tokscale --json
+  run: token-stats --json
 ```
 
 > **注**: ヘッドレスキャプチャはCodex CLIのみサポートしています。Codexを直接実行する場合は、上記のようにstdoutをヘッドレスディレクトリにリダイレクトしてください。
@@ -1004,7 +1004,7 @@ bun run dev
 
 ## ソーシャルプラットフォーム
 
-Tokscaleには使用量データを共有し、他の開発者と競争できるソーシャルプラットフォームが含まれています。
+Token Statsには使用量データを共有し、他の開発者と競争できるソーシャルプラットフォームが含まれています。
 
 ### 機能
 
@@ -1016,10 +1016,10 @@ Tokscaleには使用量データを共有し、他の開発者と競争できる
 
 ### GitHubプロフィール埋め込みウィジェット
 
-GitHubプロフィールREADMEにTokscaleの公開統計を直接埋め込むことができます：
+GitHubプロフィールREADMEにToken Statsの公開統計を直接埋め込むことができます：
 
 ```md
-[![Tokscale Stats](https://tokscale.ai/api/embed/<username>/svg)](https://tokscale.ai/u/<username>)
+[![Token Stats Stats](https://token-stats.com/api/embed/<username>/svg)](https://token-stats.com/u/<username>)
 ```
 
 `<username>` を GitHub ユーザー名に置き換えてください。クエリパラメータを付けない場合は既定の `classic` カードがレンダリングされます。以下のパラメータを追加してデザインをカスタマイズできます。
@@ -1038,10 +1038,10 @@ GitHubプロフィールREADMEにTokscaleの公開統計を直接埋め込むこ
 例：
 
 ```md
-![](https://tokscale.ai/api/embed/<username>/svg?template=minimal&color=purple&graph=1)
-![](https://tokscale.ai/api/embed/<username>/svg?template=orbit&color=pink&rank=percent)
-![](https://tokscale.ai/api/embed/<username>/svg?template=terminal&color=green&theme=light)
-![](https://tokscale.ai/api/embed/<username>/svg?template=receipt&color=YlGnBu&graph=1)
+![](https://token-stats.com/api/embed/<username>/svg?template=minimal&color=purple&graph=1)
+![](https://token-stats.com/api/embed/<username>/svg?template=orbit&color=pink&rank=percent)
+![](https://token-stats.com/api/embed/<username>/svg?template=terminal&color=green&theme=light)
+![](https://token-stats.com/api/embed/<username>/svg?template=receipt&color=YlGnBu&graph=1)
 ```
 
 ### GitHubプロフィールバッジ
@@ -1049,7 +1049,7 @@ GitHubプロフィールREADMEにTokscaleの公開統計を直接埋め込むこ
 shields.ioスタイルのよりコンパクトなバッジも使用できます：
 
 ```md
-![Tokscale Tokens](https://tokscale.ai/api/badge/<username>/svg)
+![Token Stats Tokens](https://token-stats.com/api/badge/<username>/svg)
 ```
 
 - `<username>`をGitHubユーザー名に置き換えてください
@@ -1061,13 +1061,13 @@ shields.ioスタイルのよりコンパクトなバッジも使用できます�
   - `label=<テキスト>` 左側のラベルをカスタマイズ
   - `color=<hex>` 右側の背景色をカスタマイズ（例：`color=ff5733`）
 - 例：
-  - `https://tokscale.ai/api/badge/<username>/svg?metric=cost&compact=1`
-  - `https://tokscale.ai/api/badge/<username>/svg?metric=rank&sort=cost&style=flat-square`
+  - `https://token-stats.com/api/badge/<username>/svg?metric=cost&compact=1`
+  - `https://token-stats.com/api/badge/<username>/svg?metric=rank&sort=cost&style=flat-square`
 
 ### はじめに
 
-1. **ログイン** - `tokscale login`を実行してGitHubで認証するか、CI/ヘッドレス用途では Settings で API トークンを作成
-2. **送信** - `tokscale submit`を実行して使用量データをアップロード
+1. **ログイン** - `token-stats login`を実行してGitHubで認証するか、CI/ヘッドレス用途では Settings で API トークンを作成
+2. **送信** - `token-stats submit`を実行して使用量データをアップロード
 3. **表示** - Webプラットフォームを訪問してプロフィールとリーダーボードを確認
 
 ### データ検証
@@ -1084,7 +1084,7 @@ shields.ioスタイルのよりコンパクトなバッジも使用できます�
 
 Spotify Wrappedにインスパイアされた、AIコーディングアシスタントの年間使用量をまとめた美しいレビュー画像を生成します。
 
-| `bunx tokscale@latest wrapped` | `bunx tokscale@latest wrapped --clients` | `bunx tokscale@latest wrapped --agents --disable-pinned` |
+| `bunx @token-stats/cli@latest wrapped` | `bunx @token-stats/cli@latest wrapped --clients` | `bunx @token-stats/cli@latest wrapped --agents --disable-pinned` |
 |:---:|:---:|:---:|
 | ![Wrapped 2025 (Agents + Pin Sisyphus)](.github/assets/wrapped-2025-agents.png) | ![Wrapped 2025 (Clients)](.github/assets/wrapped-2025-clients.png) | ![Wrapped 2025 (Agents + Disable Pinned)](.github/assets/wrapped-2025-agents-disable-pinned.png) |
 
@@ -1092,10 +1092,10 @@ Spotify Wrappedにインスパイアされた、AIコーディングアシスタ
 
 ```bash
 # 現在の年のWrapped画像を生成
-tokscale wrapped
+token-stats wrapped
 
 # 特定の年のWrapped画像を生成
-tokscale wrapped --year 2025
+token-stats wrapped --year 2025
 ```
 
 ### 含まれる内容
@@ -1191,19 +1191,19 @@ bun run bench
 
 ```bash
 # グラフデータをファイルにエクスポート
-tokscale graph --output usage-data.json
+token-stats graph --output usage-data.json
 
 # 日付フィルタリング（すべてのショートカットが使用可能）
-tokscale graph --today
-tokscale graph --week
-tokscale graph --since 2024-01-01 --until 2024-12-31
-tokscale graph --year 2024
+token-stats graph --today
+token-stats graph --week
+token-stats graph --since 2024-01-01 --until 2024-12-31
+token-stats graph --year 2024
 
 # プラットフォーム別フィルター
-tokscale graph --client opencode,claude
+token-stats graph --client opencode,claude
 
 # 処理時間ベンチマークを表示
-tokscale graph --output data.json --benchmark
+token-stats graph --output data.json --benchmark
 ```
 
 ### ベンチマークフラグ
@@ -1211,17 +1211,17 @@ tokscale graph --output data.json --benchmark
 パフォーマンス分析用の処理時間を表示：
 
 ```bash
-tokscale --benchmark           # デフォルトビューと共に処理時間を表示
-tokscale models --benchmark    # モデルレポートをベンチマーク
-tokscale monthly --benchmark   # 月別レポートをベンチマーク
-tokscale graph --benchmark     # グラフ生成をベンチマーク
+token-stats --benchmark           # デフォルトビューと共に処理時間を表示
+token-stats models --benchmark    # モデルレポートをベンチマーク
+token-stats monthly --benchmark   # 月別レポートをベンチマーク
+token-stats graph --benchmark     # グラフ生成をベンチマーク
 ```
 
 ### フロントエンド用データの生成
 
 ```bash
 # 可視化用データをエクスポート
-tokscale graph --output packages/frontend/public/my-data.json
+token-stats graph --output packages/frontend/public/my-data.json
 ```
 
 ### パフォーマンス
@@ -1276,7 +1276,7 @@ Linux では、ランチャーが glibc と musl を自動検出します（`pro
 
 ### Windowsサポート
 
-TokscaleはWindowsを完全にサポートしています。TUIとCLIはmacOS/Linuxと同様に動作します。
+Token StatsはWindowsを完全にサポートしています。TUIとCLIはmacOS/Linuxと同様に動作します。
 
 **Windowsでのインストール：**
 ```powershell
@@ -1284,7 +1284,7 @@ TokscaleはWindowsを完全にサポートしています。TUIとCLIはmacOS/Li
 powershell -c "irm bun.sh/install.ps1 | iex"
 
 # tokscaleの実行
-bunx tokscale@latest
+bunx @token-stats/cli@latest
 ```
 
 #### Windowsでのデータ保存場所
@@ -1315,11 +1315,11 @@ AIコーディングツールはクロスプラットフォームの場所にセ
 | Kilo CLI | `~/.local/share/kilo/` | `%USERPROFILE%\.local\share\kilo\` | OpenCodeと同様に`xdg-basedir`を使用 |
 | Crush | `$XDG_DATA_HOME/crush/`（フォールバック: `~/.local/share/crush/`） | `%USERPROFILE%\.local\share\crush\`（設定されていれば `%XDG_DATA_HOME%\crush\`） | フォールバック付きでXDGデータディレクトリを使用 |
 | Goose | `~/.local/share/goose/sessions/` (+ macOS Application Support、レガシー Block パス) | `%USERPROFILE%\.local\share\goose\sessions\` | `GOOSE_PATH_ROOT` 環境変数で設定可能 |
-| Antigravity | `~/.config/tokscale/antigravity-cache/sessions/` | — | `tokscale antigravity sync` は現在 macOS / Linux でのみサポート |
+| Antigravity | `~/.config/tokscale/antigravity-cache/sessions/` | — | `token-stats antigravity sync` は現在 macOS / Linux でのみサポート |
 | Zed Agent | `~/.local/share/zed/threads/threads.db` | `%LOCALAPPDATA%\Zed\threads\threads.db` | ホスティング済み Zed モデルの使用量のみ；外部 ACP エージェントは対象外 |
 | Kiro | `~/.kiro/sessions/cli/` および `~/.local/share/kiro-cli/data.sqlite3` | `%USERPROFILE%\.kiro\sessions\cli\` および `%USERPROFILE%\.local\share\kiro-cli\data.sqlite3` | Kiro セッションファイルに加え、存在する場合は Kiro CLI の SQLite データベースを解析 |
-| Trae | `~/.config/tokscale/trae-cache/sessions/` | `%APPDATA%\tokscale\trae-cache\sessions\` | `tokscale trae sync` で 1 回だけ同期。インストール済みの Trae IDE または Trae Solo デスクトップアプリから資格情報を自動検出 |
-| Warp/Oz | `~/.config/tokscale/warp-cache/usage.json` | `%APPDATA%\tokscale\warp-cache\usage.json` | `tokscale warp sync` で同期；集計リクエスト数と使用金額のみ、トークントランスクリプトは含まない |
+| Trae | `~/.config/tokscale/trae-cache/sessions/` | `%APPDATA%\tokscale\trae-cache\sessions\` | `token-stats trae sync` で 1 回だけ同期。インストール済みの Trae IDE または Trae Solo デスクトップアプリから資格情報を自動検出 |
+| Warp/Oz | `~/.config/tokscale/warp-cache/usage.json` | `%APPDATA%\tokscale\warp-cache\usage.json` | `token-stats warp sync` で同期；集計リクエスト数と使用金額のみ、トークントランスクリプトは含まない |
 | Grok Build | `~/.grok/sessions/` | `%USERPROFILE%\.grok\sessions\` | `GROK_HOME` 環境変数で設定可能。`updates.jsonl` セッション更新を解析 |
 | Jcode | `~/.jcode/sessions/` | `%USERPROFILE%\.jcode\sessions\` | `JCODE_HOME` 環境変数で設定可能。`session_*.json` スナップショットと `session_*.journal.jsonl` サイドカーを解析 |
 | MiMo Code | `~/.local/share/mimocode/` | `%USERPROFILE%\.local\share\mimocode\` | XDG データディレクトリを使用；SQLite データベース `mimocode.db` |
@@ -1335,13 +1335,13 @@ AIコーディングツールはクロスプラットフォームの場所にセ
 
 #### Windows固有の設定
 
-Tokscaleは以下の場所に設定を保存します：
+Token Statsは以下の場所に設定を保存します：
 - **TUI設定**: `%APPDATA%\tokscale\settings.json`（プラットフォームのデフォルト。`TOKSCALE_CONFIG_DIR` でオーバーライド可能）
 - **キャッシュ**: `%APPDATA%\tokscale\cache\`（統合キャッシュルート）
 - **レガシーキャッシュパス**: 以前のリリースで使われていた `%USERPROFILE%\.cache\tokscale\` のような分散パスは、新しい場所に再生成可能データが書かれるまで残ることがあります。
 - **Cursor認証情報**: `%USERPROFILE%\.config\tokscale\cursor-credentials.json`
 - **Trae認証情報と同期済み使用量**: `%APPDATA%\tokscale\trae-cache\`
-- **Tokscaleアカウント認証情報**: `%USERPROFILE%\.config\tokscale\credentials.json`
+- **Token Statsアカウント認証情報**: `%USERPROFILE%\.config\tokscale\credentials.json`
 
 ## セッションデータ保持
 
@@ -1418,9 +1418,9 @@ OpenCodeには組み込みのセッションクリーンアップがありませ
 
 場所: `~/.local/share/opencode/opencode.db` (v1.2+) または `storage/message/{sessionId}/*.json` (レガシー)
 
-OpenCode 1.2+はセッションをSQLiteに保存します。TokscaleはまずSQLiteから読み取り、古いバージョンの場合はレガシーJSONファイルにフォールバックします。
+OpenCode 1.2+はセッションをSQLiteに保存します。Token StatsはまずSQLiteから読み取り、古いバージョンの場合はレガシーJSONファイルにフォールバックします。
 
-OpenCodeはビルド時のリリースチャンネルに応じてDBファイル名を決定します: `latest`/`beta` チャンネルは `opencode.db` を使い、それ以外のチャンネルは `opencode-<channel>.db`（例: `opencode-stable.db`、`opencode-nightly.db`）を使います。Tokscaleはこれらすべてをスキャンするため、複数のチャンネルを併用しているユーザーも統合されたビューを得られます。
+OpenCodeはビルド時のリリースチャンネルに応じてDBファイル名を決定します: `latest`/`beta` チャンネルは `opencode.db` を使い、それ以外のチャンネルは `opencode-<channel>.db`（例: `opencode-stable.db`、`opencode-nightly.db`）を使います。Token Statsはこれらすべてをスキャンするため、複数のチャンネルを併用しているユーザーも統合されたビューを得られます。
 
 各メッセージの内容：
 ```json
@@ -1450,7 +1450,7 @@ OpenCodeはビルド時のリリースチャンネルに応じてDBファイル�
 
 `~/.claude/transcripts/` 配下のラッパートランスクリプトファイルは、実際の Claude 使用量メタデータを含む場合のみカウントされます。ユーザー/ツールイベントはあるが `usage` ブロックがないファイルは、推定せずにスキップされます。
 
-Tokscale の `claude` クライアントは Claude Code のトークン集計であり、Claude Desktop チャットの集計ではありません。Claude Desktop は `~/Library/Application Support/Claude` などの場所にアプリデータを保存しますが、Anthropic はコンシューマー向けデスクトップチャットやチャット履歴エクスポートについて、安定したローカルのメッセージ単位トークン台帳を文書化していません。Claude Desktop のデータは存在するが Claude Code の JSONL ルートのみがスキャン可能な場合は、`tokscale clients` を実行すると診断が表示されます。`tokscale usage` は Claude Code の認証情報からベストエフォートで Claude サブスクリプションのクォータバーを表示できますが、組織/API 使用量は Anthropic の Admin Usage and Cost API に属し、ローカルのトランスクリプトスキャンとは意図的に分離されています。
+Token Stats の `claude` クライアントは Claude Code のトークン集計であり、Claude Desktop チャットの集計ではありません。Claude Desktop は `~/Library/Application Support/Claude` などの場所にアプリデータを保存しますが、Anthropic はコンシューマー向けデスクトップチャットやチャット履歴エクスポートについて、安定したローカルのメッセージ単位トークン台帳を文書化していません。Claude Desktop のデータは存在するが Claude Code の JSONL ルートのみがスキャン可能な場合は、`token-stats clients` を実行すると診断が表示されます。`token-stats usage` は Claude Code の認証情報からベストエフォートで Claude サブスクリプションのクォータバーを表示できますが、組織/API 使用量は Anthropic の Admin Usage and Cost API に属し、ローカルのトランスクリプトスキャンとは意図的に分離されています。
 
 ### Codex CLI
 
@@ -1486,13 +1486,13 @@ $env:COPILOT_OTEL_FILE_EXPORTER_PATH = Join-Path $otelDir ("copilot-otel-{0}.jso
 
 タイムスタンプ付きのファイル名を使用することを推奨します。これにより、各Copilotセッションが1つの巨大なOTELログに蓄積されるのではなく、新しいファイルに書き込まれます。
 
-Tokscaleは `chat` spanをトークン集計の信頼源として扱い、ツールspanおよび累積メトリクスはフェーズ1で無視します:
+Token Statsは `chat` spanをトークン集計の信頼源として扱い、ツールspanおよび累積メトリクスはフェーズ1で無視します:
 
 ```json
 {"type":"span","name":"chat gpt-5.4-mini","attributes":{"gen_ai.operation.name":"chat","gen_ai.response.model":"gpt-5.4-mini","gen_ai.conversation.id":"session-id","gen_ai.usage.input_tokens":1234,"gen_ai.usage.output_tokens":567,"gen_ai.usage.cache_read.input_tokens":890,"gen_ai.usage.reasoning.output_tokens":123}}
 ```
 
-> CopilotのOTELペイロードは現在、安定したワークスペースメタデータを公開していないため、Copilotの行はワークスペース属性なしで表示される場合があります。Tokscaleは可能な限り報告されたモデルからこれらの行を価格計算し、`github.copilot.cost` を直接信頼しません。
+> CopilotのOTELペイロードは現在、安定したワークスペースメタデータを公開していないため、Copilotの行はワークスペース属性なしで表示される場合があります。Token Statsは可能な限り報告されたモデルからこれらの行を価格計算し、`github.copilot.cost` を直接信頼しません。
 
 ### Gemini CLI
 
@@ -1512,37 +1512,37 @@ Tokscaleは `chat` spanをトークン集計の信頼源として扱い、ツー
 
 場所: `~/.config/tokscale/cursor-cache/`（Cursor API経由で同期）
 
-CursorデータはセッショントークンでCursor APIから取得され、ローカルにキャッシュされます。認証するには`tokscale cursor login`を実行してください。セットアップ手順は[Cursor IDEコマンド](#cursor-ideコマンド)を参照。
+CursorデータはセッショントークンでCursor APIから取得され、ローカルにキャッシュされます。認証するには`token-stats cursor login`を実行してください。セットアップ手順は[Cursor IDEコマンド](#cursor-ideコマンド)を参照。
 
 ### Antigravity
 
 場所: `~/.config/tokscale/antigravity-cache/sessions/*.jsonl`（ローカルの Antigravity 言語サーバ RPC 経由で同期）
 
-Antigravity データはルートコマンドでは自動取得されません。Antigravity 対応エディタを開いた状態で `tokscale antigravity sync` を実行してローカルキャッシュを更新し、その後はキャッシュ済みの JSONL アーティファクトに対して通常の tokscale レポートとフィルターを利用してください。
+Antigravity データはルートコマンドでは自動取得されません。Antigravity 対応エディタを開いた状態で `token-stats antigravity sync` を実行してローカルキャッシュを更新し、その後はキャッシュ済みの JSONL アーティファクトに対して通常の token-stats レポートとフィルターを利用してください。
 
 ### Trae
 
 場所: `~/.config/tokscale/trae-cache/sessions/*.json`（公式使用量 API 経由で同期）
 
-Trae データはルートコマンドでは自動取得されません。最初に `tokscale trae login` を実行し、レポート前に `tokscale trae sync` または `tokscale trae sync --since 30` を実行してください。Tokscale は同期された API dump をセッション単位のレコードとして解析し、Trae が返すコスト合計を保持します。
+Trae データはルートコマンドでは自動取得されません。最初に `token-stats trae login` を実行し、レポート前に `token-stats trae sync` または `token-stats trae sync --since 30` を実行してください。Token Stats は同期された API dump をセッション単位のレコードとして解析し、Trae が返すコスト合計を保持します。
 
 ### Warp/Oz
 
 場所: `~/.config/tokscale/warp-cache/usage.json`（認証済み GraphQL API 経由で同期）
 
-Warp/Oz データはルートコマンドでは自動取得されません。レポートの前に `tokscale warp login` を実行し、続いて `tokscale warp sync` を実行してください。Warp はトークンに紐づくローカルトランスクリプトを公開しないため、Tokscale は集約されたリクエスト数と支出のみを記録します。
+Warp/Oz データはルートコマンドでは自動取得されません。レポートの前に `token-stats warp login` を実行し、続いて `token-stats warp sync` を実行してください。Warp はトークンに紐づくローカルトランスクリプトを公開しないため、Token Stats は集約されたリクエスト数と支出のみを記録します。
 
 ### Grok Build
 
 場所: `$GROK_HOME/sessions/*/*/updates.jsonl`（フォールバック: `~/.grok/sessions/*/*/updates.jsonl`）
 
-Grok Build データはローカルのセッション更新から直接解析されます。現在のログは安定した input/output 分割なしで累積 `totalTokens` カウンターを公開するため、Tokscale はターンごとの正の増分を input トークンとして記録します。`grok-composer-2.5-fast` は専用の公開価格が利用可能になるまで Composer 2.5 Fast 価格 override に一時的にマップされます。
+Grok Build データはローカルのセッション更新から直接解析されます。現在のログは安定した input/output 分割なしで累積 `totalTokens` カウンターを公開するため、Token Stats はターンごとの正の増分を input トークンとして記録します。`grok-composer-2.5-fast` は専用の公開価格が利用可能になるまで Composer 2.5 Fast 価格 override に一時的にマップされます。
 
 ### Jcode
 
 場所: `$JCODE_HOME/sessions/session_*.json`（フォールバック: `~/.jcode/sessions/session_*.json`）と、対応する `session_*.journal.jsonl` サイドカー。
 
-Jcode データはローカルのセッションスナップショットから直接解析されます。Tokscale は別のクライアントの識別子を偽装することなく、アシスタントの `messages[].token_usage` フィールド（`input_tokens`、`output_tokens`、`cache_read_input_tokens`、`cache_creation_input_tokens`、`reasoning_output_tokens`）を読み取ります。対応するジャーナルサイドカーは重複排除の前に同じセッションストリームへマージされるため、Jcode がスナップショットにチェックポイントするまでの間も、最近追記されたメッセージが含まれます。リプレイの重複排除には安定したメッセージ ID を使用し、ID を持たない不正/カスタムなレコードにはスコープ付きのフォールバックキーを使用します。
+Jcode データはローカルのセッションスナップショットから直接解析されます。Token Stats は別のクライアントの識別子を偽装することなく、アシスタントの `messages[].token_usage` フィールド（`input_tokens`、`output_tokens`、`cache_read_input_tokens`、`cache_creation_input_tokens`、`reasoning_output_tokens`）を読み取ります。対応するジャーナルサイドカーは重複排除の前に同じセッションストリームへマージされるため、Jcode がスナップショットにチェックポイントするまでの間も、最近追記されたメッセージが含まれます。リプレイの重複排除には安定したメッセージ ID を使用し、ID を持たない不正/カスタムなレコードにはスコープ付きのフォールバックキーを使用します。
 
 ### OpenClaw
 
@@ -1568,7 +1568,7 @@ model_changeイベントとアシスタントメッセージを含むセッシ�
 
 場所: `$HERMES_HOME/state.db`（フォールバック: `~/.hermes/state.db`）および標準プロファイルデータベース `$HERMES_HOME/profiles/*/state.db`（`HERMES_HOME` がアクティブなプロファイルを指す場合は、同階層の `~/.hermes/profiles/*/state.db`）
 
-HermesはSQLiteの`sessions`テーブルにセッションレベルの使用量を保存します。Tokscaleは`model`が存在しトークンまたはコスト合計が0でない行をインポートし、`started_at`をタイムスタンプとして使用し、`message_count`を保持し、`actual_cost_usd`を`estimated_cost_usd`より優先します。
+HermesはSQLiteの`sessions`テーブルにセッションレベルの使用量を保存します。Token Statsは`model`が存在しトークンまたはコスト合計が0でない行をインポートし、`started_at`をタイムスタンプとして使用し、`message_count`を保持し、`actual_cost_usd`を`estimated_cost_usd`より優先します。
 
 ### Pi
 
@@ -1617,7 +1617,7 @@ StatusUpdate メッセージを含む wire.jsonl 形式：
 
 各タスクディレクトリには、モデル/エージェントメタデータに使用される`<environment_details>`ブロックを含む`api_conversation_history.json`も含まれる場合があります。
 
-`ui_messages.json`はUIイベントの配列です。Tokscaleは以下のみをカウントします：
+`ui_messages.json`はUIイベントの配列です。Token Statsは以下のみをカウントします：
 - `type == "say"`
 - `say == "api_req_started"`
 
@@ -1637,7 +1637,7 @@ StatusUpdate メッセージを含む wire.jsonl 形式：
 - ローカル：`~/.config/Code/User/globalStorage/kilocode.kilo-code/tasks/{TASK_ID}/ui_messages.json`
 - サーバー（ベストエフォート）：`~/.vscode-server/data/User/globalStorage/kilocode.kilo-code/tasks/{TASK_ID}/ui_messages.json`
 
-KiloはRoo Codeと同じタスクログ形式を使用します。Tokscaleは同じルールを適用します：
+KiloはRoo Codeと同じタスクログ形式を使用します。Token Statsは同じルールを適用します：
 - `ui_messages.json`から`say/api_req_started`イベントのみをカウント
 - `text` JSONから`tokensIn`、`tokensOut`、`cacheReads`、`cacheWrites`、`cost`、`apiProtocol`を解析
 - 利用可能な場合、隣接する`api_conversation_history.json`からモデル/エージェントメタデータを補完
@@ -1650,7 +1650,7 @@ KiloはRoo Codeと同じタスクログ形式を使用します。Tokscaleは同
 - Windows デスクトップ VS Code: `%APPDATA%\Code\User\globalStorage\saoudrizwan.claude-dev\tasks\{TASK_ID}\ui_messages.json`
 - サーバー（ベストエフォート）: `~/.vscode-server/data/User/globalStorage/saoudrizwan.claude-dev/tasks/{TASK_ID}/ui_messages.json`
 
-Cline は Roo Code と Kilo がフォークした元となるアップストリームプロジェクトであり、同じ VS Code globalStorage のタスクログ形式を使用します。Tokscale は同じルールを適用します：
+Cline は Roo Code と Kilo がフォークした元となるアップストリームプロジェクトであり、同じ VS Code globalStorage のタスクログ形式を使用します。Token Stats は同じルールを適用します：
 - `ui_messages.json`から`say/api_req_started`イベントのみをカウント
 - `text` JSONから`tokensIn`、`tokensOut`、`cacheReads`、`cacheWrites`、`cost`、`apiProtocol`を解析
 - 利用可能な場合、隣接する`api_conversation_history.json`からモデル/エージェントメタデータを補完
@@ -1675,25 +1675,25 @@ Kilo CLIはOpenCodeと同様のSQLiteデータベースにセッションデー�
 
 場所: `$XDG_DATA_HOME/crush/projects.json`を通じて発見されるプロジェクトごとのSQLiteデータベース（フォールバック: `~/.local/share/crush/projects.json`）
 
-Crushはプロジェクトごとのデータベース（`crush.db`）に使用量を保存します。Crushは信頼できるメッセージごとまたはモデルごとのトークン集計を提供しないため、Tokscaleはルートセッションのセッションレベルのコスト合計のみをインポートします。レコードは`model=session-total`として表示され、トークン内訳はゼロです。
+Crushはプロジェクトごとのデータベース（`crush.db`）に使用量を保存します。Crushは信頼できるメッセージごとまたはモデルごとのトークン集計を提供しないため、Token Statsはルートセッションのセッションレベルのコスト合計のみをインポートします。レコードは`model=session-total`として表示され、トークン内訳はゼロです。
 
 ### Goose
 
 場所: `~/.local/share/goose/sessions/sessions.db`（`~/Library/Application Support/goose/`、`~/Library/Application Support/Block/goose/`、`~/.local/share/Block/goose/` もスキャン; `GOOSE_PATH_ROOT` でオーバーライド可能）
 
-Goose はセッションごとの使用量を SQLite の `sessions.db` に保存します。Tokscale は `model_config_json` からモデル、`provider_name` からプロバイダ、そしてセッションごとに累積された入力/出力トークン合計を抽出します。推論トークンはそのカラムが値を持つ場合に推定されます。
+Goose はセッションごとの使用量を SQLite の `sessions.db` に保存します。Token Stats は `model_config_json` からモデル、`provider_name` からプロバイダ、そしてセッションごとに累積された入力/出力トークン合計を抽出します。推論トークンはそのカラムが値を持つ場合に推定されます。
 
 ### Codebuff
 
 場所: `~/.config/manicode/projects/<project>/chats/<chatId>/chat-messages.json`（`manicode-dev` および `manicode-staging` チャネルもスキャン; `CODEBUFF_DATA_DIR` でオーバーライド可能）
 
-Codebuff（旧 Manicode）はチャットごとに JSON ファイルを書き出します。Tokscale は `metadata.usage`、`metadata.codebuff.usage`、および run-state の `messageHistory[*].providerOptions` フォールバックからトークン使用量を解析し、部分的に新しいエントリが実トークン数を持つ古いエントリを覆い隠さないように履歴を逆順に走査します。メッセージごとのタイムスタンプが欠けている場合は chat-id ディレクトリ名、最後にファイルの mtime にフォールバックします。
+Codebuff（旧 Manicode）はチャットごとに JSON ファイルを書き出します。Token Stats は `metadata.usage`、`metadata.codebuff.usage`、および run-state の `messageHistory[*].providerOptions` フォールバックからトークン使用量を解析し、部分的に新しいエントリが実トークン数を持つ古いエントリを覆い隠さないように履歴を逆順に走査します。メッセージごとのタイムスタンプが欠けている場合は chat-id ディレクトリ名、最後にファイルの mtime にフォールバックします。
 
 ### Gajae-Code (gjc)
 
 場所: `~/.gjc/agent/sessions/<project-slug>/*.jsonl`（エージェントディレクトリは `GJC_CODING_AGENT_DIR` でオーバーライド可能；`GJC_CONFIG_DIR`/`PI_CONFIG_DIR` に `agent/sessions` を結合した形式も解決；Linux/macOS では `$XDG_DATA_HOME/gjc/sessions/` へのフラットなリダイレクトにも対応）。深さ2のサブエージェントトランスクリプト（`<slug>/<session>/N-*.jsonl`）も検出します。
 
-セッションヘッダーとメッセージエントリを含む JSONL 形式。Tokscale はアシスタントメッセージのみを対象とし、存在する場合は gjc の信頼性の高いメッセージごとの `usage.cost.total`（USD）を再利用し、ない場合のみトークンから再計算します：
+セッションヘッダーとメッセージエントリを含む JSONL 形式。Token Stats はアシスタントメッセージのみを対象とし、存在する場合は gjc の信頼性の高いメッセージごとの `usage.cost.total`（USD）を再利用し、ない場合のみトークンから再計算します：
 ```json
 {"type":"session","id":"S1","timestamp":"2026-01-01T00:00:00.000Z","cwd":"/work/proj"}
 {"type":"message","id":"M1","timestamp":"2026-01-01T00:00:01.000Z","message":{"role":"assistant","model":"claude-sonnet-4","provider":"anthropic","usage":{"input":1000,"output":500,"cacheRead":0,"cacheWrite":0,"totalTokens":1500,"cost":{"input":0.1,"output":0.2,"total":0.3}}}}
@@ -1710,7 +1710,7 @@ Synthetic は他ソースのメッセージを後処理で再帰属します。`
 
 場所: `~/.local/share/mimocode/mimocode.db`（XDG データディレクトリ）
 
-MiMo Code は SQLite データベースにセッションデータを保存します。Tokscale はワークスペースコンテキストのために `session` テーブルと結合した `message` テーブルをクエリします：
+MiMo Code は SQLite データベースにセッションデータを保存します。Token Stats はワークスペースコンテキストのために `session` テーブルと結合した `message` テーブルをクエリします：
 
 ```sql
 SELECT m.id, m.session_id, m.data, NULLIF(s.directory, '') AS workspace_root
@@ -1739,11 +1739,11 @@ WHERE json_extract(m.data, '$.role') = 'assistant'
 }
 ```
 
-Tokscale はタイムスタンプ、モデル、プロバイダ、トークン数、コスト、エージェント名のフィンガープリントを使用して、フォークされたセッション間のメッセージを重複排除します。
+Token Stats はタイムスタンプ、モデル、プロバイダ、トークン数、コスト、エージェント名のフィンガープリントを使用して、フォークされたセッション間のメッセージを重複排除します。
 
 ## 価格
 
-Tokscaleは[LiteLLMの価格データベース](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)からリアルタイム価格を取得します。
+Token Statsは[LiteLLMの価格データベース](https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json)からリアルタイム価格を取得します。
 
 **ダイナミックフォールバック**: LiteLLMにまだ存在しないモデル（例：最近リリースされたモデル）は、[OpenRouterのエンドポイントAPI](https://openrouter.ai/docs/api/api-reference/endpoints/list-endpoints)から自動的に価格を取得します。
 
@@ -1794,13 +1794,13 @@ Tokscaleは[LiteLLMの価格データベース](https://github.com/BerriAI/litel
 ## ライセンス
 
 <p align="center">
-  <a href="https://github.com/junhoyeo">
+  <a href="https://github.com/Annihilater">
     <img src=".github/assets/labtocat-on-spaceship.png" width="540">
   </a>
 </p>
 
 <p align="center">
-  <strong>MIT © <a href="https://github.com/junhoyeo">Junho Yeo</a></strong>
+  <strong>MIT © <a href="https://github.com/Annihilater">Junho Yeo</a></strong>
 </p>
 
-このプロジェクトが興味深いと感じたら、**スターを付けてください ⭐** または[GitHubでフォロー](https://github.com/junhoyeo)して旅に参加してください（すでに1.1k以上が乗船中）。私は24時間コーディングし、定期的に驚くべきものを出荷しています—あなたのサポートは無駄になりません。
+このプロジェクトが興味深いと感じたら、**スターを付けてください ⭐** または[GitHubでフォロー](https://github.com/Annihilater)して旅に参加してください（すでに1.1k以上が乗船中）。私は24時間コーディングし、定期的に驚くべきものを出荷しています—あなたのサポートは無駄になりません。
