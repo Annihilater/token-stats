@@ -24,8 +24,8 @@ jobs:
           - host: macos-latest
             target: x86_64-apple-darwin
             build: cargo build --release -p tokscale-cli --target x86_64-apple-darwin
-            strip: strip -x target/x86_64-apple-darwin/release/tokscale
-            bin_name: tokscale
+            strip: strip -x target/x86_64-apple-darwin/release/token-stats
+            bin_name: token-stats
           # Apple Silicon: build with the `apple-fm` feature so the on-device
           # Apple Foundation Models summarizer is available. Requires the macOS
           # 26 SDK + Swift toolchain (Xcode 26 on the macos-26 runner) to build
@@ -35,38 +35,38 @@ jobs:
           - host: macos-26
             target: aarch64-apple-darwin
             build: cargo build --release -p tokscale-cli --target aarch64-apple-darwin --features apple-fm
-            strip: strip -x target/aarch64-apple-darwin/release/tokscale
-            bin_name: tokscale
+            strip: strip -x target/aarch64-apple-darwin/release/token-stats
+            bin_name: token-stats
           - host: ubuntu-latest
             target: x86_64-unknown-linux-gnu
             build: cargo zigbuild --release -p tokscale-cli --target x86_64-unknown-linux-gnu
-            strip: strip target/x86_64-unknown-linux-gnu/release/tokscale
-            bin_name: tokscale
+            strip: strip target/x86_64-unknown-linux-gnu/release/token-stats
+            bin_name: token-stats
           - host: ubuntu-latest
             target: x86_64-unknown-linux-musl
             build: cargo zigbuild --release -p tokscale-cli --target x86_64-unknown-linux-musl
-            strip: strip target/x86_64-unknown-linux-musl/release/tokscale
-            bin_name: tokscale
+            strip: strip target/x86_64-unknown-linux-musl/release/token-stats
+            bin_name: token-stats
           - host: ubuntu-latest
             target: aarch64-unknown-linux-gnu
             build: cargo zigbuild --release -p tokscale-cli --target aarch64-unknown-linux-gnu
             strip: ""
-            bin_name: tokscale
+            bin_name: token-stats
           - host: ubuntu-latest
             target: aarch64-unknown-linux-musl
             build: cargo zigbuild --release -p tokscale-cli --target aarch64-unknown-linux-musl
             strip: ""
-            bin_name: tokscale
+            bin_name: token-stats
           - host: windows-latest
             target: x86_64-pc-windows-msvc
             build: cargo build --release -p tokscale-cli --target x86_64-pc-windows-msvc
             strip: ""
-            bin_name: tokscale.exe
+            bin_name: token-stats.exe
           - host: windows-latest
             target: aarch64-pc-windows-msvc
             build: cargo build --release -p tokscale-cli --target aarch64-pc-windows-msvc
             strip: ""
-            bin_name: tokscale.exe
+            bin_name: token-stats.exe
 
     steps:
       - uses: actions/checkout@v5
