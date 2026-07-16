@@ -149,11 +149,13 @@ for package_name in cli.get("optionalDependencies", {}):
     if not package_name.startswith("@token-stats/cli-"):
         raise SystemExit(f"Unexpected optional dependency package name: {package_name}")
     paths.append(root / "packages" / package_name.removeprefix("@token-stats/") / "package.json")
-paths.append(root / "packages/tokscale/package.json")
+# Unscoped token-stats wrapper is private / blocked on npm; do not include it.
 
 seen = set()
 for path in paths:
     manifest = json.loads(path.read_text())
+    if manifest.get("private") is True:
+        continue
     name = manifest.get("name")
     version = manifest.get("version")
     if not name or not version:
@@ -184,7 +186,16 @@ while IFS=$'\t' read -r path package_name manifest_version; do
     errors+=("${path}: expected version ${NEW_VERSION}, found ${manifest_version}")
   fi
 
-  if ! npm_view_required_version current_version "${package_name}" "${package_name}"; then
+  # First-time packages (never published) return 404 — that is OK; we are about to publish them.
+  # Note: npm_view_version_status may re-enable `set -e` internally, so capture status via ||.
+  view_status=0
+  npm_view_version_status current_version "${package_name}" || view_status=$?
+  if [[ ${view_status} -eq 1 ]]; then
+    echo "${package_name}: not on npm yet (will be published as ${NEW_VERSION})"
+    continue
+  fi
+  if [[ ${view_status} -ne 0 ]]; then
+    errors+=("${package_name}: npm lookup failed")
     continue
   fi
   echo "${package_name}: npm latest ${current_version}"
