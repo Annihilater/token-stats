@@ -1,13 +1,14 @@
 #!/usr/bin/env bun
 /**
  * Usage: bun scripts/generate-release-notes.ts <version>
- * Env: GITHUB_REPOSITORY (default: junhoyeo/tokscale)
+ * Env: GITHUB_REPOSITORY (default: Annihilater/token-stats)
  */
 export {};
 
 import { execFileSync } from "node:child_process";
 
-const REPO = process.env.GITHUB_REPOSITORY || "junhoyeo/tokscale";
+const REPO = process.env.GITHUB_REPOSITORY || "Annihilater/token-stats";
+const PRODUCT = process.env.RELEASE_PRODUCT_NAME || "token-stats";
 
 interface Commit {
   hash: string;
@@ -163,14 +164,16 @@ function isFirstContributionAfter(login: string, thresholdDate: string): Contrib
     : null;
 }
 
+function getRootCommit(): string {
+  return run("git", ["rev-list", "--max-parents=0", "HEAD"]);
+}
+
 function generateReleaseNotes(version: string): string {
   const prevTag = getPreviousTag();
-  if (!prevTag) {
-    throw new Error("No previous tag found. Aborting release-note generation.");
-  }
-
-  const prevTagDate = getTagDate(prevTag);
-  const commits = getCommitsBetween(prevTag, "HEAD");
+  // First release (or shallow history): fall back to repo root commit range.
+  const rangeStart = prevTag ?? getRootCommit();
+  const prevTagDate = prevTag ? getTagDate(prevTag) : getTagDate(rangeStart);
+  const commits = getCommitsBetween(rangeStart, "HEAD");
   const entries: ChangeEntry[] = [];
   const candidateLogins = new Set<string>();
 
@@ -204,31 +207,39 @@ function generateReleaseNotes(version: string): string {
     }
   }
 
-  const newContributors = Array.from(candidateLogins)
-    .map((login) => isFirstContributionAfter(login, prevTagDate))
-    .filter((item): item is ContributorInfo => Boolean(item));
+  const newContributors = prevTag
+    ? Array.from(candidateLogins)
+        .map((login) => isFirstContributionAfter(login, prevTagDate))
+        .filter((item): item is ContributorInfo => Boolean(item))
+    : [];
 
   const lines: string[] = [
     '<div align="center">',
     "",
-    `[![Tokscale](https://github.com/${REPO}/raw/main/.github/assets/hero-v2.png)](https://github.com/${REPO})`,
+    `[![Token Stats](https://github.com/${REPO}/raw/main/.github/assets/hero-v2.png)](https://github.com/${REPO})`,
     "",
-    `# \`tokscale@v${version}\` is here!`,
+    `# \`${PRODUCT}@v${version}\` is here!`,
     "</div>",
     "",
     "## What's Changed",
   ];
 
-  if (entries.length === 0) {
+  if (!prevTag) {
+    lines.push("* Initial multi-platform release of Token Stats CLI (`@token-stats/cli`).");
+  }
+
+  if (entries.length === 0 && prevTag) {
     lines.push("* No notable changes");
   } else {
-    for (const entry of entries.reverse()) {
+    // Cap very long first-release histories so notes stay readable.
+    const shown = prevTag ? entries : entries.slice(-40);
+    for (const entry of shown.reverse()) {
       const prLink = entry.prNumber
         ? ` in https://github.com/${REPO}/pull/${entry.prNumber}`
         : "";
       const commitLink = entry.prNumber
         ? ""
-        : ` (${entry.hash})`;
+        : ` (${entry.hash.slice(0, 7)})`;
       lines.push(`* ${entry.message} by ${entry.author}${prLink}${commitLink}`);
     }
   }
@@ -242,10 +253,17 @@ function generateReleaseNotes(version: string): string {
     }
   }
 
-  lines.push(
-    "",
-    `**Full Changelog**: https://github.com/${REPO}/compare/${prevTag}...v${version}`
-  );
+  if (prevTag) {
+    lines.push(
+      "",
+      `**Full Changelog**: https://github.com/${REPO}/compare/${prevTag}...v${version}`
+    );
+  } else {
+    lines.push(
+      "",
+      `**Release**: https://github.com/${REPO}/releases/tag/v${version}`
+    );
+  }
 
   return lines.join("\n");
 }
