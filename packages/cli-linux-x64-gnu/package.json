@@ -1,6 +1,6 @@
 {
   "name": "@token-stats/cli-linux-x64-gnu",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "token-stats CLI binary for linux x64 gnu",
   "license": "MIT",
   "type": "module",

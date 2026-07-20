@@ -1,7 +1,7 @@
 {
   "name": "token-stats",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unused unscoped alias. npm blocks the name token-stats (too similar to tokenstats). Install with: bunx @token-stats/cli@latest",
   "type": "module",
   "main": "index.js",
@@ -29,7 +29,7 @@
     "token-stats"
   ],
   "dependencies": {
-    "@token-stats/cli": "0.1.1"
+    "@token-stats/cli": "0.1.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

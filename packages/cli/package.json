@@ -1,6 +1,6 @@
 {
   "name": "@token-stats/cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Token Stats CLI — track AI coding assistant token usage and costs.",
   "license": "MIT",
   "type": "module",
@@ -29,14 +29,14 @@
   },
   "dependencies": {},
   "optionalDependencies": {
-    "@token-stats/cli-darwin-arm64": "0.1.1",
-    "@token-stats/cli-darwin-x64": "0.1.1",
-    "@token-stats/cli-linux-arm64-gnu": "0.1.1",
-    "@token-stats/cli-linux-arm64-musl": "0.1.1",
-    "@token-stats/cli-linux-x64-gnu": "0.1.1",
-    "@token-stats/cli-linux-x64-musl": "0.1.1",
-    "@token-stats/cli-win32-arm64-msvc": "0.1.1",
-    "@token-stats/cli-win32-x64-msvc": "0.1.1"
+    "@token-stats/cli-darwin-arm64": "0.1.2",
+    "@token-stats/cli-darwin-x64": "0.1.2",
+    "@token-stats/cli-linux-arm64-gnu": "0.1.2",
+    "@token-stats/cli-linux-arm64-musl": "0.1.2",
+    "@token-stats/cli-linux-x64-gnu": "0.1.2",
+    "@token-stats/cli-linux-x64-musl": "0.1.2",
+    "@token-stats/cli-win32-arm64-msvc": "0.1.2",
+    "@token-stats/cli-win32-x64-msvc": "0.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
